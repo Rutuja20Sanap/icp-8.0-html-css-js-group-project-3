@@ -2,9 +2,30 @@ body{
          margin: 0;
          padding: 0;
 }
+.main-container{
+
+}
 .regester-login-container{
-    width: 80%;
+    width: fit-content;
     background-color: aqua;
-    height: 500px;
     margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+.container-image{
+   
+}
+.container-image img{
+
+height: 300px;
+
+}
+.login-container{
+
+}
+.login-input-fields{
+
+    border: 2px solid black;
 }
