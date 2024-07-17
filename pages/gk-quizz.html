@@ -17,8 +17,59 @@
             <img src="./../images/gk-quizz/gk-1.jpeg" alt="kids" class="header-img">
         </div>
         <h1 class="tagline">Explore and Learn: Quizzes for Little Geniuses!</h1>
+        <hr>
+
+        <div class="Quiz-container">
+            <h1 class="que-type">Simple Questions</h1>
+            <div class="question">
+                <p class="que-name" id="Question">1.  How many hours are there in a day?</p>
+                <form id="quiz-form">
+                    <label>
+                        <input type="radio" name="q1" value="A">
+                        A. <img src="./../images/gk-quizz/S-Q-1.jpg" alt="24" height="50px">
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="B">
+                        B. <img src="./../images/gk-quizz/S-Q-2.jpg" alt="36" height="50px" >
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="C">
+                        C. <img src="./../images/gk-quizz/S-Q-3.jpg" alt="15" height="50px">
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="D">
+                        D. <img src="./../images/gk-quizz/S-Q-4.jpg" alt="20" height="50px" >
+                    </label>
+                </form>
+                <h1 id="Result"></h1>
+                <button type="button" id="Result" onclick="Quiz()"> Check Answer</button>
+            </div>
+        </div>
     </div>
     </div>
 </body>
+
+<script>
+    function Quiz() {
+    const correctAnswer = "A"; 
+    const form = document.getElementById('quiz-form');
+    const resultElement = document.getElementById('Result');
+    let selectedAnswer;
+
+    const radios = form.elements['q1'];
+    for (let i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+            selectedAnswer = radios[i].value;
+            break;
+        }
+    }
+
+    if (selectedAnswer === correctAnswer) {
+        resultElement.innerText = "Your Answer Is Correct!";
+    } else {
+        resultElement.innerText = "Your Answer Is Incorrect!";
+    }
+}
+</script>
 
 </html>
