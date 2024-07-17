@@ -18,38 +18,72 @@ body{
 }
 .container-image img{
 
-height: 300px;
+height: 500px;
 mix-blend-mode: multiply;
-filter: drop-shadow(12px 10px 10px 10px black);
+
 
 }
 .login-container{
 
+    padding: 30px 40px;
 }
 .login-input-fields{
 
-    border: 2px solid black;
+   
 }
 .login-input-fields h1{
     text-align: center;
 }
 .login-input-fields button{
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.login-input-fields button span{
     display: block;
-    margin: 10px auto;
+    margin: 0 auto;
+}
+.hr-field div{
+    width: 25%;
+}
+.hr-field{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 35px;
+}
+.hr-field span{
+    font-size: 10px;
+    width: 50%;
+    text-align: center;
 }
 .input-fields{
     display: flex;
     flex-direction: column;
+    margin-top: 15px;
+    
+}
+.input-fields input{
+    margin-top: 25px;
+    padding: 13px;
 }
 .checkbox{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 20px;
+    gap: 70px;
 }
-.login-btn{
-    
+.login-btn {
+     width: fit-content;
+     margin: 25px auto;  
+}
+.login-btn button{
+    padding: 5px 136px;
 }
 .last-text{
     display: block;
     text-align: center;
+    margin-top: 15px;
 }
