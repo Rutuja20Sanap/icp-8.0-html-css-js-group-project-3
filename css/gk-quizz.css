@@ -1,0 +1,8 @@
+.GK-header{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-img{
+    height: 100px;
+}
