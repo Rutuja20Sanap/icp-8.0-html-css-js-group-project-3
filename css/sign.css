@@ -1,0 +1,10 @@
+body{
+         margin: 0;
+         padding: 0;
+}
+.regester-login-container{
+    width: 80%;
+    background-color: aqua;
+    height: 500px;
+    margin: 100px auto;
+}
