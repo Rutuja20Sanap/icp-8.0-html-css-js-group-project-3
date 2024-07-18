@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
+    <link rel="stylesheet" href="../css/feedback.css">
 </head>
-<body>
-    
-    
 
+<body>
+
+    <section>
+        <div class="main-container">
+            <div class="regester-login-container">
+
+                <div class="container-image">
+                    <img src="../images/feedback-signin/5360730.jpg" alt="">
+                </div>
+
+                <div class="login-container">
+
+                    <div class="login-input-fields">
+                        <div class="feedback-heading">
+                        <img src="../images/feedback-signin/review.png" alt="" srcset="">
+                        <h1>Feedback</h1>
+                        </div>
+                        <hr class="hr">
+                        <div class="feedback-main-heading">
+                             <h1>How are you feeling?</h1>
+                             <p>Your input is valuable in helping us better understand your <br>needs and tailor our service accordingly.</p>
+                        </div>
+
+                        <div class="imogi-container">
+                             <img src="../images/feedback-signin/star.png" id="img1" onclick="Light('img1')">
+                             <img src="../images/feedback-signin/star.png" id="img2" onclick="Light('img2')">
+                             <img src="../images/feedback-signin/star.png" id="img3" onclick="Light('img3')">
+                             <img src="../images/feedback-signin/star.png" id="img4" onclick="Light('img4')">
+                        </div>
+
+                        <div class="text-box">
+                            <textarea rows="6" cols="50" placeholder="Add a Comment"></textarea>
+                            <button>Submit Now</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function Light(active) {
+            const lightElement = document.getElementById(active);
+            if (lightElement.src.includes('star-color.png')) {
+                lightElement.src = '../images/feedback-signin/star.png';
+            } else {
+                lightElement.src = '../images/feedback-signin/star-color.png';
+            }
+        }
+        
+    </script>
 </body>
+
 </html>

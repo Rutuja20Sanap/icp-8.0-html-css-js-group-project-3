@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {}
+
+.regester-login-container {
+    width: fit-content;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    
+    padding: 20px;
+}
+
+.container-image {}
+
+.container-image img {
+
+    height: 400px;
+    mix-blend-mode: multiply;
+
+
+}
+
+.login-container {
+
+    padding: 30px 40px;
+}
+.login-input-fields{
+    border: 2px solid black;
+}
+.feedback-heading{
+    display: flex;
+    align-items: center;
+}
+.feedback-heading img{
+    height: 18px;
+}
+.feedback-main-heading{
+text-align: center;
+}
+.hr{
+    margin-top: -10px;
+}
+.imogi-container{
+    display: flex;
+    justify-content: space-around;
+}
+.imogi-container img{
+     display: block;
+     margin-top: 20px;
+        height: 60px;
+}
+.text-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.text-box button{
+    margin-top: 20px;
+}
+textarea{
+    resize: vertical;
+}
+
+
+
+
+
