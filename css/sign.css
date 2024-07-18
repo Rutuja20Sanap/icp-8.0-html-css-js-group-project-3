@@ -1,11 +1,11 @@
-body{
-         margin: 0;
-         padding: 0;
+body {
+    margin: 0;
+    padding: 0;
 }
-.main-container{
 
-}
-.regester-login-container{
+.main-container {}
+
+.regester-login-container {
     width: fit-content;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     margin: 100px auto;
@@ -13,77 +13,87 @@ body{
     justify-content: center;
     padding: 20px;
 }
-.container-image{
-   
+
+.container-image {}
+
+.container-image img {
+
+    height: 500px;
+    mix-blend-mode: multiply;
+
+
 }
-.container-image img{
 
-height: 500px;
-mix-blend-mode: multiply;
-
-
-}
-.login-container{
+.login-container {
 
     padding: 30px 40px;
 }
-.login-input-fields{
 
-    
-   
-}
-.login-input-fields h1{
+.login-input-fields {}
+
+.login-input-fields h1 {
     text-align: center;
 }
-.login-input-fields button{
+
+.login-input-fields button {
 
     display: flex;
     align-items: center;
     width: 100%;
 }
-.login-input-fields button span{
+
+.login-input-fields button span {
     display: block;
     margin: 0 auto;
 }
-.hr-field div{
+
+.hr-field div {
     width: 25%;
 }
-.hr-field{
+
+.hr-field {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 35px;
 }
-.hr-field span{
+
+.hr-field span {
     font-size: 10px;
     width: 50%;
     text-align: center;
 }
-.input-fields{
+
+.input-fields {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
-    
+
 }
-.input-fields input{
+
+.input-fields input {
     margin-top: 25px;
     padding: 13px;
 }
-.checkbox{
+
+.checkbox {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 20px;
     gap: 70px;
 }
+
 .login-btn {
-     width: fit-content;
-     margin: 25px auto;  
+    width: fit-content;
+    margin: 25px auto;
 }
-.login-btn button{
+
+.login-btn button {
     padding: 5px 136px;
 }
-.last-text{
+
+.last-text {
     display: block;
     text-align: center;
     margin-top: 15px;
@@ -91,23 +101,25 @@ mix-blend-mode: multiply;
 
 
 
-.register-input-fields{
+.register-input-fields {
 
-   display: none;
+    display: none;
     border: 2px solid black;
-   
+
 }
-.register-input-fields h1{
+
+.register-input-fields h1 {
     text-align: center;
 }
-.register-input-fields button{
+
+.register-input-fields button {
 
     display: flex;
     align-items: center;
     width: 100%;
 }
-.register-input-fields button span{
+
+.register-input-fields button span {
     display: block;
     margin: 0 auto;
 }
-

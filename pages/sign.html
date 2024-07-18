@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,124 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Here</title>
     <link rel="stylesheet" href="../css/sign.css">
-
-    <!-- <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        .main-container {}
-
-        .regester-login-container {
-            width: fit-content;
-            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-            margin: 100px auto;
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .container-image {}
-
-        .container-image img {
-            height: 500px;
-            mix-blend-mode: multiply;
-        }
-
-        .login-container {
-            padding: 30px 40px;
-        }
-
-        .login-input-fields h1 {
-            text-align: center;
-        }
-
-        .login-input-fields button {
-            display: flex;
-            align-items: center;
-            width: 100%;
-        }
-
-        .login-input-fields button span {
-            display: block;
-            margin: 0 auto;
-        }
-
-        .hr-field div {
-            width: 25%;
-        }
-
-        .hr-field {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin-top: 35px;
-        }
-
-        .hr-field span {
-            font-size: 10px;
-            width: 50%;
-            text-align: center;
-        }
-
-        .input-fields {
-            display: flex;
-            flex-direction: column;
-            margin-top: 15px;
-        }
-
-        .input-fields input {
-            margin-top: 25px;
-            padding: 13px;
-        }
-
-        .checkbox {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin-top: 20px;
-            gap: 70px;
-        }
-
-        .login-btn {
-            width: fit-content;
-            margin: 25px auto;
-        }
-
-        .login-btn button {
-            padding: 5px 136px;
-        }
-
-        .last-text {
-            display: block;
-            text-align: center;
-            margin-top: 15px;
-            cursor: pointer;
-        }
-
-        .register-input-fields {
-            display: none;
-            border: 2px solid black;
-        }
-
-        .register-input-fields h1 {
-            text-align: center;
-        }
-
-        .register-input-fields button {
-            display: flex;
-            align-items: center;
-            width: 100%;
-        }
-
-        .register-input-fields button span {
-            display: block;
-            margin: 0 auto;
-        }
-    </style> -->
 </head>
-
 <body>
     <section>
         <div class="main-container">
@@ -194,24 +76,14 @@
                             <button>Sign Up</button>
                         </div>
                         <hr>
-                        <span class="last-text" onclick="showLogin()">Already have an account? Log in</span>
+                        <span class="last-text" onclick="showLogin()">Already have an account? <a>Log in</a></span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <script>
-        function showLogin() {
-            document.getElementById('Login-page').style.display = 'block';
-            document.getElementById('Register-page').style.display = 'none';
-        }
-
-        function showRegister() {
-            document.getElementById('Login-page').style.display = 'none';
-            document.getElementById('Register-page').style.display = 'block';
-        }
-    </script>
+    <script src="../js/sign.js"></script>
 </body>
 
 </html>
