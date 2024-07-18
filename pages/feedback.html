@@ -39,8 +39,8 @@
                         </div>
 
                         <div class="text-box">
-                            <textarea rows="6" cols="50" placeholder="Add a Comment"></textarea>
-                            <button>Submit Now</button>
+                            <textarea rows="8" cols="50" placeholder="Add a Comment" id="text-area"></textarea>
+                            <button onclick="Submit()">Submit Now</button>
                         </div>
 
                     </div>
@@ -51,17 +51,7 @@
         </div>
     </section>
 
-    <script>
-        function Light(active) {
-            const lightElement = document.getElementById(active);
-            if (lightElement.src.includes('star-color.png')) {
-                lightElement.src = '../images/feedback-signin/star.png';
-            } else {
-                lightElement.src = '../images/feedback-signin/star-color.png';
-            }
-        }
-        
-    </script>
+    <script src="../js/feedback.js"></script>
 </body>
 
 </html>

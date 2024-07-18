@@ -11,8 +11,9 @@ body {
     margin: 100px auto;
     display: flex;
     justify-content: center;
-    
-    padding: 20px;
+    align-items: center;
+    padding: 30px 50px;
+    padding-top: 10px;
 }
 
 .container-image {}
@@ -30,7 +31,7 @@ body {
     padding: 30px 40px;
 }
 .login-input-fields{
-    border: 2px solid black;
+  
 }
 .feedback-heading{
     display: flex;
@@ -61,9 +62,15 @@ text-align: center;
 }
 .text-box button{
     margin-top: 20px;
+    border: none;
+    padding: 10px 0px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 textarea{
     resize: vertical;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: 1px solid rgb(202, 198, 198);
+    padding: 5px;
 }
 
 
