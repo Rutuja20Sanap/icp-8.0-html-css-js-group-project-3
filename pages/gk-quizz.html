@@ -42,7 +42,29 @@
                     </label>
                 </form>
                 <h1 id="Result"></h1>
-                <button type="button" id="Result" onclick="Quiz()"> Check Answer</button>
+                <button type="button" id="Result" onclick="Quiz1()"> Check Answer</button>
+
+                <p class="que-name" id="Question">2. How many minutes are there in an hour?</p>
+                <form id="quiz-form1">
+                    <label>
+                        <input type="radio" name="q2" value="30">
+                        A. 30
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="40">
+                        B. 40
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="60">
+                        C. 60
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="120">
+                        D. 120
+                    </label>
+                </form>
+                <h1 id="Result1"></h1>
+                <button type="button" id="Result" onclick="Quiz2()"> Check Answer</button>
             </div>
         </div>
     </div>
@@ -50,13 +72,34 @@
 </body>
 
 <script>
-    function Quiz() {
+    function Quiz1() {
     const correctAnswer = "A"; 
     const form = document.getElementById('quiz-form');
     const resultElement = document.getElementById('Result');
     let selectedAnswer;
 
     const radios = form.elements['q1'];
+    for (let i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+            selectedAnswer = radios[i].value;
+            break;
+        }
+    }
+
+    if (selectedAnswer === correctAnswer) {
+        resultElement.innerText = "Your Answer Is Correct!";
+    } else {
+        resultElement.innerText = "Your Answer Is Incorrect!";
+    }
+}
+
+function Quiz2() {
+    const correctAnswer = "60"; 
+    const form = document.getElementById('quiz-form1');
+    const resultElement = document.getElementById('Result1');
+    let selectedAnswer;
+
+    const radios = form.elements['q2'];
     for (let i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
             selectedAnswer = radios[i].value;
