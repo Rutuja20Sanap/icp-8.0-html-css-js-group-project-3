@@ -11,6 +11,7 @@ body {
     margin: 100px auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
@@ -18,7 +19,7 @@ body {
 
 .container-image img {
 
-    height: 500px;
+    height: 450px;
     mix-blend-mode: multiply;
 
 
@@ -40,15 +41,24 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
+    border: none;
+    padding: 9px 15px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.login-input-fields button img{
+    height: 16px;
 }
 
 .login-input-fields button span {
     display: block;
     margin: 0 auto;
 }
+hr{
+    border: 1px solid rgb(224, 224, 224);
+}
 
 .hr-field div {
-    width: 25%;
+    width: 30%;
 }
 
 .hr-field {
@@ -60,7 +70,7 @@ body {
 
 .hr-field span {
     font-size: 10px;
-    width: 50%;
+    width: 40%;
     text-align: center;
 }
 
@@ -74,6 +84,9 @@ body {
 .input-fields input {
     margin-top: 25px;
     padding: 13px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: none;
+    border: 1px solid rgb(224, 224, 224);
 }
 
 .checkbox {
@@ -90,7 +103,9 @@ body {
 }
 
 .login-btn button {
-    padding: 5px 136px;
+    padding: 8px 136px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: none;
 }
 
 .last-text {
@@ -104,7 +119,6 @@ body {
 .register-input-fields {
 
     display: none;
-    border: 2px solid black;
 
 }
 
@@ -117,9 +131,24 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
+    border: none;
+    padding: 9px 15px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.register-input-fields button img{
+    height: 16px;
 }
 
 .register-input-fields button span {
     display: block;
     margin: 0 auto;
+}
+.sign-up-btn{
+    width: fit-content;
+    margin: 25px auto;
+}
+.sign-up-btn button {
+    padding: 8px 144px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: none;
 }
