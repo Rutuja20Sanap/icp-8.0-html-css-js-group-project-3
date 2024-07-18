@@ -21,3 +21,13 @@ function Submit() {
     }
     
 }
+
+function Mouse() {
+    const ele = document.getElementById("blink");
+   ele.src = '../images/feedback-signin/star-color.png'; 
+}
+
+function Over() {
+    const ele = document.getElementById("blink");
+    ele.src = '../images/feedback-signin/star.png';
+}
