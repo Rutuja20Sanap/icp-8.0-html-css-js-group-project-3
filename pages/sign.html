@@ -1,11 +1,128 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regester Here</title>
+    <title>Register Here</title>
     <link rel="stylesheet" href="../css/sign.css">
+
+    <!-- <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {}
+
+        .regester-login-container {
+            width: fit-content;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+            margin: 100px auto;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container-image {}
+
+        .container-image img {
+            height: 500px;
+            mix-blend-mode: multiply;
+        }
+
+        .login-container {
+            padding: 30px 40px;
+        }
+
+        .login-input-fields h1 {
+            text-align: center;
+        }
+
+        .login-input-fields button {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .login-input-fields button span {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .hr-field div {
+            width: 25%;
+        }
+
+        .hr-field {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 35px;
+        }
+
+        .hr-field span {
+            font-size: 10px;
+            width: 50%;
+            text-align: center;
+        }
+
+        .input-fields {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+        }
+
+        .input-fields input {
+            margin-top: 25px;
+            padding: 13px;
+        }
+
+        .checkbox {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 20px;
+            gap: 70px;
+        }
+
+        .login-btn {
+            width: fit-content;
+            margin: 25px auto;
+        }
+
+        .login-btn button {
+            padding: 5px 136px;
+        }
+
+        .last-text {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .register-input-fields {
+            display: none;
+            border: 2px solid black;
+        }
+
+        .register-input-fields h1 {
+            text-align: center;
+        }
+
+        .register-input-fields button {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .register-input-fields button span {
+            display: block;
+            margin: 0 auto;
+        }
+    </style> -->
 </head>
 
 <body>
@@ -13,57 +130,88 @@
         <div class="main-container">
             <div class="regester-login-container">
                 <div class="container-image">
-
-                    <img src="../images/feedback-signin/Mobile-login.jpg" alt="" srcset="">
-
+                    <img src="../images/feedback-signin/Mobile-login.jpg" alt="">
                 </div>
                 <div class="login-container">
-                    <div class="login-input-fields">
-
+                    <div class="login-input-fields" id="Login-page">
                         <h1>Welcome Back</h1>
-
                         <button>
                             <img src="../images/feedback-signin/google.png">
                             <span>Log in with Google</span>
                         </button>
-
                         <div class="hr-field">
-                            <div><hr></div>
+                            <div>
+                                <hr>
+                            </div>
                             <span>OR LOGIN WITH EMAIL</span>
-                            <div><hr></div>
+                            <div>
+                                <hr>
+                            </div>
                         </div>
-
-
                         <div class="input-fields">
                             <input type="text" placeholder="Your Email">
                             <input type="password" placeholder="Your Password">
                         </div>
-                        
                         <div class="checkbox">
-                            <div> <input type="checkbox" id="check">Keep me logged in</div>
-                           
-                            
+                            <div>
+                                <input type="checkbox" id="check">Keep me logged in
+                            </div>
                             <a href="#">Forgot Password</a>
                         </div>
-                            
-                      
                         <div class="login-btn">
-                            <button >Log in</button>
+                            <button>Log in</button>
                         </div>
-                        
-
                         <hr>
-
-                        <span class="last-text">Don't have an account yet? <a href="">Sign Up</a></span>
-
-                        
-
+                        <span class="last-text" onclick="showRegister()">Don't have an account yet? Sign Up</span>
                     </div>
 
+                    <div class="register-input-fields" id="Register-page">
+                        <h1>Welcome To</h1>
+                        <button>
+                            <img src="../images/feedback-signin/google.png">
+                            <span>Sign up with Google</span>
+                        </button>
+                        <div class="hr-field">
+                            <div>
+                                <hr>
+                            </div>
+                            <span>CREATE YOUR ACCOUNT</span>
+                            <div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="input-fields">
+                            <input type="text" placeholder="Your Name">
+                            <input type="text" placeholder="Your Email">
+                            <input type="password" placeholder="Your Password">
+                        </div>
+                        <div class="checkbox">
+                            <div>
+                                <input type="checkbox" id="check">By Signing up I agree with the terms and Conditions
+                            </div>
+                        </div>
+                        <div class="login-btn">
+                            <button>Sign Up</button>
+                        </div>
+                        <hr>
+                        <span class="last-text" onclick="showLogin()">Already have an account? Log in</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        function showLogin() {
+            document.getElementById('Login-page').style.display = 'block';
+            document.getElementById('Register-page').style.display = 'none';
+        }
+
+        function showRegister() {
+            document.getElementById('Login-page').style.display = 'none';
+            document.getElementById('Register-page').style.display = 'block';
+        }
+    </script>
 </body>
 
 </html>

@@ -29,6 +29,7 @@ mix-blend-mode: multiply;
 }
 .login-input-fields{
 
+    
    
 }
 .login-input-fields h1{
@@ -71,7 +72,7 @@ mix-blend-mode: multiply;
 .checkbox{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
     margin-top: 20px;
     gap: 70px;
 }
@@ -87,3 +88,26 @@ mix-blend-mode: multiply;
     text-align: center;
     margin-top: 15px;
 }
+
+
+
+.register-input-fields{
+
+   display: none;
+    border: 2px solid black;
+   
+}
+.register-input-fields h1{
+    text-align: center;
+}
+.register-input-fields button{
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.register-input-fields button span{
+    display: block;
+    margin: 0 auto;
+}
+
