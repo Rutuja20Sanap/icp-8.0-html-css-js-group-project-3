@@ -42,6 +42,18 @@
     margin-bottom: 20px; 
 }
 
+.question {
+    display: none; /* Initially hide all questions */
+}
+
+.question.show {
+    display: block; /* Show question */
+}
+
+.question.hide {
+    display: none; /* Hide question */
+}
+
 .que-name{
     text-align: center;
     font-size: 25px;
