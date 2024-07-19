@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #0b3d91, #1e90ff);
+    background: linear-gradient(#0b3d91, #1e90ff);
     color: #fff;
     margin: 0;
     padding: 0;
@@ -21,8 +21,48 @@ header {
 
 header h1 {
     font-size: 1.8em;
+    margin: 0;
 }
-.container {
+
+/* Navbar CSS */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav span {
+    color: #fff;
+    font-size: 15px;
+    padding-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav span:hover {
+    color: #cadcfc;
+}
+
+.body-container {
     max-width: 1200px;
     width: 90%;
     margin: auto;
@@ -103,7 +143,7 @@ footer {
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
 }
 
-/*Media queries*/
+/* Media Queries */
 @media (max-width: 1200px) {
     .category {
         width: 45%;
