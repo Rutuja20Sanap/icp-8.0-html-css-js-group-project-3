@@ -1,11 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fun Quizz</title>
 </head>
-<body>
-    <h1>Fun Quizz</h1>
+
+<body class="patrick-hand-regular">
+    <div class="container">
+        <section id="que1" class="question active-question">
+            <h1>Epic Emoji Emotion Quiz!</h1>
+            <h2> Question 1 of 15:</h2>
+            <img src="./images/smile.webp" class="img">
+            <p>Let's start off easy! What emotion do you associate with this?</p>
+            <form>
+                <div>
+                    <input type="radio" id="Happiness" name="question1" value="Happiness">
+                    <label for="Happiness">Happiness</label>
+                </div>
+                <div>
+                    <input type="radio" id="Sadness" name="question1" value="Sadness">
+                    <label for="Sadness">Sadness</label>
+                </div>
+                <div>
+                    <input type="radio" id="Boredom" name="question1" value="Boredom">
+                    <label for="Boredom">Boredom</label>
+                </div>
+                <div>
+                    <input type="radio" id="Loneliness" name="question1" value="Loneliness">
+                    <label for="Loneliness">Loneliness</label>
+                </div>
+            </form>
+            <div class="btn-count">
+                <div class="btn">
+                    <button class="nxt-btn" data-next="que2">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="que2" class="question ">
+            <h1>Epic Emoji Emotion Quiz!</h1>
+            <h2> Question 2 of 15:</h2>
+            <img src="./images/sad.webp" class="img">
+            <p>How about this one?</p>
+            <form>
+                <div>
+                    <input type="radio" id="Relaxed" name="question2" value="Relaxed">
+                    <label for="Relaxed">Relaxed</label>
+                </div>
+                <div>
+                    <input type="radio" id="Sad" name="question2" value="Sad">
+                    <label for="Sad">Sad</label>
+                </div>
+                <div>
+                    <input type="radio" id="Sick" name="question2" value="Sick">
+                    <label for="Sick">Sick</label>
+                </div>
+                <div>
+                    <input type="radio" id="Interested" name="question2" value="Interested">
+                    <label for="Interested">Interested</label>
+                </div>
+            </form>
+            <div class="btn-count">
+                <div class="btn">
+                    <button class="nxt-btn" data-previous="que1" onclick="showpreviousQuestion()">Back</button>
+                    <button class="nxt-btn" data-next="que3">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="que3" class="question">
+            <h1>Epic Emoji Emotion Quiz!</h1>
+            <h2> Question 3 of 15:</h2>
+            <img src="./images/angry.webp" class="img">
+            <p>And how about this guy?</p>
+            <form>
+                <div>
+                    <input type="radio" id="Happy" name="question3" value="Happy">
+                    <label for="Happy">Happy</label>
+                </div>
+                <div>
+                    <input type="radio" id="Angry" name="question3" value="Angry">
+                    <label for="Angry">Angry</label>
+                </div>
+                <div>
+                    <input type="radio" id="Befuddled" name="question3" value="Befuddled">
+                    <label for="Befuddled">Befuddled</label>
+                </div>
+                <div>
+                    <input type="radio" id="Lost" name="question3" value="Lost">
+                    <label for="Lost">Lost</label>
+                </div>
+            </form>
+            <div class="btn-count">
+                <div class="btn">
+                    <button class="back-btn" data-back="que2" onclick="showpreviousQuestion()">Back</button>
+                    <button class="nxt-btn" data-next="que4">Next</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="que4" class="question">
+            <h1>Epic Emoji Emotion Quiz!</h1>
+            <h2> Question 4 of 15:</h2>
+            <img src="./images/confused.webp" class="img">
+            <p>And this emoji?</p>
+            <form>
+                <div>
+                    <input type="radio" id="Hungry" name="question4" value="Hungry">
+                    <label for="Hungry">Hungry</label>
+                </div>
+                <div>
+                    <input type="radio" id="Excited" name="question4" value="Excited">
+                    <label for="Excited">Excited</label>
+                </div>
+                <div>
+                    <input type="radio" id="Confused" name="question4" value="Confused">
+                    <label for="Confused">Confused</label>
+                </div>
+                <div>
+                    <input type="radio" id="Angry" name="question4" value="Angry">
+                    <label for="Angry">Angry</label>
+                </div>
+            </form>
+            <div class="btn-count">
+                <div class="btn">
+                    <button class="back-btn" data-back="que3" onclick="showpreviousQuestion()">Back</button>
+                    <button class="nxt-btn" data-next="que5">Next</button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="que5" class="question">
+            <h1>Epic Emoji Emotion Quiz!</h1>
+            <h2> Question 5 of 15:</h2>
+            <img src="./images/relaxed.webp" class="img">
+            <p>And how about this emoji?</p>
+            <form>
+                <div>
+                    <input type="radio" id="Upset" name="question5" value="Upset">
+                    <label for="Upset">Upset</label>
+                </div>
+                <div>
+                    <input type="radio" id="Confused" name="question5" value="Confused">
+                    <label for="Confused">Confused</label>
+                </div>
+                <div>
+                    <input type="radio" id="Sad" name="question5" value="Sad">
+                    <label for="Sad">Sad</label>
+                </div>
+                <div>
+                    <input type="radio" id="Relaxed" name="question5" value="Relaxed">
+                    <label for="Relaxed">Relaxed</label>
+                </div>
+            </form>
+            <div class="btn-count">
+                <div class="btn">
+                    <button class="back-btn" data-back="que4">Back</button>
+                    <button class="nxt-btn" data-next="que6">Next</button>
+                </div>
+
+            </div>
+        </section>
+    </div>
 </body>
 </html>
