@@ -63,3 +63,27 @@ function showScore() {
         scorecontent.innerText = `Your score: ${score}/${totalQuestions}\n Perfect - you're totally in touch with your emotions! You're definitely the emoji expert in your friend group! `;
     }
 }
+
+  //handleAnswer which takes an event object as a parameter. 
+  function handleAnswer(event) {
+    //Get the Selected Element
+    const selected = event.target;
+    //Check if the Selected Element has a Name and is Checked
+    if (selected.name && selected.checked) {
+        //Get the Question Number and Selected Answer
+        const questionNumber = selected.name;
+        const selectedAnswer = selected.value;
+        // Check if the Selected Answer is Correct
+        if (correctAnswers[questionNumber] === selectedAnswer) {
+            score++;
+        }
+    }
+}
+
+document.querySelectorAll('input[type="radio"]').forEach(input => {
+    input.addEventListener('change', handleAnswer);
+});
+
+document.querySelectorAll('.nxt-btn').forEach(button => {
+    button.addEventListener('click', showNextQuestion);
+});
