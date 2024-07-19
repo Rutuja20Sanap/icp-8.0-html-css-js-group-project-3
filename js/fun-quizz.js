@@ -21,3 +21,24 @@ const correctAnswers = {
     question14: "Pineapple",
     question15: "Shepards pie"
 }
+
+function showNextQuestion() {
+    // Selects the current active question based on the activeQuestionIndex.
+    const currentQuestion = document.querySelector(`#que${activeQuestionIndex + 1}`);
+    //Selects the element with the ID certificate.
+    const certificate = document.getElementById('certificate');
+    if (currentQuestion) {
+        currentQuestion.classList.remove('active-question');
+    }//Increment the Active Question Index 
+    activeQuestionIndex++;
+    //Check if There Are More Questions
+    if (activeQuestionIndex < totalQuestions) {
+        const nextQuestion = document.querySelector(`#que${activeQuestionIndex + 1}`);
+        nextQuestion.classList.add('active-question');
+        certificate.classList.remove('show-certificate');
+        
+    } else {
+        showScore();
+        certificate.classList.add('show-certificate');
+    }
+}
