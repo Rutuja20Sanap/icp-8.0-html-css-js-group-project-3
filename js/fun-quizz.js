@@ -42,3 +42,24 @@ function showNextQuestion() {
         certificate.classList.add('show-certificate');
     }
 }
+
+function showScore() {
+    //Hide All Questions
+    document.querySelectorAll('.question').forEach(q => q.classList.remove('active-question'));
+    //Show the Score Section
+    const scoreSection = document.getElementById('score');
+    const scorecontent = document.getElementById('scoreText');
+
+    scoreSection.classList.add('active-question');
+    //Display the User's Score
+    scorecontent.innerText= `Your score: ${score}/${totalQuestions} `;
+    //Display Custom Message Based on Score
+    if (score < 8) {
+        scorecontent.innerText= `Your score: ${score}/${totalQuestions}\n Ooh, not quite! Don't worry, you can always take the quiz and try again!`;
+
+    } else if (score > 8 && score < 13) {
+        scorecontent.innerText = `Your score: ${score}/${totalQuestions}\n Very good! You love your emojis, no doubt about that! We bet you can get a perfect score, though - why not try again and see?`;
+    } else {
+        scorecontent.innerText = `Your score: ${score}/${totalQuestions}\n Perfect - you're totally in touch with your emotions! You're definitely the emoji expert in your friend group! `;
+    }
+}
