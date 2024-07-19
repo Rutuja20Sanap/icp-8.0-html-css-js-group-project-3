@@ -20,10 +20,14 @@
             <hr>
 
             <div class="Quiz-container">
+                <div class="type-container">
+                    <img src="./../images/gk-quizz/type.png" alt="study" height="100px">
                 <h1 class="que-type">Simple Questions</h1>
-                <div class="question">
+                <img src="./../images/gk-quizz/type.png" alt="study" height="100px">
+            </div>
+            <hr>
 
-                    <section id="questions">
+                    <section id="questions" class="que-no">
                         <div class="question" id="question1" data-correct="A">
                             <p class="que-name">1. How many hours are there in a day?</p>
                             <form class="quiz-form" id="quiz-form1">
@@ -45,8 +49,10 @@
                                 </label>
                             </form>
                             <h1 class="result" id="result1"></h1>
-                            <button type="button" id="check-answer1"
+                            <div class="check-btn-container">
+                            <button type="button" id="check-answer1" class="check-btn"
                                 onclick="checkAnswer('question1', 'quiz-form1', 'result1')">Check Answer</button>
+                        </div>
                         </div>
 
                         <div class="question" id="question2" data-correct="C">
@@ -70,8 +76,10 @@
                                 </label>
                             </form>
                             <h1 class="result" id="result2"></h1>
-                            <button type="button" id="check-answer2"
+                            <div class="check-btn-container">
+                            <button type="button" id="check-answer2" class="check-btn"
                                 onclick="checkAnswer('question2', 'quiz-form2', 'result2')">Check Answer</button>
+                        </div>
                         </div>
 
                         <div class="question" id="question3" data-correct="C">
@@ -96,8 +104,10 @@
                                 </label>
                             </form>
                             <h1 class="result" id="result3"></h1>
-                            <button type="button" id="check-answer3"
+                            <div class="check-btn-container">
+                            <button type="button" id="check-answer3" class="check-btn"
                                 onclick="checkAnswer('question3', 'quiz-form3', 'result3')">Check Answer</button>
+                        </div>
                         </div>
 
                         <div class="question" id="question4" data-correct="D">
@@ -121,8 +131,10 @@
                                 </label>
                             </form>
                             <h1 class="result" id="result4"></h1>
-                            <button type="button" id="check-answer4"
+                            <div class="check-btn-container">
+                            <button type="button" id="check-answer4" class="check-btn"
                                 onclick="checkAnswer('question4', 'quiz-form4', 'result4')">Check Answer</button>
+                        </div>
                         </div>
 
                         <div class="question" id="question5" data-correct="B">
@@ -146,8 +158,10 @@
                                 </label>
                             </form>
                             <h1 class="result" id="result5"></h1>
-                            <button type="button" id="check-answer5"
+                            <div class="check-btn-container">
+                            <button type="button" id="check-answer5" class="check-btn"
                                 onclick="checkAnswer('question5', 'quiz-form5', 'result5')">Check Answer</button>
+                        </div>
                         </div>
                     </section>
 

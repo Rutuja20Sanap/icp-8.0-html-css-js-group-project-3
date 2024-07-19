@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 .GK-header{
     display: flex;
     justify-content: space-evenly;
@@ -10,4 +12,59 @@
 .tagline{
     text-align: center;
     font-size: 25px;
+}
+
+.type-container{
+    display: flex;
+    justify-content:center;
+    gap: 60px;
+}
+.que-no {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px; 
+}
+
+.que-type{
+    text-align: center;
+    font-family: "Patrick Hand",cursive;
+    font-size: 40px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.question {
+    flex: 1 1 calc(33.33% - 20px); 
+    max-width: calc(33.33% - 20px); 
+    border: 2px solid black;
+    box-sizing: border-box; 
+    margin-bottom: 20px; 
+}
+
+.que-name{
+    text-align: center;
+    font-size: 25px;
+    font-family: "Patrick Hand",cursive;
+    margin-bottom: 5px;
+}
+
+.quiz-form{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.result{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.check-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.check-btn {
+    height: 30px;
+   margin-bottom: 10px;
 }
