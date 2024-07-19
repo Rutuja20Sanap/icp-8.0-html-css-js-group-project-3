@@ -87,7 +87,7 @@
 
     .who {
         height: 70%;
-       
+
         width: 500px;
         /* border: 1px solid black; */
     }
@@ -98,20 +98,58 @@
         border-radius: 30px;
 
     }
-    .who b{
-       font-size: 40px;
 
-       color: #00967D;
+    .who b {
+        font-size: 40px;
+
+        color: #00967D;
 
     }
-    #btn-learn{
+
+    #btn-learn {
         margin: 25px;
         background-color: #F5E7D3;
         border-radius: 20px;
         padding: 20px;
         font-size: 20px;
-        
+
     }
+
+    .ourmission {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 100px auto;
+        height: 500px;
+        width: 90%;
+        /* border: 1px solid black; */
+
+    }
+    .mission-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 70%;
+        width: 40%;
+        /* border: 1px solid black; */
+
+    }
+    #mission-img{
+        height: 100%;
+        border-radius: 25px;
+    }
+    .miss-img{
+        height: 400px;
+       
+    }
+    .mission-content b{
+        font-size: 50px;
+        color: #94458d;
+    }
+    .mission-content p{
+        font-size: 20px;
+    }
+
 </style>
 
 <body>
@@ -140,9 +178,21 @@
             <p>We are a passionate team of educators, developers, and designers dedicated to creating a positive and
                 enriching online learning environment. With years of experience in education and technology, we aim to
                 make learning an enjoyable journey for every child.</p>
-                <button id="btn-learn">Learn More</button>
+            <button id="btn-learn">Learn More</button>
         </div>
-        
+
+    </div>
+
+    <div class="ourmission">
+        <div class="mission-content">
+            <b>Our Vision</b>
+            <p>Our vision is to spark a love for learning in children by making educational content interactive and
+                enjoyable. We strive to help children build a strong foundation in math and English, preparing them for
+                a bright academic future.</p>
+        </div>
+        <div class="miss-img">
+            <img src="/images/aboutus/mission-img.png" alt="img" id="mission-img">
+        </div>
     </div>
 </body>
 
