@@ -11,15 +11,21 @@ function Light(active) {
 function Submit() {
 
     const element = document.getElementById('text-area');
-     const star = document.getElementById("img1")
+    const textShow = document.getElementById('review-text');
+    const messageShow = document.getElementById('msg-show');
+    const star = document.getElementById("img1")
     if(element.value == 0)
     {
-        alert("Filled text area");
+        messageShow.innerText = 'Fillled form';
     }
     else{
-        alert("Thank you");
+        messageShow.innerText = 'Thank You🙂';
     }
-    
+     
+    textShow.innerText = element.value;
+    element.value = " ";
+
+     
 }
 
 function Mouse() {
