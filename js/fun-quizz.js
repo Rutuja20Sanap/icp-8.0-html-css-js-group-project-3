@@ -87,3 +87,13 @@ document.querySelectorAll('input[type="radio"]').forEach(input => {
 document.querySelectorAll('.nxt-btn').forEach(button => {
     button.addEventListener('click', showNextQuestion);
 });
+
+function generateCertificate() {
+    //Selects the element with the ID inputname and iinput date.
+  const name = document.getElementById('inputName').value;
+  const date = document.getElementById('inputDate').value;
+  //set the innertext of child name and date
+  document.getElementById('childName').innerText = name;
+  document.getElementById('date').innerText = date;
+  
+}
