@@ -5,7 +5,6 @@ function checkAnswer(questionId, formId, resultId) {
     const resultElement = document.getElementById(resultId);
     let selectedAnswer;
 
-    // Find the selected radio button within the form
     const radios = form.querySelectorAll('input[type="radio"]');
     for (let i = 0; i < radios.length; i++) {
         if (radios[i].checked) {

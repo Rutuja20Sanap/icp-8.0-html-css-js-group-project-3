@@ -22,152 +22,301 @@
             <div class="Quiz-container">
                 <div class="type-container">
                     <img src="./../images/gk-quizz/type.png" alt="study" height="100px">
-                <h1 class="que-type">Simple Questions</h1>
-                <img src="./../images/gk-quizz/type.png" alt="study" height="100px">
-            </div>
-            <hr>
+                    <h1 class="que-type">Simple Questions</h1>
+                    <img src="./../images/gk-quizz/type.png" alt="study" height="100px">
+                </div>
+                <hr>
 
-                    <section id="questions" class="que-no">
-                        <div class="question" id="question1" data-correct="A">
-                            <p class="que-name">1. How many hours are there in a day?</p>
-                            <form class="quiz-form" id="quiz-form1">
-                                <label>
-                                    <input type="radio" name="q1" value="A">
-                                    A. <img src="./../images/gk-quizz/S-Q-1.jpg" alt="24" height="50px">
-                                </label>
-                                <label>
-                                    <input type="radio" name="q1" value="B">
-                                    B. <img src="./../images/gk-quizz/S-Q-2.jpg" alt="36" height="50px">
-                                </label>
-                                <label>
-                                    <input type="radio" name="q1" value="C">
-                                    C. <img src="./../images/gk-quizz/S-Q-3.jpg" alt="15" height="50px">
-                                </label>
-                                <label>
-                                    <input type="radio" name="q1" value="D">
-                                    D. <img src="./../images/gk-quizz/S-Q-4.jpg" alt="20" height="50px">
-                                </label>
-                            </form>
-                            <h1 class="result" id="result1"></h1>
-                            <div class="check-btn-container">
+                <section id="questions" class="que-no">
+                    <div class="question" id="question1" data-correct="A">
+                        <p class="que-name">1. How many hours are there in a day?</p>
+                        <form class="quiz-form" id="quiz-form1">
+                            <label>
+                                <input type="radio" name="q1" value="A">
+                                A. <img src="./../images/gk-quizz/S-Q-1.jpg" alt="24" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q1" value="B">
+                                B. <img src="./../images/gk-quizz/S-Q-2.jpg" alt="36" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q1" value="C">
+                                C. <img src="./../images/gk-quizz/S-Q-3.jpg" alt="15" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q1" value="D">
+                                D. <img src="./../images/gk-quizz/S-Q-4.jpg" alt="20" height="50px">
+                            </label>
+                        </form>
+                        <h1 class="result" id="result1"></h1>
+                        <div class="check-btn-container">
                             <button type="button" id="check-answer1" class="check-btn"
                                 onclick="checkAnswer('question1', 'quiz-form1', 'result1')">Check Answer</button>
                         </div>
-                        </div>
+                    </div>
 
-                        <div class="question" id="question2" data-correct="C">
-                            <p class="que-name">2. How many minutes are there in an hour?</p>
-                            <form class="quiz-form" id="quiz-form2">
-                                <label>
-                                    <input type="radio" name="q2" value="A">
-                                    A. <img src="./../images/gk-quizz/S-Q2-1.jpg" alt="30" height="50px">
-                                </label>
-                                <label>
-                                    <input type="radio" name="q2" value="B">
-                                    B. <img src="./../images/gk-quizz/S-Q2-2.jpg" alt="40" height="50px">
-                                </label>
-                                <label>
-                                    <input type="radio" name="q2" value="C">
-                                    C. <img src="./../images/gk-quizz/S-Q2-3.jpg" alt="60" height="50px">
-                                </label>
-                                <label>
-                                    <input type="radio" name="q2" value="D">
-                                    D. <img src="./../images/gk-quizz/S-Q2-4.png" alt="120" height="50px">
-                                </label>
-                            </form>
-                            <h1 class="result" id="result2"></h1>
-                            <div class="check-btn-container">
+                    <div class="question" id="question2" data-correct="C">
+                        <p class="que-name">2. How many minutes are there in an hour?</p>
+                        <form class="quiz-form" id="quiz-form2">
+                            <label>
+                                <input type="radio" name="q2" value="A">
+                                A. <img src="./../images/gk-quizz/S-Q2-1.jpg" alt="30" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q2" value="B">
+                                B. <img src="./../images/gk-quizz/S-Q2-2.jpg" alt="40" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q2" value="C">
+                                C. <img src="./../images/gk-quizz/S-Q2-3.jpg" alt="60" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q2" value="D">
+                                D. <img src="./../images/gk-quizz/S-Q2-4.png" alt="120" height="50px">
+                            </label>
+                        </form>
+                        <h1 class="result" id="result2"></h1>
+                        <div class="check-btn-container">
                             <button type="button" id="check-answer2" class="check-btn"
                                 onclick="checkAnswer('question2', 'quiz-form2', 'result2')">Check Answer</button>
                         </div>
-                        </div>
+                    </div>
 
-                        <div class="question" id="question3" data-correct="C">
-                            <p class="que-name" id="Question">3. What is the name of the big, gray animal with a trunk?
-                            </p>
-                            <form id="quiz-form3">
-                                <label>
-                                    <input type="radio" name="q3" value="A">
-                                    A. <img src="./../images/gk-quizz/S-Q3-1.jpg" alt="Lion" height="50px">
-                                </label>
-                                <label>
-                                    <input type="radio" name="q3" value="B">
-                                    B. <img src="./../images/gk-quizz/S-Q3-2.jpg" alt="Giraff" height="50px">
-                                </label>
-                                <label>
-                                    <input type="radio" name="q3" value="C">
-                                    C. <img src="./../images/gk-quizz/S-Q3-3.jpg" alt="elephant" height="50px">
-                                </label>
-                                <label>
-                                    <input type="radio" name="q3" value="D">
-                                    D. <img src="./../images/gk-quizz/S-Q3-4.jpg" alt="panda" height="50px">
-                                </label>
-                            </form>
-                            <h1 class="result" id="result3"></h1>
-                            <div class="check-btn-container">
+                    <div class="question" id="question3" data-correct="C">
+                        <p class="que-name" id="Question">3. What is the name of the big, gray animal with a trunk?
+                        </p>
+                        <form id="quiz-form3">
+                            <label>
+                                <input type="radio" name="q3" value="A">
+                                A. <img src="./../images/gk-quizz/S-Q3-1.jpg" alt="Lion" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q3" value="B">
+                                B. <img src="./../images/gk-quizz/S-Q3-2.jpg" alt="Giraff" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q3" value="C">
+                                C. <img src="./../images/gk-quizz/S-Q3-3.jpg" alt="elephant" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q3" value="D">
+                                D. <img src="./../images/gk-quizz/S-Q3-4.jpg" alt="panda" height="50px">
+                            </label>
+                        </form>
+                        <h1 class="result" id="result3"></h1>
+                        <div class="check-btn-container">
                             <button type="button" id="check-answer3" class="check-btn"
                                 onclick="checkAnswer('question3', 'quiz-form3', 'result3')">Check Answer</button>
                         </div>
-                        </div>
+                    </div>
 
-                        <div class="question" id="question4" data-correct="D">
-                            <p class="que-name" id="Question">4. What color is an apple?</p>
-                            <form id="quiz-form4">
-                                <label>
-                                    <input type="radio" name="q4" value="A">
-                                    A. <img src="./../images/gk-quizz/S-Q4-1.png" alt="blue" height="50px">
-                                </label>
-                                <label>
-                                    <input type="radio" name="q4" value="B">
-                                    B. <img src="./../images/gk-quizz/S-Q4-2.png" alt="green" height="50px">
-                                </label>
-                                <label>
-                                    <input type="radio" name="q4" value="C">
-                                    C. <img src="./../images/gk-quizz/S-Q4-3.png" alt="black" height="50px">
-                                </label>
-                                <label>
-                                    <input type="radio" name="q4" value="D">
-                                    D. <img src="./../images/gk-quizz/S-Q4-4.png" alt="red" height="50px">
-                                </label>
-                            </form>
-                            <h1 class="result" id="result4"></h1>
-                            <div class="check-btn-container">
+                    <div class="question" id="question4" data-correct="D">
+                        <p class="que-name" id="Question">4. What color is an apple?</p>
+                        <form id="quiz-form4">
+                            <label>
+                                <input type="radio" name="q4" value="A">
+                                A. <img src="./../images/gk-quizz/S-Q4-1.png" alt="blue" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q4" value="B">
+                                B. <img src="./../images/gk-quizz/S-Q4-2.png" alt="green" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q4" value="C">
+                                C. <img src="./../images/gk-quizz/S-Q4-3.png" alt="black" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q4" value="D">
+                                D. <img src="./../images/gk-quizz/S-Q4-4.png" alt="red" height="50px">
+                            </label>
+                        </form>
+                        <h1 class="result" id="result4"></h1>
+                        <div class="check-btn-container">
                             <button type="button" id="check-answer4" class="check-btn"
                                 onclick="checkAnswer('question4', 'quiz-form4', 'result4')">Check Answer</button>
                         </div>
-                        </div>
+                    </div>
 
-                        <div class="question" id="question5" data-correct="B">
-                            <p class="que-name" id="Question">5. What do you use to cut paper?</p>
-                            <form id="quiz-form5">
-                                <label>
-                                    <input type="radio" name="q5" value="A">
-                                    A. <img src="./../images/gk-quizz/S-Q5-1.png" alt="pen" height="50px">
-                                </label>
-                                <label>
-                                    <input type="radio" name="q5" value="B">
-                                    B. <img src="./../images/gk-quizz/S-Q5-2.png" alt="Scissor" height="50px">
-                                </label>
-                                <label>
-                                    <input type="radio" name="q5" value="C">
-                                    C. <img src="./../images/gk-quizz/S-Q5-3.png" alt="board" height="50px">
-                                </label>
-                                <label>
-                                    <input type="radio" name="q5" value="D">
-                                    D. <img src="./../images/gk-quizz/S-Q5-4.png" alt="nailcutter" height="50px">
-                                </label>
-                            </form>
-                            <h1 class="result" id="result5"></h1>
-                            <div class="check-btn-container">
+                    <div class="question" id="question5" data-correct="B">
+                        <p class="que-name" id="Question">5. What do you use to cut paper?</p>
+                        <form id="quiz-form5">
+                            <label>
+                                <input type="radio" name="q5" value="A">
+                                A. <img src="./../images/gk-quizz/S-Q5-1.png" alt="pen" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q5" value="B">
+                                B. <img src="./../images/gk-quizz/S-Q5-2.png" alt="Scissor" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q5" value="C">
+                                C. <img src="./../images/gk-quizz/S-Q5-3.png" alt="board" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q5" value="D">
+                                D. <img src="./../images/gk-quizz/S-Q5-4.png" alt="nailcutter" height="50px">
+                            </label>
+                        </form>
+                        <h1 class="result" id="result5"></h1>
+                        <div class="check-btn-container">
                             <button type="button" id="check-answer5" class="check-btn"
                                 onclick="checkAnswer('question5', 'quiz-form5', 'result5')">Check Answer</button>
                         </div>
-                        </div>
-                    </section>
+                    </div>
+                </section>
+            </div>
 
+            <hr>
+
+            <div class="Quiz-container">
+                <div class="type-container">
+                    <img src="./../images/gk-quizz/type.png" alt="study" height="100px">
+                    <h1 class="que-type">Medium Questions</h1>
+                    <img src="./../images/gk-quizz/type.png" alt="study" height="100px">
                 </div>
+                <hr>
+
+                <section id="questions" class="que-no">
+                    <div class="question" id="question6" data-correct="B">
+                        <p class="que-name">1. Which gas do humans exhale when they breathe out?</p>
+                        <form class="quiz-form" id="quiz-form6">
+                            <label>
+                                <input type="radio" name="q6" value="A">
+                                A. Oxygen (O2)
+                            </label>
+                            <label>
+                                <input type="radio" name="q6" value="B">
+                                B. Carbon Dioxide (CO2)
+                            </label> <br>
+                            <label>
+                                <input type="radio" name="q6" value="C">
+                                C. Hydrogen (H2)
+                            </label>
+                            <label>
+                                <input type="radio" name="q6" value="D">
+                                D. Nitrogen (N2)
+                            </label>
+                        </form>
+                        <h1 class="result" id="result6"></h1>
+                        <div class="check-btn-container">
+                            <button type="button" id="check-answer6" class="check-btn"
+                                onclick="checkAnswer('question6', 'quiz-form6', 'result6')">Check Answer</button>
+                        </div>
+                    </div>
+
+                    <div class="question" id="question7" data-correct="D">
+                        <p class="que-name">2. Who is known as the “Father of the Nation” in India?</p>
+                        <form class="quiz-form" id="quiz-form7">
+                            <label>
+                                <input type="radio" name="q7" value="A">
+                                A. Mahatma Jyotiba Phule
+                            </label>
+                            <label>
+                                <input type="radio" name="q7" value="B">
+                                B. Pandit Javaharlal Neharu
+                            </label> <br>
+                            <label>
+                                <input type="radio" name="q7" value="C">
+                                C. Dr. Rajendra Prasad
+                            </label>
+                            <label>
+                                <input type="radio" name="q7" value="D">
+                                D. Mahatma Gandhi
+                            </label>
+                        </form>
+                        <h1 class="result" id="result7"></h1>
+                        <div class="check-btn-container">
+                            <button type="button" id="check-answer7" class="check-btn"
+                                onclick="checkAnswer('question7', 'quiz-form7', 'result7')">Check Answer</button>
+                        </div>
+                    </div>
+
+                    <div class="question" id="question8" data-correct="B">
+                        <p class="que-name" id="Question">3. What is the capital city of India?
+                        </p>
+                        <form id="quiz-form8">
+                            <label>
+                                <input type="radio" name="q8" value="A">
+                                A. Nepal
+                            </label>
+                            <label>
+                                <input type="radio" name="q8" value="B">
+                                B. New Delhi
+                            </label>
+                            <label>
+                                <input type="radio" name="q8" value="C">
+                                C. Mumbai
+                            </label>
+                            <label>
+                                <input type="radio" name="q8" value="D">
+                                D. Gujrat
+                            </label>
+                        </form>
+                        <h1 class="result" id="result8"></h1>
+                        <div class="check-btn-container">
+                            <button type="button" id="check-answer8" class="check-btn"
+                                onclick="checkAnswer('question8', 'quiz-form8', 'result8')">Check Answer</button>
+                        </div>
+                    </div>
+
+                    <div class="question" id="question4" data-correct="D">
+                        <p class="que-name" id="Question">4. What color is an apple?</p>
+                        <form id="quiz-form4">
+                            <label>
+                                <input type="radio" name="q4" value="A">
+                                A. <img src="./../images/gk-quizz/S-Q4-1.png" alt="blue" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q4" value="B">
+                                B. <img src="./../images/gk-quizz/S-Q4-2.png" alt="green" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q4" value="C">
+                                C. <img src="./../images/gk-quizz/S-Q4-3.png" alt="black" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q4" value="D">
+                                D. <img src="./../images/gk-quizz/S-Q4-4.png" alt="red" height="50px">
+                            </label>
+                        </form>
+                        <h1 class="result" id="result4"></h1>
+                        <div class="check-btn-container">
+                            <button type="button" id="check-answer4" class="check-btn"
+                                onclick="checkAnswer('question4', 'quiz-form4', 'result4')">Check Answer</button>
+                        </div>
+                    </div>
+
+                    <div class="question" id="question5" data-correct="B">
+                        <p class="que-name" id="Question">5. What do you use to cut paper?</p>
+                        <form id="quiz-form5">
+                            <label>
+                                <input type="radio" name="q5" value="A">
+                                A. <img src="./../images/gk-quizz/S-Q5-1.png" alt="pen" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q5" value="B">
+                                B. <img src="./../images/gk-quizz/S-Q5-2.png" alt="Scissor" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q5" value="C">
+                                C. <img src="./../images/gk-quizz/S-Q5-3.png" alt="board" height="50px">
+                            </label>
+                            <label>
+                                <input type="radio" name="q5" value="D">
+                                D. <img src="./../images/gk-quizz/S-Q5-4.png" alt="nailcutter" height="50px">
+                            </label>
+                        </form>
+                        <h1 class="result" id="result5"></h1>
+                        <div class="check-btn-container">
+                            <button type="button" id="check-answer5" class="check-btn"
+                                onclick="checkAnswer('question5', 'quiz-form5', 'result5')">Check Answer</button>
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </div>
+    </div>
     </div>
 
     <script src="./../js/gk-quizz.js"></script>
