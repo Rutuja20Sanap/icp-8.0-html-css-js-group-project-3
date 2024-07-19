@@ -76,3 +76,73 @@ button:hover {
     transform: scale(1.1);
 
 }
+.question {
+    display: none;
+}
+
+.active-question {
+    display: block;
+}
+
+#score {
+    text-align: center;
+}
+
+.certificate-container-main{
+    display: block;
+   max-width: 650px;
+   margin: 10px auto;
+   padding: 10px 30px;
+}
+
+.certificate-container {
+    padding: 10px;
+    background-color: #ffffff;
+    max-width: 750px;
+   margin-top: 50px;
+   text-align: center;
+    box-shadow:  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.certificate-container  h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+.certificate-container h2 {
+    font-size: 2em;
+    color: #ff6347;
+}
+
+.certificate-container h3 {
+    font-size: 1.5em;
+    color: #1e90ff;
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+.form-container input {
+  border: none;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+    box-shadow:  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.certificate-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow:  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.certificate-button:hover {
+    background-color: #45a049;
+}
