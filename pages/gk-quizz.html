@@ -85,7 +85,7 @@
                     <div class="question" id="question3" data-correct="C">
                         <p class="que-name" id="Question">3. What is the name of the big, gray animal with a trunk?
                         </p>
-                        <form class="quiz-form id=" quiz-form3">
+                        <form class="quiz-form" id="quiz-form3">
                             <label>
                                 <input type="radio" name="q3" value="A">
                                 A. <img src="./../images/gk-quizz/S-Q3-1.jpg" alt="Lion" height="50px">
@@ -112,7 +112,7 @@
 
                     <div class="question" id="question4" data-correct="D">
                         <p class="que-name" id="Question">4. What color is an apple?</p>
-                        <form class="quiz-form id=" quiz-form4">
+                        <form class="quiz-form" id="quiz-form4">
                             <label>
                                 <input type="radio" name="q4" value="A">
                                 A. <img src="./../images/gk-quizz/S-Q4-1.png" alt="blue" height="50px">
@@ -139,7 +139,7 @@
 
                     <div class="question" id="question5" data-correct="B">
                         <p class="que-name" id="Question">5. What do you use to cut paper?</p>
-                        <form class="quiz-form id=" quiz-form5">
+                        <form class="quiz-form" id="quiz-form5">
                             <label>
                                 <input type="radio" name="q5" value="A">
                                 A. <img src="./../images/gk-quizz/S-Q5-1.png" alt="pen" height="50px">
@@ -167,8 +167,8 @@
 
 
                 <div class="navigation-buttons">
-                    <button id="prev-question" onclick="navigateQuestion(-1)">Previous</button>
-                    <button id="next-question" onclick="navigateQuestion(1)">Next</button>
+                    <button id="prev-question" onclick="navigateQuestion(0.-1)">Previous</button>
+                    <button id="next-question" onclick="navigateQuestion(0,1)">Next</button>
                 </div>
 
                 <hr>
@@ -239,7 +239,7 @@
                         <div class="question" id="question8" data-correct="B">
                             <p class="que-name" id="Question">3. What is the capital city of India?
                             </p>
-                            <form class="quiz-form id=" quiz-form8">
+                            <form class="quiz-form" id="quiz-form8">
                                 <label>
                                     <input type="radio" name="q8" value="A">
                                     A. Nepal
@@ -266,7 +266,7 @@
 
                         <div class="question" id="question9" data-correct="A">
                             <p class="que-name" id="Question">4. What is the tallest mountain in the world?</p>
-                            <form class="quiz-form id=" quiz-form9">
+                            <form class="quiz-form" id="quiz-form9">
                                 <label>
                                     <input type="radio" name="q9" value="A">
                                     A. Mount Everest
@@ -293,7 +293,7 @@
 
                         <div class="question" id="question10" data-correct="B">
                             <p class="que-name" id="Question">5. What is the Earth's natural satellite?</p>
-                            <form class="quiz-form id=" quiz-form10">
+                            <form class="quiz-form" id="quiz-form10">
                                 <label>
                                     <input type="radio" name="q10" value="A">
                                     A. The Mars
@@ -320,8 +320,8 @@
                     </section>
 
                     <div class="navigation-buttons">
-                        <button id="prev-question" onclick="navigateQuestion(-1)">Previous</button>
-                        <button id="next-question" onclick="navigateQuestion(1)">Next</button>
+                        <button id="prev-question" onclick="navigateQuestion(1,-1)">Previous</button>
+                        <button id="next-question" onclick="navigateQuestion(1,1)">Next</button>
                     </div>
 
                     <hr>
@@ -478,14 +478,17 @@
                             </div>
                         </section>
                         <div class="navigation-buttons">
-                            <button id="prev-question" onclick="navigateQuestion(-1)">Previous</button>
-                            <button id="next-question" onclick="navigateQuestion(1)">Next</button>
+                            <button id="prev-question" onclick="navigateQuestion(2,-1)">Previous</button>
+                            <button id="next-question" onclick="navigateQuestion(2,1)">Next</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="result-contanier">
+            <div id="final-score-container" class="final-score-container">
+                
+            </div>
            <button type="button" class="res-btn" onclick="showFinalScore()">Check Result</button>
            <button type="button" class="res-btn" onclick="restartQuiz()">Restart Quiz</button>
         </div>

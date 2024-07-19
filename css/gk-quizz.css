@@ -21,7 +21,7 @@
 }
 .que-no {
     margin-top: 20px;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 20px; 
@@ -65,6 +65,10 @@
     text-align: center;
     margin-bottom: 15px;
 }
+
+.navigation-buttons{
+    margin: auto;
+}
 .result{
     text-align: center;
     margin-top: 5px;
@@ -79,4 +83,13 @@
 .check-btn {
     height: 30px;
    margin-bottom: 10px;
+   display: none;
+}
+
+.final-score-container{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.res-btn{
+    margin-top: 30px;
 }

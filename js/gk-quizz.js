@@ -1,4 +1,7 @@
-let currentQuestionIndex = 0;
+let score = 0;
+let totalQuestions = 15; 
+let answeredQuestions = 0;
+
 const allQuestions = [
     [
         document.getElementById('question1'),
@@ -23,11 +26,12 @@ const allQuestions = [
     ]
 ];
 
+let currentQuestionIndexes = Array(allQuestions.length).fill(0);
 
-function showQuestion(index) {
+function showInitialQuestions() {
     allQuestions.forEach((section, sectionIndex) => {
         section.forEach((question, questionIndex) => {
-            if (questionIndex === index) {
+            if (questionIndex === 0) {
                 question.classList.add('show');
                 question.classList.remove('hide');
             } else {
@@ -38,20 +42,31 @@ function showQuestion(index) {
     });
 }
 
-function navigateQuestion(direction) {
-    currentQuestionIndex += direction;
-
-    if (currentQuestionIndex < 0) {
-        currentQuestionIndex = 0;
-    } else if (currentQuestionIndex >= questions.length) {
-        currentQuestionIndex = questions.length - 1;
-    }
-
-    showQuestion(currentQuestionIndex);
+function showQuestion(sectionIndex, questionIndex) {
+    allQuestions[sectionIndex].forEach((question, qIndex) => {
+        if (qIndex === questionIndex) {
+            question.classList.add('show');
+            question.classList.remove('hide');
+        } else {
+            question.classList.add('hide');
+            question.classList.remove('show');
+        }
+    });
 }
 
+function navigateQuestion(sectionIndex, direction) {
+    currentQuestionIndexes[sectionIndex] += direction;
 
-function checkAnswer(questionId, formId, resultId) {
+    if (currentQuestionIndexes[sectionIndex] < 0) {
+        currentQuestionIndexes[sectionIndex] = 0;
+    } else if (currentQuestionIndexes[sectionIndex] >= allQuestions[sectionIndex].length) {
+        currentQuestionIndexes[sectionIndex] = allQuestions[sectionIndex].length - 1;
+    }
+
+    showQuestion(sectionIndex, currentQuestionIndexes[sectionIndex]);
+}
+
+function checkAnswer(questionId, formId, resultId, sectionIndex) {
     const questionDiv = document.getElementById(questionId);
     const correctAnswer = questionDiv.getAttribute('data-correct');
     const form = document.getElementById(formId);
@@ -65,13 +80,50 @@ function checkAnswer(questionId, formId, resultId) {
             break;
         }
     }
+    if (selectedAnswer) {
+        if (selectedAnswer === correctAnswer) {
+            resultElement.innerText = "Your Answer Is Correct!";
+            score += 2; 
+        } else {
+            resultElement.innerText = "Your Answer Is Incorrect!";
+        }
+        answeredQuestions++;
 
-    if (selectedAnswer === correctAnswer) {
-        resultElement.innerText = "Your Answer Is Correct!";
+        if (answeredQuestions === totalQuestions) {
+            showFinalScore();
+        } else {
+            navigateQuestion(sectionIndex, 1);
+        }
     } else {
-        resultElement.innerText = "Your Answer Is Incorrect!";
+        resultElement.innerText = "Please select an answer!";
     }
 }
 
-// Initial setup to show the first question
-showQuestion(currentQuestionIndex);
+function showFinalScore() {
+    const mainContainer = document.getElementById('final-score-container');
+    mainContainer.innerHTML = `
+        <div class="final-score-container">
+            <h1>Quiz Completed!</h1>
+            <p>Your final score is: ${score} out of ${totalQuestions * 2}</p>
+        </div>
+    `;
+}
+
+function restartQuiz() {
+    score = 0;
+    answeredQuestions = 0;
+    currentQuestionIndexes = Array(allQuestions.length).fill(0);
+    allQuestions.forEach(section => {
+        section.forEach(question => {
+            question.classList.remove('show');
+            question.classList.add('hide');
+            const form = question.querySelector('form');
+            form.reset();
+            const resultElement = question.querySelector('.result');
+            resultElement.innerText = "";
+        });
+    });
+    showInitialQuestions();
+}
+
+showInitialQuestions();
