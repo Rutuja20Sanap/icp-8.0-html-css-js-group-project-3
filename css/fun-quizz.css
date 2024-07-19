@@ -146,3 +146,13 @@ button:hover {
 .certificate-button:hover {
     background-color: #45a049;
 }
+
+/* Hide by default */
+#certificate {
+    display: none; 
+}
+/* Show when the class is added */
+#certificate.show-certificate {
+    display:block; 
+    
+}
