@@ -8,7 +8,7 @@ header {
     padding: 10px;
     height: 110px;
 }
-.quizz-container{
+.quizz-container, #result-container{
     margin: 10px auto;
     background-color: white;
     border-radius: 10px;
@@ -44,4 +44,22 @@ button:hover {
 }
 #choices button:hover {
     background: #cfd9df;
+}
+#navigation-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin: 15px auto;
+}
+#navigation-buttons button {
+    background: #8f4387;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 15px;
+    margin: 0 10px;
 }
