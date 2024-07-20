@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="../css/feedback.css">
 </head>
+
 <body>
-    
+
+    <section>
+        <div class="main-container">
+            <div class="regester-login-container">
+
+                <div class="container-image">
+                    <img src="../images/feedback-signin/5360730.jpg" alt="">
+                </div>
+
+                <div class="login-container">
+
+                    <div class="login-input-fields">
+                        <div class="feedback-heading">
+                        <img src="../images/feedback-signin/review.png" alt="" srcset="">
+                        <h1>Feedback</h1>
+                        </div>
+                        <hr class="hr">
+                        <div class="feedback-main-heading">
+                             <h1>How are you feeling?</h1>
+                             <p>Your input is valuable in helping us better understand your <br>needs and tailor our service accordingly.</p>
+                        </div>
+
+                        <div class="imogi-container">
+                             <img src="../images/feedback-signin/star.png"  id="img1" onclick="Light('img1')"  onmouseover="Mouse()" onmouseout="Over()">
+                             <img src="../images/feedback-signin/star.png"  id="img2" onclick="Light('img2')">
+                             <img src="../images/feedback-signin/star.png"  id="img3" onclick="Light('img3')">
+                             <img src="../images/feedback-signin/star.png"  id="img4" onclick="Light('img4')">
+                        </div>
+
+                        <div class="text-box">
+                            <textarea rows="8" cols="50" placeholder="Add a Comment" id="text-area"></textarea>
+                            <p id="msg-show"></p>
+                            <button onclick="Submit()">Submit Now</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="review-main-container">
+           <p id="review-text"></p>
+        </div>
+    </section>
+
+    <script src="../js/feedback.js"></script>
 </body>
+
 </html>
