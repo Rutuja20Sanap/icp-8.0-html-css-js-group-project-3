@@ -26,3 +26,6 @@ function loadQuestion() {
         button.onclick = () => selectAnswer(button, choice);
         choicesEl.appendChild(button);
     });
+    prevButton.style.display = currentQuestionIndex === 0 ? 'none' : 'inline-block';
+    nextButton.style.display = 'inline-block';
+}
