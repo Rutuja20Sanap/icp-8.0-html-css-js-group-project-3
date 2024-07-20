@@ -141,3 +141,134 @@ section{
   #menu-btn{
     display: none;
   }
+  body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+
+}
+
+.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.dropdown a i {
+    margin-left: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #f7a636;
+}
+
+.navbar a {
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #302e2e;
+}
+.nav__logo{
+margin-right:100px;
+}
+.dark-theme .navbar a {
+    color: #fff;
+}
+.dark-theme .home .content h3{
+    font-size: 6rem;
+    color: #fff;
+  }
+  .dark-theme .heading{
+    font-size: 4rem;
+    color: #fff;
+  }
+  .dark-theme .home .image img{
+    filter: drop-shadow(10px 10px 60px #e28605);
+  }
+  .dark-theme header{
+    background-color: #1d1c1c;
+  }
+  .dark-theme .dropdown-content{
+    background-color: #1d1c1c;
+  }
+  .dark-theme .dropdown-content a{
+    color:#fff ;
+  }
+  .dark-theme .dropdown-content a:hover{
+    background-color: #fff;
+  }
+  .dark-theme .header .icons div{
+    color:var(--white) ;       }
+    .dark-theme .header .icons div:hover{
+        color:var(--orange) ;  } 
+    .dark-theme .menu-open{
+        background-color: var(--orange);
+        padding: 4px;
+        border-radius: 4px;
+    }     
+.logo-dark {
+    display: none;
+    width: 35px;
+    padding: 8px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #e28605;
+    
+}
+
+.logo-light {
+    display: inline;
+    width: 40px;
+    box-shadow: 0 0 10px #e7e1e5;
+    padding: 8px;
+    border-radius: 50px;
+}
+
+.light-theme .logo-dark {
+    display: none;
+}
+
+.light-theme .logo-light {
+    display: inline;
+}
+
+.dark-theme .logo-dark {
+    display: inline;
+}
+
+.dark-theme .logo-light {
+    display: none;
+}
