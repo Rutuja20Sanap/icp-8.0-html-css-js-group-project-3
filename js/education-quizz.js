@@ -113,4 +113,12 @@ function selectAnswer(button, selectedChoice) {
     }
     nextButton.style.display = 'block';
 }
+function nextQuestion() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        loadQuestion();
+    } else {
+        showResults();
+    }
+}
 loadQuestion();
