@@ -137,6 +137,5 @@ function restartQuiz() {
     score = 0;
     quizContainer.style.display = 'block';
     resultContainer.style.display = 'none';
-    loadQuestion();
 }
 loadQuestion();
