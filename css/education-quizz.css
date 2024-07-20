@@ -92,3 +92,36 @@ button:hover {
 .dark-theme button{
     background: #f7a636;
 }
+
+/* Small Devices */
+@media screen and (max-width: 600px) {
+    .header-d {
+        font-size: small;
+        padding: 10px;
+        margin: 10px;
+        margin-top: 140px;
+    }
+    #question {
+        font-size: 24px;
+    }
+    .quizz-container, #result-container {
+        max-width: 95%;
+        padding: 10px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    #choices button {
+        max-width: 95%;
+        padding: 10px;
+    }
+    #navigation-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    #navigation-buttons button {
+        margin: 10px 0;
+        padding: 10px 20px;
+    }
+}
