@@ -72,17 +72,33 @@ textarea{
     border: 1px solid rgb(202, 198, 198);
     padding: 5px;
 }
+.review-main-container-heading{
+    text-align: center;
+}
 .review-main-container{
            display: flex;
            justify-content: space-evenly;
+           padding-bottom: 50px;
 }
 .review-container-1{
-          height: 200px;
+         
           width: 300px;
-          background-color: aqua;
-          border: 2px solid black;
+          border: 1px solid rgb(202, 198, 198);
+          box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+          padding: 10px;
+        
 }
-
+.review-container-1 img{
+    display: block;
+    margin: 0 auto;
+} 
+.review-container-1 p{
+    text-align: center;
+}
+.person-image{
+    height: 50px;
+    border-radius: 50%;
+}
 
 
 
