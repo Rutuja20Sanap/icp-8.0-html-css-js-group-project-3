@@ -1,4 +1,5 @@
-const questions = [
+const questions = {
+    easy: [
     {
         "question": "What is 5 + 3?",
         "choices": ["6", "7", "8", "9"],
@@ -23,8 +24,8 @@ const questions = [
         "question": "What is the next number after 15?",
         "choices": ["14", "16", "17", "18"],
         "correctAnswer": "16"
-    },
-    {
+    }],
+    medium: [ {
         "question": "What is 7 x 6?",
         "choices": ["42", "48", "36", "56"],
         "correctAnswer": "42"
@@ -48,8 +49,8 @@ const questions = [
         "question": "What is 50 ÷ 5?",
         "choices": ["5", "10", "15", "20"],
         "correctAnswer": "10"
-    },
-    {
+    }],
+   hard:[{
         "question": "What is the square root of 81?",
         "choices": ["7", "8", "9", "10"],
         "correctAnswer": "9"
@@ -70,7 +71,8 @@ const questions = [
         "correctAnswer": "quickly"
     }
     
-];
+]
+};
 
 let currentQuestionIndex = 0;
 let score = 0;
