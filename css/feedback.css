@@ -78,7 +78,7 @@ textarea{
 .review-main-container{
            display: flex;
            justify-content: space-evenly;
-           padding-bottom: 50px;
+           padding: 50px 0px;
 }
 .review-container-1{
          
