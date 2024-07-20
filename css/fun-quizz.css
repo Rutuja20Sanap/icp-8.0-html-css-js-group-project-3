@@ -1,0 +1,627 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    color: #f7a636;
+    color: #e534aa;
+    color: #1d1c1c;
+    color: #fff;
+    color: #55552b;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+
+.patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 500;
+    font-size: larger;
+    font-style: normal;
+}
+
+.header {
+
+    padding: 10px;
+    display: flex;
+
+    justify-content: center;
+}
+
+.header img {
+    margin: 0 120px;
+    height: 150px;
+    width: 250px;
+}
+
+.header h1 {
+    font-size: 30px;
+}
+
+.header2 h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin: 50px;
+    border: 1px black solid;
+}
+
+.box img {
+    height: 100px;
+    margin: 0 70px;
+}
+
+.box h1 {
+    font-size: 30px;
+    align-self: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    position: relative;
+}
+
+h1 {
+    font-size: 24px;
+    color: darkslategrey;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    color: darkslategrey;
+}
+
+.img {
+    display: block;
+    margin: 10px auto;
+    height: 150px;
+    width: 250px;
+    border-radius: 15px;
+    transition: all .3s ease-in-out;
+    cursor: zoom-out;
+}
+
+.img:hover {
+    transform: scale(1.2);
+}
+
+form {
+    margin-top: 20px;
+}
+
+form div {
+    margin-bottom: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button {
+    padding: 10px 30px;
+    border: none;
+    background-color: #990099;
+    color: white;
+    border-radius: 25px 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #e600e6;
+    color: black;
+    transform: scale(1.1);
+
+}
+
+.question {
+    display: none;
+}
+
+.active-question {
+    display: block;
+}
+
+#score {
+    text-align: center;
+}
+
+.certificate-container-main {
+    display: block;
+    max-width: 650px;
+    margin: 10px auto;
+    padding: 10px 30px;
+}
+
+.certificate-container {
+    padding: 10px;
+    background-color: #ffffff;
+    max-width: 750px;
+    margin-top: 50px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.certificate-container h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+.certificate-container h2 {
+    font-size: 2em;
+    color: #ff6347;
+}
+
+.certificate-container h3 {
+    font-size: 1.5em;
+    color: #1e90ff;
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+.form-container input {
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.certificate-input {
+    display: flex;
+    justify-content: center;
+
+}
+
+.certificate-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.certificate-button:hover {
+    background-color: #45a049;
+}
+
+/* Hide by default */
+#certificate {
+    display: none;
+}
+
+/* Show when the class is added */
+#certificate.show-certificate {
+    display: block;
+
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        padding: 10px;
+    }
+
+    .header img {
+        margin: 0 5px;
+        height: 30px;
+        width: 50px;
+    }
+
+    .header h1 {
+        font-size: 6px;
+    }
+
+    .header2 h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 8px;
+    }
+
+    .box {
+        padding: 0;
+        margin: 0;
+    }
+
+    .box img {
+        height: 30px;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .box h1 {
+        font-size: 5px;
+    }
+
+    h1 {
+        font-size: 12px;
+
+    }
+
+    h2 {
+        font-size: 10px;
+        color: darkslategrey;
+    }
+
+    .container {
+        max-width: 450px;
+        margin: 10px auto;
+        padding: 10px 10px;
+
+    }
+
+    .container p {
+        font-size: 10px;
+    }
+
+    .img {
+        display: block;
+        margin: 10px auto;
+        height: 80px;
+        width: 120px;
+
+    }
+
+    .img:hover {
+        transform: scale(1.2);
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    form div {
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+
+    .que {
+        font-size: 20px;
+    }
+
+
+    button {
+        padding: 5px 10px;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+
+    .certificate-input input {
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 320.5px) and (max-width:450px) {
+    .header {
+        padding: 10px;
+    }
+
+    .header img {
+        margin: 0 5px;
+        height: 30px;
+        width: 50px;
+    }
+
+    .header h1 {
+        font-size: 10px;
+    }
+
+    .header2 h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+    }
+
+    .box {
+        padding: 0;
+        margin: 20px;
+    }
+
+    .box img {
+        height: 50px;
+        margin: 0 15px;
+        padding: 10px;
+    }
+
+    .box h1 {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 10px;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 10px 40px;
+        padding: 10px 20px;
+
+    }
+
+    .container p {
+        font-size: 10px;
+    }
+
+    .img {
+        display: block;
+        margin: 10px auto;
+        height: 80px;
+        width: 120px;
+    }
+
+    .img:hover {
+        transform: scale(1.2);
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    form div {
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+
+    .que {
+        font-size: 20px;
+    }
+
+    .certificate-input input {
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 450.5px) and (max-width:702px) {
+    .header {
+        padding: 10px;
+    }
+
+    .header img {
+        margin: 0 5px;
+        height: 80px;
+        width: 100px;
+    }
+
+    .header h1 {
+        font-size: 15px;
+    }
+
+    .header2 h2 {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .box {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .box img {
+        height: 100px;
+        margin: 0;
+    }
+
+    .box h1 {
+        font-size: 20px;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 10px 40px;
+        padding: 10px 20px;
+    }
+
+    h1 {
+        font-size: 24px
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .img {
+        display: block;
+        margin: 10px auto;
+        height: 150px;
+        width: 250px;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    form div {
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 10px 30px;
+        border-radius: 25px 10px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .certificate-input input {
+        width: 100px;
+    }
+
+}
+
+@media screen and (min-width: 702.5px) and (max-width:900px) {
+    .header {
+        padding: 10px;
+    }
+
+    .header img {
+        margin: 0 5px;
+        height: 80px;
+        width: 100px;
+    }
+
+    .header h1 {
+        font-size: 15px;
+    }
+
+    .header2 h2 {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .box {
+        padding: 10px;
+        margin: 10px;
+
+    }
+
+    .box img {
+        height: 100px;
+        margin: 0;
+    }
+
+    .box h1 {
+        font-size: 20px;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 10px auto;
+        padding: 10px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .img {
+        display: block;
+        margin: 10px auto;
+        height: 150px;
+        width: 250px;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    form div {
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 10px 30px;
+        border-radius: 25px 10px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (min-width: 902.5px) and (max-width:1304px) {
+    .header {
+        padding: 10px;
+    }
+
+    .header img {
+        margin: 0 auto;
+        height: 100px;
+        width: 120px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .header2 h2 {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .box {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .box img {
+        height: 100px;
+        margin: 0 70px;
+    }
+
+    .box h1 {
+        font-size: 20px;
+        align-self: center;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 10px auto;
+        padding: 10px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .img {
+        display: block;
+        margin: 10px auto;
+        height: 150px;
+        width: 250px;
+    }
+
+    .img:hover {
+        transform: scale(1.2);
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    form div {
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 10px 30px;
+        border-radius: 25px 10px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+}
