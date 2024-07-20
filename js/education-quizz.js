@@ -29,4 +29,21 @@ function loadQuestion() {
     prevButton.style.display = currentQuestionIndex === 0 ? 'none' : 'inline-block';
     nextButton.style.display = 'inline-block';
 }
+function selectAnswer(button, selectedChoice) {
+    const currentQuestion = questions[currentQuestionIndex];
+    const allButtons = choicesEl.querySelectorAll('button');
+    allButtons.forEach(btn => {
+        btn.disabled = true;
+        if (btn.textContent === currentQuestion.correctAnswer) {
+            btn.classList.add('correct');
+        } else if (btn.textContent === selectedChoice) {
+            btn.classList.add('incorrect');
+        }
+    });
+    button.classList.add('selected');
+    if (selectedChoice === currentQuestion.correctAnswer) {
+        score++;
+    }
+    nextButton.style.display = 'block';
+}
 loadQuestion();
