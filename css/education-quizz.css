@@ -24,7 +24,7 @@ body {
     font-family: Arial, sans-serif;
 }
 button {
-    background-color: #5d2057;
+    background-color: #e534aa;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -61,7 +61,7 @@ button:hover {
     margin: 15px auto;
 }
 #navigation-buttons button {
-    background: #8f4387;
+    background: #e534aa;
     color: white;
     border: none;
     padding: 15px 30px;
