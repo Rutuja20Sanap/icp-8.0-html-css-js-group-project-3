@@ -29,3 +29,4 @@ function loadQuestion() {
     prevButton.style.display = currentQuestionIndex === 0 ? 'none' : 'inline-block';
     nextButton.style.display = 'inline-block';
 }
+loadQuestion();
