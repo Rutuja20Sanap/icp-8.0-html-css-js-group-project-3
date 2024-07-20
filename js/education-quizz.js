@@ -127,4 +127,16 @@ function previousQuestion() {
         loadQuestion();
     }
 }
+function showResults() {
+    quizContainer.style.display = 'none';
+    resultContainer.style.display = 'block';
+    scoreEl.textContent = `${score} out of ${questions.length}`;
+}
+function restartQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    quizContainer.style.display = 'block';
+    resultContainer.style.display = 'none';
+    loadQuestion();
+}
 loadQuestion();
