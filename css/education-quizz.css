@@ -2,11 +2,13 @@ body {
     text-align: center;
     background-color: #f5f7fa;
 }
-header {
-    background-color: #5d2057;
-    color: white;
-    padding: 10px;
+.header-d {
+    font-size: larger;
+    color: black;
+    padding: 20px;
+    margin: 20px;
     height: 110px;
+    margin-top: 130px;
 }
 .quizz-container, #result-container{
     margin: 10px auto;
