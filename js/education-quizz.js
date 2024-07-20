@@ -1,9 +1,76 @@
 const questions = [
     {
-        question: "What is the chemical symbol for water?",
-        choices: ["H2O", "O2", "CO2", "H2"],
-        correctAnswer: "H2O"
-    }];
+        "question": "What is 5 + 3?",
+        "choices": ["6", "7", "8", "9"],
+        "correctAnswer": "8"
+    },
+    {
+        "question": "What is the opposite of 'hot'?",
+        "choices": ["cold", "warm", "cool", "heat"],
+        "correctAnswer": "cold"
+    },
+    {
+        "question": "What is the value of 9 - 4?",
+        "choices": ["3", "4", "5", "6"],
+        "correctAnswer": "5"
+    },
+    {
+        "question": "Which one is a noun?",
+        "choices": ["quickly", "run", "apple", "blue"],
+        "correctAnswer": "apple"
+    },
+    {
+        "question": "What is the next number after 15?",
+        "choices": ["14", "16", "17", "18"],
+        "correctAnswer": "16"
+    },
+    {
+        "question": "What is 7 x 6?",
+        "choices": ["42", "48", "36", "56"],
+        "correctAnswer": "42"
+    },
+    {
+        "question": "Which word is an adjective?",
+        "choices": ["happy", "jump", "quickly", "and"],
+        "correctAnswer": "happy"
+    },
+    {
+        "question": "What is the perimeter of a square with side length 5?",
+        "choices": ["10", "15", "20", "25"],
+        "correctAnswer": "20"
+    },
+    {
+        "question": "Which sentence is in past tense?",
+        "choices": ["She will go to the store.", "She is going to the store.", "She went to the store.", "She goes to the store."],
+        "correctAnswer": "She went to the store."
+    },
+    {
+        "question": "What is 50 ÷ 5?",
+        "choices": ["5", "10", "15", "20"],
+        "correctAnswer": "10"
+    },
+    {
+        "question": "What is the square root of 81?",
+        "choices": ["7", "8", "9", "10"],
+        "correctAnswer": "9"
+    },
+    {
+        "question": "What is 12 x 7?",
+        "choices": ["72", "84", "96", "108"],
+        "correctAnswer": "84"
+    },   
+    {
+        "question": "Solve for x: 2x + 3 = 7",
+        "choices": ["1", "2", "3", "4"],
+        "correctAnswer": "2"
+    },
+    {
+        "question": "Identify the adverb in the sentence: 'She quickly ran to the store.'",
+        "choices": ["She", "quickly", "ran", "store"],
+        "correctAnswer": "quickly"
+    }
+    
+];
 
 let currentQuestionIndex = 0;
 let score = 0;
