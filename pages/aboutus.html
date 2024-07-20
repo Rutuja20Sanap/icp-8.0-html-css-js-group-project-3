@@ -9,10 +9,27 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="/css/aboutus.css">
+     <script src="/js/aboutus.js"></script>
+    
 </head>
 
 
-<body>
+
+<body class="bg-light" id="main-body">
+
+    <div class="thim-container">
+        <div id="icon" onclick="enabledark()">
+            <img src="/images/aboutus/Moon.png" alt="img" id="theme-icn" >
+             <button >Dark mode</button>
+         </div>
+
+        <div id="icon" onclick="enablelight()">
+            <img src="/images/aboutus/Sun.png" alt="img" id="theme-icn">
+            <button >Light mode</button>
+        </div>
+        
+    </div>
+   
     <div class="top_content">
         <h1 id="head">About Us</h1>
 
@@ -74,6 +91,9 @@
 
         
     </div>
+  
+
+
 </body>
 
 </html>
