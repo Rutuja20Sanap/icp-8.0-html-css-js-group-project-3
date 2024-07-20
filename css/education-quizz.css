@@ -29,3 +29,6 @@ header {
     max-width: 300px;
     margin: 10px auto;
 }
+#choices button:hover {
+    background: #cfd9df;
+}
