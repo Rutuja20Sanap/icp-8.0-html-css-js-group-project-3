@@ -93,8 +93,12 @@ function loadQuestion() {
         choicesEl.appendChild(button);
     });
 
-    prevButton.style.display = currentQuestionIndex === 0 ? 'none' : 'inline-block';
-    nextButton.style.display = 'none';
+    prevButton.style.display = 'inline-block';
+    nextButton.style.display = 'inline-block';
+
+    if (currentQuestionIndex === 0) {
+        prevButton.style.display = 'none';
+    }
 }
 
 function selectAnswer(button, selectedChoice) {
