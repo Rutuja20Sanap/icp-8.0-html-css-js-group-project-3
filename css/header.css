@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --orange:#f7a636;
+    --pink:#e534aa;
+    --black: #1d1c1c;
+    --white: #fff;
+    --light-color:#55552b;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+@keyframes topToBottom {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
+  
+  .animative-movement {
+    animation: topToBottom 5s infinite alternate;
+  width: 60px;
+  height:20px;
+  position: relative;
+  margin-left: 0;
+  
+  }
+  #name1{
+  margin-left: 0%;
+    font-family:rutu;
+    color: rgb(255, 2, 15);
+    font-size:70px;
+    margin-right: 10px;
+  }
+  #name2{
+    font-family:rutu;
+    color: rgb(59, 205, 40);
+    font-size:70px;
+    margin-right: 10px;
+  }
+  #name3{
+    font-family:rutu;
+    color: rgb(2, 175, 255);
+    font-size:70px;
+    margin-right: 10px;
+  }
+  #name4{
+    font-family:rutu;
+    color: rgb(162, 2, 255);
+    font-size:70px;
+    margin-right: 10px;
+  }
+  
+  
+  h2 {
+    margin-top: 40px;
+    color:#ff3399;
+    font-family:rutu;
+    font-size: 40px;
+    margin-left:20px;
+    }
+
+  @font-face{
+    font-family:rutu;
+    src: url('lemondrops-font/LemondropspersonaluseBold-9Yn02.otf');
+  }
+  .container{
+    margin-left:30px;
+    margin-right: 0%;
+  }
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding: 3rem 7%;
+}
+
+.heading{
+  font-size: 4rem;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 6rem;
+}
+
+.heading span{
+  color: var(--orange);
+  text-transform: uppercase;
+}
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .navbar{
+    margin-left: 20%;
+  }
+  
+  .header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+    margin-right: 40px;
+   
+  }
+  
+  .header .navbar a:hover,
+  .header .icons div:hover{
+    color: var(--orange);
+  }
+  
+  .header .icons div{
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+    
+  }
+  
+  #menu-btn{
+    display: none;
+  }
