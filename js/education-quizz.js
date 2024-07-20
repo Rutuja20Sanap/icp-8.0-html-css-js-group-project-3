@@ -14,3 +14,15 @@ const prevButton = document.getElementById('prev-button');
 const resultContainer = document.getElementById('result-container');
 const quizContainer = document.getElementById('quiz-container');
 const scoreEl = document.getElementById('score');
+
+function loadQuestion() {
+    const currentQuestion = questions[currentQuestionIndex];
+    questionEl.textContent = currentQuestion.question;
+    choicesEl.innerHTML = '';
+
+    currentQuestion.choices.forEach(choice => {
+        const button = document.createElement('button');
+        button.textContent = choice;
+        button.onclick = () => selectAnswer(button, choice);
+        choicesEl.appendChild(button);
+    });
