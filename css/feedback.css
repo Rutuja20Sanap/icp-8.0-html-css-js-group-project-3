@@ -72,6 +72,16 @@ textarea{
     border: 1px solid rgb(202, 198, 198);
     padding: 5px;
 }
+.review-main-container{
+           display: flex;
+           justify-content: space-evenly;
+}
+.review-container-1{
+          height: 200px;
+          width: 300px;
+          background-color: aqua;
+          border: 2px solid black;
+}
 
 
 
