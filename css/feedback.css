@@ -3,7 +3,9 @@ body {
     padding: 0;
 }
 
-.main-container {}
+.main-container {
+    margin-top: 200px;
+}
 
 .regester-login-container {
     width: fit-content;
@@ -44,7 +46,7 @@ body {
 text-align: center;
 }
 .hr{
-    margin-top: -10px;
+    margin: 10px 0px;
 }
 .imogi-container{
     display: flex;
@@ -78,14 +80,14 @@ textarea{
 .review-main-container{
            display: flex;
            justify-content: space-evenly;
-           padding: 50px 0px;
+         
 }
 .review-container-1{
          
           width: 300px;
           border: 1px solid rgb(202, 198, 198);
           box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
-          padding: 10px;
+          padding: 10px ;
         
 }
 .review-container-1 img{
@@ -99,6 +101,7 @@ textarea{
     height: 50px;
     border-radius: 50%;
 }
+
 
 
 
