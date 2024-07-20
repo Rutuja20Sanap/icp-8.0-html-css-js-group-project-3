@@ -76,7 +76,7 @@ button:hover {
 .dark-theme .header-d {
     color: white;
 }
-.dark-theme .quizz-container, #result-container {
+.dark-theme .quizz-container, .dark-theme #result-container {
     background: #1e1e1e;
 }
 .dark-theme #choices button {
