@@ -121,4 +121,10 @@ function nextQuestion() {
         showResults();
     }
 }
+function previousQuestion() {
+    if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        loadQuestion();
+    }
+}
 loadQuestion();
