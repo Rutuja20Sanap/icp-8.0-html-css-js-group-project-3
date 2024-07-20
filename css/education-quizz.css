@@ -16,6 +16,19 @@ header {
     max-width: 600px;
     padding: 10px;
 }
+button {
+    background-color: #5d2057;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 15px;
+}
+button:hover {
+    background-color: #8f4387;
+}
 #choices button {
     display: block;
     background: #e1e8ed;
