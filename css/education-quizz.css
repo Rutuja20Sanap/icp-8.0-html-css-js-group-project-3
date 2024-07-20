@@ -73,3 +73,22 @@ button:hover {
 #navigation-buttons button:hover{
     background: #e534aa;
 }
+.dark-theme .header-d {
+    color: white;
+}
+.dark-theme .quizz-container, #result-container {
+    background: #1e1e1e;
+}
+.dark-theme #choices button {
+    background: #504f4f;
+    color: white;
+}
+.dark-theme #question {
+    color: white;
+}
+.dark-theme #navigation-buttons button {
+    background: #f7a636;
+}
+.dark-theme button{
+    background: #f7a636;
+}
