@@ -190,3 +190,35 @@ button:hover {
         padding: 15px 30px;
     }
 }
+/* Large Devices */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .header-d {
+        font-size: 20px;
+        padding: 20px;
+        margin: 20px;
+        margin-top: 140px;
+    }
+    #question {
+        font-size: 34px;
+    }
+    .quizz-container, #result-container {
+        max-width: 70%;
+        padding: 25px;
+    }
+    button {
+        padding: 15px 30px;
+        font-size: 15px;
+    }
+    #choices button {
+        max-width: 70%;
+        padding: 15px;
+    }
+    #navigation-buttons {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #navigation-buttons button {
+        margin: 0 10px;
+        padding: 15px 30px;
+    }
+}
