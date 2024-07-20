@@ -125,3 +125,36 @@ button:hover {
         padding: 10px 20px;
     }
 }
+
+/* Normal Devices */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .header-d {
+        font-size: small;
+        padding: 10px;
+        margin: 10px;
+        margin-top: 140px;
+    }
+    #question {
+        font-size: 28px;
+    }
+    .quizz-container, #result-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+    button {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+    #choices button {
+        max-width: 90%;
+        padding: 12px;
+    }
+    #navigation-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    #navigation-buttons button {
+        margin: 10px 0;
+        padding: 12px 25px;
+    }
+}
