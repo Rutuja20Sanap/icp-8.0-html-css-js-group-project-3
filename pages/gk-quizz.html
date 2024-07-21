@@ -10,15 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
     <link rel="stylesheet" href="./../css/header.css">
     <link rel="stylesheet" href="./../css/footer.css">
-    <style>
-        .hide {
-            display: none;
-        }
 
-        .show {
-            display: block;
-        }
-    </style>
 </head>
 
 <body>
@@ -546,16 +538,29 @@
         </div>
         </div>
         </div>
-        <div class="result-contanier">
-            <div id="final-score-container" class="final-score-container">
-                <h1></h1>
-                <p></p>
+
+
+        <div id="final-score-container" class="hide"></div>
+        
+
+        <div id="certificate" class="certificate-container-main">
+            <div class="certificate-container">
+                <h1>Certificate of Achievement</h1>
+                <p>This certificate is awarded to:</p>
+                <h2 id="childName">[Child's Name]</h2>
+                <p>For their outstanding performance and participation in the</p>
+                <h3>Fun Quiz for Kids</h3>
+                <p>Congratulations on your amazing efforts and knowledge!</p>
+                <p>Date: <span id="date">[Date]</span></p>
+                <p>Quiz Organizer: <span id="organizerName">karishma wadaskar</span></p>
             </div>
-            <div class="res-contanier">
-                <button type="button" class="res-btn" onclick="showFinalScore()">Check Result</button>
-                <button type="button" class="res-btn" onclick="restartQuiz()">Restart Quiz</button>
+            <div class="form-container">
+                <div class="certificate-input">
+                    <input type="text" id="inputName" placeholder="Enter Child's Name" required>
+                    <input type="text" id="inputDate" placeholder="Enter Date" required>
+                </div>
+                <button class="certificate-button" onclick="generateCertificate()">Generate Certificate</button>
             </div>
-        </div>
         </div>
 
         <!--footer section start-->
