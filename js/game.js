@@ -17,5 +17,9 @@ for (let i = 0; i < emojis.length; i++){
         this.classList.add('boxOpen');
 
         setTimeout(function() {
+
+            if (document.querySelectorAll('.boxOpen').length > 1) {
+
+            }
     })
 } }
