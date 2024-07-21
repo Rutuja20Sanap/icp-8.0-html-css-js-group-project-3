@@ -5,6 +5,7 @@ let shuf_emojis = emojis.sort(shuffleEmojis)
 function shuffleEmojis(){
 if(Math.random() > 0.5){
  return  2 ;
+ 
 }else{
     return -1 ;
 }

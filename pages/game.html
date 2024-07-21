@@ -7,6 +7,77 @@
     <link rel="stylesheet" href="./../css/game.css">
 </head>
 <body>
+    <!--header section start -->
+
+<body id="body" class="light-theme">
+    <header class="header">
+        <div class="container">
+            <div class="animative-movement">
+                <span id="name1">K</span><span id="name2">I</span><span id="name3">D</span><span id="name4">S</span>
+            </div>
+            <h2>Quizzland</h2>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../pages/aboutus.html">About</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="#">Quizz Category<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../pages/educational-quizz.html">Educational Quizz</a>
+                    <a href="../pages/fun-quizz.html">Fun Quizz</a>
+                    <a href="../pages/gk-quizz.html">General Knowledge Quizz</a>
+                </div>
+            </div>
+            <a href="../pages/contactus.html">Contact Us</a>
+            <a href="../pages/feedback.html">Feedback</a>
+        </nav>
+
+        <div class="icons">
+            <a href="../pages/sign.html">
+                <div class="fas fa-user" id="login-btn"></div>
+            </a>
+        </div>
+        <div class="nav__logo">
+            <a href="#">
+                <img src="../icon/moon.png" alt="dark mode" class="logo-dark" id="dark-logo" onclick="toggleTheme()" />
+                <img src="../icon/sun.png" alt="light mode" class="logo-light" id="light-logo" onclick="toggleTheme()" />
+            </a>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="close-btn" id="close-btn">
+                <img src="../icon/arrow.png" alt="Close" width="30px">
+            </div>
+            <nav class="sidebar-navbar">
+                <a class="menu-item active-menu" href="../index.html"> <img src="../icon/home.png" class="menu-icon">
+                    <span class="menu-text">Home</span></a>
+                <a class="menu-item" href="../pages/aboutus.html">
+                    <img src="../icon/aboutus.png" class="menu-icon">
+                    <span class="menu-text">AboutUs</span>
+                </a>
+                <a class="menu-item" href="../pages/quizz-list.html">
+                    <img src="../icon/quizz.png" class="menu-icon">
+                    <span class="menu-text">Quizz-List</span>
+                </a>
+                <a class="menu-item" href="../pages/contactus.html">
+                    <img src="../icon/contact-us.png" class="menu-icon">
+                    <span class="menu-text">Contact</span>
+                </a>
+                <a class="menu-item" href="../pages/feedback.html">
+                    <img src="../icon/feedback.png" class="menu-icon">
+                    <span class="menu-text">Feedback</span>
+                </a>
+            </nav>
+        </div>
+
+        <!-- Open Sidebar Menu Button -->
+        <div class="menu-open" id="menu-open">
+            <img src="../icon/menus.png" alt="Menu" width="30px">
+        </div>
+    </header>
+    <!--header section end-->
+
+
     <div class="container">
         <h2>brain Game</h2>
         <div class="game"></div>
@@ -14,6 +85,8 @@
         </div>
 
         <script src="./../js/game.js"></script>
+
+        
 </body>
 
 </html>
