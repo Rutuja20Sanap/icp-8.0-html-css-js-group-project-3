@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+@font-face {
+    font-family: rutu;
+    src: url(../fonts/font-name.otf);
+}
+
+.Main-container {
+    margin-top: 160px;
+}
+
+.header-name {
+    font-size: 60px;
+    color: #ff3399;
+    font-family: rutu;
+    margin-top: 30px;
+}
+
+.GK-header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-img {
+    height: 150px;
+    margin-top: 0;
+}
+
+.tagline {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+.divider {
+    border-bottom: 2px solid #ccc;
+    margin: 20px 0;
+}
+
+.Quiz-container {
+    margin-top: 30px;
+}
+
+.type-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.que-no {
+    margin-top: 20px;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.que-type {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.que-type-img {
+    height: 70px;
+}
+
+.question {
+    width: 700px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.question {
+    display: none;
+}
+
+.question.show {
+    display: block;
+}
+
+.question.hide {
+    display: none;
+}
+
+.que-name {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+
+.quiz-form {
+    text-align: center;
+    font-size: 15px;
+}
+
+.opt-img {
+    height: 50px;
+}
+
+.Note {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.nav-btn {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.res-contanier {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.res-btn {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.result {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.check-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.check-btn {
+    height: 30px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.final-score-container {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.res-btn {
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .header-name {
+        font-size: 30px;
+        margin-top: 7px;
+    }
+
+    .header-img {
+        height: 30px;
+        margin-top: 0;
+    }
+
+    .tagline {
+        font-size: 15px;
+    }
+
+    .Quiz-container {
+        margin-top: 10px;
+    }
+
+    .type-container {
+        gap: 25px;
+        padding: 5px;
+    }
+
+    .que-no {
+        margin-top: 10px;
+        display: block;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+
+    .que-type {
+        font-size: 20px;
+        margin-top: 7px;
+        margin-bottom: 0;
+    }
+
+    .que-type-img {
+        height: 35px;
+    }
+
+    .question {
+        width: 350px;
+        border: 2px solid black;
+        box-sizing: border-box;
+        margin-bottom: 1px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .question {
+        display: none;
+    }
+
+    .question.show {
+        display: block;
+    }
+
+    .question.hide {
+        display: none;
+    }
+
+    .que-name {
+        font-size: 15px;
+        margin-bottom: 5px;
+        padding-top: 10px;
+    }
+
+    .quiz-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+    }
+
+    .opt-img {
+        height: 25px;
+    }
+
+    .Note {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .res-contanier {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .res-btn {
+        margin: 0 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .result {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+
+    .check-btn-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .check-btn {
+        height: 30px;
+        margin-bottom: 10px;
+        display: none;
+    }
+
+    .final-score-container {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .res-btn {
+        margin-top: 30px;
+    }
+
+}
