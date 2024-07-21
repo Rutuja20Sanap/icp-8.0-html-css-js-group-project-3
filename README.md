@@ -1,1 +1,2 @@
 # icp-8.0-html-css-js-group-project-3
+brain game = In this game,  create a match card memory game or brain game using emojies Cards! i will learn how to randomly place cards onto the board and create click handlers for selecting two cards and checking if they match.
