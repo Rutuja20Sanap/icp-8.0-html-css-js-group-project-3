@@ -102,11 +102,9 @@ function checkAnswer(questionId, formId, resultId, sectionIndex) {
 function showFinalScore() {
     const mainContainer = document.getElementById('final-score-container');
     mainContainer.innerHTML = `
-        <div class="final-score-container">
-            <h1>Quiz Completed!</h1>
-            <p>Your final score is: ${score} out of ${totalQuestions * 2}</p>
-        </div>
-    `;
+            Quiz Completed!
+            Your final score is: ${score} out of ${totalQuestions * 2}
+     `;
 }
 
 function restartQuiz() {
