@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #fff;
     margin: 0;
-    padding: 0;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -13,7 +13,7 @@ body {
     max-width: 1200px;
     width: 90%;
     margin: 80px auto 20px;
-    padding: 20px;
+    padding: 70px;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -22,14 +22,14 @@ body {
     text-align: center;
 }
 
-h2 {
-    font-size: 3em; /* Increased font size */
+h1 {
+    font-size: 4em; 
     margin-bottom: 10px;
     color: var(--orange);
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.7em;
     margin-bottom: 20px;
 }
 
@@ -42,14 +42,14 @@ p {
 }
 
 .category {
-    border: 2px solid #ffffff;
+    border: 2px solid #8a8888;
     border-radius: 10px;
     padding: 20px;
     width: 30%;
     background-color: rgba(255, 255, 255, 0.2);
     transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(7, 7, 7, 0.1);
     text-align: center;
 }
 
@@ -60,13 +60,13 @@ p {
 }
 
 .category h2 {
-    font-size: 2.5em; /* Increased font size */
+    font-size: 2.5em; 
     margin: 10px 0;
     color: var(--pink);
 }
 
 .category p {
-    font-size: 1.2em; /* Increased font size */
+    font-size: 1.2em; 
     margin: 10px 0;
 }
 
@@ -109,7 +109,7 @@ footer {
     }
 
     header h1 {
-        font-size: 2em; /* Increased font size */
+        font-size: 2em; 
     }
 
     nav ul {
@@ -132,7 +132,7 @@ footer {
     }
 
     h2 {
-        font-size: 2.5em; /* Increased font size */
+        font-size: 2.5em; 
     }
 
     p {
@@ -151,7 +151,7 @@ footer {
     }
 
     header h1 {
-        font-size: 1.5em; /* Increased font size */
+        font-size: 1.5em; 
     }
 
     .body-container {
@@ -164,7 +164,7 @@ footer {
     }
 
     h2 {
-        font-size: 2em; /* Increased font size */
+        font-size: 2em; 
     }
 
     p {
