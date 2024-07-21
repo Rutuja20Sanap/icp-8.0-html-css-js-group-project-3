@@ -12,7 +12,7 @@ function enabledark(){
   }
   function checkEligibility() {
     const age = document.getElementById('age').value;
-    if (age && age < 14) {
+    if (age && age < 16) {
       alert('You are eligible to play.');
         document.getElementById('games').style.display = 'block';
         initializeTrafficSignal();
