@@ -32,8 +32,8 @@
         font-weight: 600;
         }
         .reset:focus{
-            color: #fff;
-            background: #267c65;
+            
+            background: #eb51b7;
             }
             .game{
             width: 440px;
@@ -73,4 +73,5 @@
                     .boxOpen:after,
                     .boxMatch:after{
                      transform: rotatey(180deg);
+                
                       }
