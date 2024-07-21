@@ -105,9 +105,15 @@ form {
 }
 
 label {
-    display: block; 
+    display: flex; 
+    align-items: center; 
     margin-bottom: 10px; 
+    padding: 10px; 
     text-align: left; 
+    border: 1px solid #ddd; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;
+    border-radius: 5px; 
 }
 
 label input[type="radio"] {
@@ -121,7 +127,7 @@ label input[type="radio"] {
 }
 
 .opt-img {
-    height: 50px;
+    height: 40px;
 }
 
 .Note {
