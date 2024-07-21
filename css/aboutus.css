@@ -22,12 +22,11 @@
     margin-top: -10px;
     margin-bottom: 25px;
     font-size: 40px;
-    color: #524e66;
     font-weight: 500;
 }
 
 #para {
-    color: #524e66;
+    
     font-size: 20px;
 }
 
@@ -150,6 +149,12 @@
     /* background-color: ; */
 
 }
+.dark-theme .offer{
+    border: 1px solid black;
+    box-shadow: white 0px 7px 29px 0px;
+
+}
+
 
 .offer h1 {
     text-align: center;
@@ -183,6 +188,12 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
+.dark-theme .card{
+    box-shadow: white 0px 4px 12px;
+}
+.dark-theme .card:hover{
+    box-shadow: white 0px 30px 60px -12px, white 0px 18px 36px -18px;
+}
 .card:hover{
     border: none;
     transform: translateY(-10px);
@@ -200,7 +211,6 @@
 .card p {
     margin-top: 10px;
     font-size: 20px;
-    color: #524e66;
 }
 .thim-container{
     margin-top: 120px;
@@ -248,6 +258,11 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 20px;
 }
+.dark-theme .game-demo{
+    box-shadow: white 0px 2px 8px 0px;
+
+}
+
 .game-demo h1{
     text-align: center;
     margin-top: 20px;
@@ -264,6 +279,9 @@
     border-radius: 10px;
     /* background-color: #F5E7D3; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.dark-theme .eligibility-check{
+    box-shadow: white 0px 6px 24px 0px, white 0px 0px 0px 1px;
 }
 #btn-eligible{
     cursor: pointer;
@@ -283,6 +301,9 @@
     border: 1px solid white;
    
 }
+.dark-theme .games{
+    border: none
+}
 .game-card{
     text-align: center;
     padding: 10px;
@@ -292,6 +313,10 @@
     width: 50%;
     border-radius: 10px;
 }
+.dark-theme .game-card{
+    box-shadow: white 0px 5px 15px;
+}
+
 #game-submit{
     font-size: 15px;
     padding: 8px;
