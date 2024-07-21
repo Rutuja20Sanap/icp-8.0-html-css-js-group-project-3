@@ -64,3 +64,6 @@
                 transform: rotatey(180deg);
                 transition: 0.25s;
                 }
+                .item.boxOpen{
+                    transform: rotatey(0deg);
+                  }
