@@ -7,7 +7,7 @@ body {
 * {
     font-family: 'Poppins', sans-serif;
 }
-.main-container {}
+
 
 .regester-login-container {
     width: fit-content;
@@ -19,7 +19,6 @@ body {
     padding: 15px 20px;
 }
 
-.container-image {}
 
 .container-image img {
 
@@ -34,7 +33,7 @@ body {
     padding: 10px 40px;
 }
 
-.login-input-fields {}
+
 
 .login-input-fields h1 {
     text-align: center;
@@ -121,6 +120,10 @@ hr{
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     border: 1px solid rgb(224, 224, 224);
     cursor: pointer;
+    border-radius: .5rem;
+    color: #fffefe;
+    background-color: #222222;
+
 }
 
 .last-text {
@@ -189,9 +192,7 @@ a{
 }
 @media screen and  (max-width:600px) {
 
-    .main-container {
-    
-    }
+
 
 .regester-login-container {
     width: 100%;
@@ -257,8 +258,8 @@ hr{
     flex-direction: column;
     margin-top: 10px;
 
-}
 
+}
 .input-fields input {
     margin-top: 20px;
     padding: 13px;
@@ -360,4 +361,49 @@ a{
 
 
 }
+}
+
+
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-theme .login-container{
+    background-color: #fff;
+    box-shadow: 0 1rem 3rem rgba(255, 255, 255, 0.175);
+}
+.dark-theme .regester-login-container {
+    background-color: #fff;
+}
+body.dark-theme .input-fields input {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #444;
+}
+
+body.dark-theme .hr-field span {
+    color: #bbb;
+}
+
+body.dark-theme hr {
+    border: 1px solid #444;
+}
+
+body.dark-theme a {
+    color: #90caf9;
+}
+
+body.dark-theme .login-btn button,
+body.dark-theme .sign-up-btn button {
+    background-color: #333;
+    border: 1px solid #444;
+    color: #e0e0e0;
+}
+
+body.dark-theme .last-text {
+    color: #060606;
+}
+.dark-theme .checkbox{
+    color: #060606;
 }
