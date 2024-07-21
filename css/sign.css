@@ -1,0 +1,156 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {}
+
+.regester-login-container {
+    width: fit-content;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container-image {}
+
+.container-image img {
+
+    height: 450px;
+    mix-blend-mode: multiply;
+
+
+}
+
+.login-container {
+
+    padding: 30px 40px;
+}
+
+.login-input-fields {}
+
+.login-input-fields h1 {
+    text-align: center;
+ 
+}
+
+.login-input-fields button {
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: none;
+    padding: 9px 15px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.login-input-fields button img{
+    height: 16px;
+}
+
+.login-input-fields button span {
+    display: block;
+    margin: 0 auto;
+}
+hr{
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.hr-field div {
+    width: 30%;
+}
+
+.hr-field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.hr-field span {
+    font-size: 10px;
+    width: 40%;
+    text-align: center;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+
+}
+
+.input-fields input {
+    margin-top: 25px;
+    padding: 13px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: none;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    gap: 70px;
+}
+
+.login-btn {
+    width: fit-content;
+    margin: 25px auto;
+}
+
+.login-btn button {
+    padding: 8px 136px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: none;
+}
+
+.last-text {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+
+.register-input-fields {
+
+    display: none;
+
+}
+
+.register-input-fields h1 {
+    text-align: center;
+}
+
+.register-input-fields button {
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: none;
+    padding: 9px 15px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.register-input-fields button img{
+    height: 16px;
+}
+
+.register-input-fields button span {
+    display: block;
+    margin: 0 auto;
+}
+.sign-up-btn{
+    width: fit-content;
+    margin: 25px auto;
+}
+.sign-up-btn button {
+    padding: 8px 144px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: none;
+}
