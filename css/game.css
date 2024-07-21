@@ -22,3 +22,20 @@
     background: #0d614b;
     padding: 40px 60px;
     }
+    h2{
+        font-size: 3em;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        }
+        .reset{
+        padding: 15px 20px;
+        color: #267c65;
+        background:#fff;
+        border: none;
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-weight: 600;
+        }
