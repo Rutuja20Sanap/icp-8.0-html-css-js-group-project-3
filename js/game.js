@@ -8,5 +8,6 @@ function ChangeEmojies(){
         return -1 ;
     }  
 }
-for (let i = 0; i < emojis.length; i++) {
+for (let i = 0; i < emojis.length; i++){
+    let box = document.createElement('div');
 } 
