@@ -15,4 +15,7 @@ for (let i = 0; i < emojis.length; i++){
 
     box.onclick = function() {
         this.classList.add('boxOpen');
+
+        setTimeout(function() {
+    })
 } }
