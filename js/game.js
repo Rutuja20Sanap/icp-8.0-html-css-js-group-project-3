@@ -19,7 +19,7 @@ for (let i = 0; i < emojis.length; i++){
         setTimeout(function() {
 
             if (document.querySelectorAll('.boxOpen').length > 1) {
-
-            }
+                if (document.querySelector('.boxOpen')[0].innerHTML == document.querySelector('.boxOpen')[1].innerHTML) {
+                }}
     })
 } }
