@@ -112,6 +112,16 @@ textarea{
     height: 50px;
     border-radius: 50%;
 }
+#review-1{
+    display: none;
+}
+#input-boxx{
+    margin-top: 25px;
+    padding: 13px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: none;
+    border: 1px solid rgb(224, 224, 224);
+}
 
 
 
