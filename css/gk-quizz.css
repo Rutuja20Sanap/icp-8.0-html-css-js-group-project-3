@@ -101,19 +101,19 @@
 }
 
 form {
-    text-align: left; /* Ensures the text inside the form is left-aligned */
+    text-align: left; 
 }
 
 label {
-    display: block; /* Each label should be on its own line */
-    margin-bottom: 10px; /* Adds space between labels */
-    text-align: left; /* Ensures the text inside the label is left-aligned */
+    display: block; 
+    margin-bottom: 10px; 
+    text-align: left; 
 }
 
 label input[type="radio"] {
-    vertical-align: middle; /* Aligns radio button vertically in the middle of the text */
-    margin-right: 10px; /* Adds space between the radio button and the text */
-    text-align: left; /* Ensures the radio button is aligned to the left */
+    vertical-align: middle; 
+    margin-right: 10px; 
+    text-align: left; 
 }
 .quiz-form {
     text-align: center;
