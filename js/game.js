@@ -24,6 +24,8 @@ for (let i = 0; i < emojis.length; i++){
                     document.querySelector('.boxOpen')[0].classList.add('boxMatch');
                     document.querySelector('.boxOpen')[1].classList.add('boxMatch');
 
+                    document.querySelector('.boxOpen')[1].classList.remove('boxOpen');
+                    document.querySelector('.boxOpen')[0].classList.remove('boxOpen');
                 }}
     })
 } }
