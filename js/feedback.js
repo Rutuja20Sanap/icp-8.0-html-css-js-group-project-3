@@ -1,11 +1,19 @@
 
 function Light(active) {
-    const lightElement = document.getElementById(active);
-    if (lightElement.src.includes('star-color.png')) {
-        lightElement.src = '../images/feedback-signin/star.png';
-    } else {
-        lightElement.src = '../images/feedback-signin/star-color.png';
+    for (let i = 1; i <= 4; i++) {
+        const lightElement = document.getElementById('img' + i);
+        if (i <= active) {
+            lightElement.src = '../images/feedback-signin/star-color.png';
+        } else {
+            lightElement.src = '../images/feedback-signin/star.png';
+        }
     }
+    // const lightElement = document.getElementById(active);
+    // if (lightElement.src.includes('star-color.png')) {
+    //     lightElement.src = '../images/feedback-signin/star.png';
+    // } else {
+    //     lightElement.src = '../images/feedback-signin/star-color.png';
+    // }
 }
 
 function Submit() {
@@ -22,12 +30,12 @@ function Submit() {
 
     if(element.value == 0 || inputBoxx.value==0)
     {
-        messageShow.innerText = 'Fillled form';
+        messageShow.innerText = 'Please Fillled All Input Fields';
         messageShow.style.color = 'red';
         rev.style.display = 'none';
     }
     else{
-        messageShow.innerText = 'Thank You🙂';
+        messageShow.innerText = 'Thank You For Your Feedback🙂';
         messageShow.style.color = 'green';
         rev.style.display = 'block';
     }
