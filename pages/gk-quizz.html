@@ -98,9 +98,9 @@
                 <div class="divider"></div>
 
                 <div class="Quiz-container">
-                    <div class="type-container">
+                    <div id="section-name" class="type-container">
                         <img src="./../images/gk-quizz/type.png" alt="study" class="que-type-img">
-                        <h1 class="que-type">Simple Questions</h1>
+                        <h1 id="section-title" class="section-title">Simple Questions</h1>
                         <img src="./../images/gk-quizz/type.png" alt="study" class="que-type-img">
                     </div>
 
@@ -519,8 +519,7 @@
                             <h1 class="result" id="result15"></h1>
                             <div class="check-btn-container">
                                 <button type="button" id="check-answer15" class="check-btn"
-                                    onclick="checkAnswer('question15', 'quiz-form15', 'result15')">Check
-                                    Answer</button>
+                                    onclick="checkAnswer('question15', 'quiz-form15', 'result15')" >Check Answer</button>
                             </div>
                         </div>
 
@@ -540,9 +539,11 @@
         </div>
 
 
-        <div id="final-score-container" class="hide"></div>
+        <div id="final-score-container" class="hide">
+            <h1 id="score-container"></h1>
+            <p id="score-line"></p>
+        </div>
         
-
         <div id="certificate" class="certificate-container-main">
             <div class="certificate-container">
                 <h1>Certificate of Achievement</h1>
