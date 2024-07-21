@@ -34,10 +34,9 @@ body {
 }
 
 .login-container {
-
     padding: 30px 40px;
+    width: 100%;
 }
-
 
 
 .feedback-heading {
@@ -169,6 +168,46 @@ textarea {
 
 #name-review {
     margin-top: 12px;
+}
+@media screen and  (max-width:600px) 
+{
+    .main-container {
+        margin-top: 160px;
+    }
+    
+    .regester-login-container {
+        width: 95%;
+        flex-wrap: wrap;
+        
+    }
+    .login-container {
+        padding: 30px 0px;
+    }
+    
+    .container-image img {
+    
+        height: 300px;
+        /* mix-blend-mode: normal; */
+    
+    
+    }
+     .imogi-container img {
+        
+        height: 50px;
+    }
+
+    .review-main-container {
+      
+        flex-wrap: wrap;
+      
+    }
+    
+    .review-container-1 {
+    
+        margin-bottom: 20px;
+    
+    }
+    
 }
 
 
