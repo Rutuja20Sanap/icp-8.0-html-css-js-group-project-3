@@ -254,6 +254,14 @@ label input[type="radio"] {
 .certificate-p{
     font-size: 20px;
 }
+
+#date{
+    font-size: 15px;
+}
+
+#organizerName{
+    font-size: 15px;
+}
 .form-container {
     margin-top: 20px;
 }
