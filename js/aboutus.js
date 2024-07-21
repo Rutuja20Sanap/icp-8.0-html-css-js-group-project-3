@@ -43,6 +43,45 @@ function countWords() {
       document.getElementById('result2').innerText = `Wrong! There are ${wordsCount} words.`;
   }
 }
+function initializeTrafficSignal() {
+  const colors = ['red', 'green', 'yellow'];
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+  document.getElementById('signal').style.backgroundColor = randomColor;
+}
+
+function chooseSignal(color) {
+  const signalColor = document.getElementById('signal').style.backgroundColor;
+
+  if (color === signalColor) {
+      document.getElementById('result3').innerText = `Correct! The signal is ${signalColor}.`;
+  } else {
+      document.getElementById('result3').innerText = `Wrong! The signal is ${signalColor}.`;
+  }
+}
+function initializeGuessNumber() {
+  const numberOptions = document.getElementById('numberOptions');
+  numberOptions.innerHTML = '';
+
+  const randomNumber = Math.floor(Math.random() * 10) + 1;
+  window.correctNumber = randomNumber;
+
+  for (let i = 1; i <= 10; i++) {
+      const button = document.createElement('button');
+      button.innerText = i;
+      button.onclick = function () {
+          guessNumber(i);
+      };
+      numberOptions.appendChild(button);
+  }
+}
+
+function guessNumber(userGuess) {
+  if (userGuess === window.correctNumber) {
+      document.getElementById('result4').innerText = `Correct! The number was ${window.correctNumber}.`;
+  } else {
+      document.getElementById('result4').innerText = `Wrong! The number was ${window.correctNumber}. Try again!`;
+  }
+}
 
 function resetAlphabetsGame() {
   document.getElementById('textInput').value = '';
@@ -53,4 +92,13 @@ function resetWordsGame() {
   document.getElementById('sentenceInput').value = '';
   document.getElementById('wordCountInput').value = '';
   document.getElementById('result2').innerText = '';
+}
+function resetSignalGame() {
+  initializeTrafficSignal();
+  document.getElementById('result3').innerText = '';
+}
+
+function resetGuessNumberGame() {
+  initializeGuessNumber();
+  document.getElementById('result4').innerText = '';
 }
