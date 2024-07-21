@@ -1,5 +1,5 @@
+/* General Styles */
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 @font-face {
@@ -132,11 +132,11 @@ label input[type="radio"] {
     height: 40px;
 }
 
-
 .navigation-buttons {
     display: flex;
     justify-content: center;
     margin: 10px 0;
+    /* Ensure buttons are visible and properly spaced */
 }
 
 .navigation-buttons button {
@@ -147,6 +147,7 @@ label input[type="radio"] {
     color: white;
     cursor: pointer;
     border-radius: 25px 10px;
+    display: inline-block;
 }
 
 .navigation-buttons button:disabled {
@@ -154,12 +155,17 @@ label input[type="radio"] {
     cursor: not-allowed;
 }
 
+/* Ensure buttons have some space around them */
+.navigation-buttons button {
+    margin: 0 5px;
+}
+
 .hide {
     display: none;
 }
 
 .show {
-    display: block;
+    display: block !important;
 }
 
 .res-contanier {
@@ -205,11 +211,12 @@ label input[type="radio"] {
     line-height: 1.5;
 }
 
-
+/* Previous styles for the score container */
 .res-btn {
     margin-top: 30px;
 }
 
+/* Updated styling for the certificate container */
 .certificate-container-main {
     display: block;
     max-width: 650px;
@@ -217,13 +224,17 @@ label input[type="radio"] {
     padding: 10px 30px;
 }
 
-.certificate-container {
-    padding: 10px;
+#certificate {
+    padding: 20px;
     background-color: #ffffff;
     max-width: 750px;
-    margin-top: 50px;
     text-align: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 10px; /* Optional: Rounded corners */
+    margin: 10px auto;
+    display: none; /* Initially hidden, shown via JS */
 }
 
 .certificate-container h1 {
@@ -232,36 +243,43 @@ label input[type="radio"] {
 }
 
 .certificate-container h2 {
-    font-size: 2em;
+    font-size: 35px;
     color: #ff6347;
 }
 
 .certificate-container h3 {
-    font-size: 1.5em;
+    font-size: 30px;
     color: #1e90ff;
 }
-
+.certificate-p{
+    font-size: 20px;
+}
 .form-container {
     margin-top: 20px;
 }
 
-
 .certificate-input {
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
+    gap: 10px;
+}
 
+.certificate-input input {
+    padding: 10px;
+    width: calc(50% - 22px); /* Responsive input width with margin */
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .certificate-button {
-    display: block;
-    margin: 10px auto;
     padding: 10px 20px;
-    font-size: 1em;
+    border: none;
     background-color: #4CAF50;
     color: #fff;
-    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    font-size: 16px;
 }
 
 .certificate-button:hover {
@@ -269,30 +287,32 @@ label input[type="radio"] {
 }
 
 .certificate-container-main {
-    display: none;
+    display: none; /* Hidden by default */
 }
 
 .certificate-container-main.show {
-    display: block;
+    display: block; /* Show when needed */
 }
 
+
+/* Styling for the final score container */
 #final-score-container {
-    padding: 10px;
+    padding: 20px;
     background-color: #ffffff;
     max-width: 750px;
-    margin: 0;
     text-align: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    /* Center the container */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 10px; /* Optional: Rounded corners */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none; /* Initially hidden, shown via JS */
 }
 
+/* Media Queries for Responsive Design */
 @media (max-width: 600px) {
     .header-name {
         font-size: 30px;
@@ -301,7 +321,6 @@ label input[type="radio"] {
 
     .header-img {
         height: 30px;
-        margin-top: 0;
     }
 
     .tagline {
@@ -354,24 +373,16 @@ label input[type="radio"] {
 
     .quiz-form {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 20px;
     }
 
     .opt-img {
-        height: 25px;
+        height: 30px;
     }
-
-
-    .final-score-container {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .header-name {
         font-size: 40px;
         margin-top: 7px;
@@ -379,7 +390,6 @@ label input[type="radio"] {
 
     .header-img {
         height: 35px;
-        margin-top: 0;
     }
 
     .tagline {
@@ -403,13 +413,13 @@ label input[type="radio"] {
     }
 
     .que-type {
-        font-size: 20px;
+        font-size: 25px;
         margin-top: 7px;
         margin-bottom: 0;
     }
 
     .que-type-img {
-        height: 35px;
+        height: 40px;
     }
 
     .question {
@@ -437,12 +447,11 @@ label input[type="radio"] {
     }
 
     .opt-img {
-        height: 30px;
+        height: 35px;
     }
-
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
     .header-name {
         font-size: 50px;
         margin-top: 7px;
@@ -509,6 +518,4 @@ label input[type="radio"] {
     .opt-img {
         height: 35px;
     }
-
-
 }

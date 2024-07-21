@@ -129,6 +129,7 @@ function showFinalScore() {
     });
 
     document.getElementById('section-name').style.display = 'none';
+    document.getElementById('Quiz-container').style.display = 'none';
 
     // Show the final score section and update content
     const scoreContainer = document.getElementById('final-score-container');
