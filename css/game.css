@@ -52,3 +52,15 @@
             transform-style: preserve-3d;
             perspective: 500px;
             }
+            .item{
+                position: relative;
+                width: 100px;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 3em;
+                background:#fff;
+                transform: rotatey(180deg);
+                transition: 0.25s;
+                }
