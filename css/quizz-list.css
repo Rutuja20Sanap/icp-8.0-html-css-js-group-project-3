@@ -85,16 +85,6 @@ p {
     margin-top: 20px;
 }
 
-footer {
-    text-align: center;
-    padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
-    margin-top: auto;
-    color: var(--white);
-}
-
 /* Media Queries */
 @media (max-width: 1200px) {
     .category {
