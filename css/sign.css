@@ -20,7 +20,7 @@ body {
 
 .container-image img {
 
-    height: 450px;
+    height: 400px;
     mix-blend-mode: multiply;
 
 
@@ -135,16 +135,20 @@ hr{
 
 .register-input-fields h1 {
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: gray;
 }
 
 .register-input-fields button {
 
+    background-color: #fff;
     display: flex;
     align-items: center;
     width: 100%;
-    border: none;
+    border: 1px solid rgb(224, 224, 224);
     padding: 9px 15px;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 }
 .register-input-fields button img{
     height: 16px;
