@@ -1,9 +1,12 @@
-
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
 .main-container {}
 
 .regester-login-container {
@@ -13,14 +16,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 15px 20px;
 }
 
 .container-image {}
 
 .container-image img {
 
-    height: 450px;
+    height: 400px;
     mix-blend-mode: multiply;
 
 
@@ -28,24 +31,28 @@ body {
 
 .login-container {
 
-    padding: 30px 40px;
+    padding: 10px 40px;
 }
 
 .login-input-fields {}
 
 .login-input-fields h1 {
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: gray;
  
 }
 
 .login-input-fields button {
-
+    background-color: #fff;
     display: flex;
     align-items: center;
     width: 100%;
-    border: none;
+    border: 1px solid rgb(224, 224, 224);
     padding: 9px 15px;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    cursor: pointer;
 }
 .login-input-fields button img{
     height: 16px;
@@ -67,7 +74,7 @@ hr{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 .hr-field span {
@@ -79,12 +86,12 @@ hr{
 .input-fields {
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
+    margin-top: 10px;
 
 }
 
 .input-fields input {
-    margin-top: 25px;
+    margin-top: 20px;
     padding: 13px;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     border: none;
@@ -93,27 +100,34 @@ hr{
 
 .checkbox {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: space-between;  
     margin-top: 20px;
     gap: 70px;
+    font-size: 12px;
 }
+.checkbox-text{
+    display: flex;
+    
+}
+
 
 .login-btn {
     width: fit-content;
-    margin: 25px auto;
+    margin: 0px auto;
 }
 
 .login-btn button {
     padding: 8px 136px;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-    border: none;
+    border: 1px solid rgb(224, 224, 224);
+    cursor: pointer;
 }
 
 .last-text {
     display: block;
     text-align: center;
     margin-top: 15px;
+    font-size: 13px;
 }
 
 
@@ -126,16 +140,21 @@ hr{
 
 .register-input-fields h1 {
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: gray;
 }
 
 .register-input-fields button {
 
+    background-color: #fff;
     display: flex;
     align-items: center;
     width: 100%;
-    border: none;
+    border: 1px solid rgb(224, 224, 224);
     padding: 9px 15px;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    cursor: pointer;
 }
 .register-input-fields button img{
     height: 16px;
@@ -147,10 +166,24 @@ hr{
 }
 .sign-up-btn{
     width: fit-content;
-    margin: 25px auto;
+    margin: 0px auto;
+    border: 1px solid rgb(224, 224, 224);
 }
 .sign-up-btn button {
     padding: 8px 144px;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-    border: none;
+    border: 1px solid rgb(224, 224, 224);
+    cursor: pointer;
+}
+a{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+#login-text,#login-text2{
+    
+    font-size: 15px;
+    padding: 15px 0px;
+
+
 }

@@ -1,10 +1,15 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
 }
 
 .main-container {
-    margin-top: 200px;
+    margin-top: 160px;
 }
 
 .regester-login-container {
@@ -14,11 +19,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 50px;
+    padding: 10px 50px;
     padding-top: 10px;
+
 }
 
-.container-image {}
 
 .container-image img {
 
@@ -32,76 +37,139 @@ body {
 
     padding: 30px 40px;
 }
-.login-input-fields{
-  
-}
-.feedback-heading{
+
+
+
+.feedback-heading {
     display: flex;
     align-items: center;
 }
-.feedback-heading img{
+
+.feedback-heading img {
     height: 18px;
 }
-.feedback-main-heading{
-text-align: center;
+
+.feedback-main-heading {
+    text-align: center;
 }
-.hr{
-    margin: 10px 0px;
+
+.hr {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    margin: 15px 0px;
+
 }
-.imogi-container{
+
+.imogi-container {
     display: flex;
     justify-content: space-around;
 }
-.imogi-container img{
-     display: block;
-     margin-top: 20px;
-        height: 60px;
+
+.imogi-container img {
+    display: block;
+    margin-top: 20px;
+    height: 60px;
 }
-.text-box{
+
+.text-box {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
 }
-.text-box button{
-    margin-top: 20px;
+
+.text-box button {
     border: none;
     padding: 10px 0px;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
-textarea{
+
+textarea {
     resize: vertical;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     border: 1px solid rgb(202, 198, 198);
     padding: 5px;
+    padding-left: 13px;
+    padding-top: 13px;
 }
-.review-main-container-heading{
+
+.review-main-container-heading {
     text-align: center;
+    margin-top: -50px;
 }
-.review-main-container{
-           display: flex;
-           justify-content: space-evenly;
-         
+
+.review-main-container-heading p {
+    font-size: 15px;
 }
-.review-container-1{
-         
-          width: 300px;
-          border: 1px solid rgb(202, 198, 198);
-          box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
-          padding: 10px ;
-        
+
+.review-main-container-heading h1 {
+    font-size: 20px;
+    line-height: 40px;
+
 }
-.review-container-1 img{
+
+.review-main-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.review-container-1 {
+
+    width: 300px;
+    border: 1px solid rgb(202, 198, 198);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.review-container-1 img {
     display: block;
     margin: 0 auto;
-} 
-.review-container-1 p{
+}
+
+.icon-img-size {
+    height: 30px;
+}
+
+.review-container-1 p {
     text-align: center;
 }
-.person-image{
-    height: 50px;
+
+.person-image {
+    height: 45px;
     border-radius: 50%;
 }
 
+#review-1 {
+    display: none;
+}
+
+#input-boxx {
+    margin-top: 25px;
+    padding: 13px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: none;
+    border: 1px solid rgb(202, 198, 198);
+}
+
+#msg-show {
+    font-size: 15px;
+    padding: 15px 0px;
+}
+
+#review-text {
+    margin: 12px 0px;
+    text-align: center;
+}
+
+#name-review {
+    margin-top: 12px;
+}
 
 
 
