@@ -36,10 +36,31 @@ function showNextQuestion() {
         const nextQuestion = document.querySelector(`#que${activeQuestionIndex + 1}`);
         nextQuestion.classList.add('active-question');
         certificate.classList.remove('show-certificate');
-        
+
     } else {
         showScore();
         certificate.classList.add('show-certificate');
+    }
+}
+
+function showPrevQuestion() {
+    // Ensure that activeQuestionIndex is not less than 0
+    if (activeQuestionIndex > 0) {
+
+        // Select the current question using activeQuestionIndex to match the selectors in HTML
+        const currentQuestion = document.querySelector(`#que${activeQuestionIndex + 1}`);
+        if (currentQuestion) {
+            currentQuestion.classList.remove('active-question');
+        }
+
+        // Decrement the activeQuestionIndex to point to the previous question
+        activeQuestionIndex--;
+
+        // Select the previous question using activeQuestionIndex to match the selectors in  HTML
+        const prevQuestion = document.querySelector(`#que${activeQuestionIndex + 1}`);
+        if (prevQuestion) {
+            prevQuestion.classList.add('active-question');
+        }
     }
 }
 
@@ -52,10 +73,10 @@ function showScore() {
 
     scoreSection.classList.add('active-question');
     //Display the User's Score
-    scorecontent.innerText= `Your score: ${score}/${totalQuestions} `;
+    scorecontent.innerText = `Your score: ${score}/${totalQuestions} `;
     //Display Custom Message Based on Score
     if (score < 8) {
-        scorecontent.innerText= `Your score: ${score}/${totalQuestions}\n Ooh, not quite! Don't worry, you can always take the quiz and try again!`;
+        scorecontent.innerText = `Your score: ${score}/${totalQuestions}\n Ooh, not quite! Don't worry, you can always take the quiz and try again!`;
 
     } else if (score > 8 && score < 13) {
         scorecontent.innerText = `Your score: ${score}/${totalQuestions}\n Very good! You love your emojis, no doubt about that! We bet you can get a perfect score, though - why not try again and see?`;
@@ -64,8 +85,8 @@ function showScore() {
     }
 }
 
-  //handleAnswer which takes an event object as a parameter. 
-  function handleAnswer(event) {
+//handleAnswer which takes an event object as a parameter. 
+function handleAnswer(event) {
     //Get the Selected Element
     const selected = event.target;
     //Check if the Selected Element has a Name and is Checked
@@ -88,12 +109,39 @@ document.querySelectorAll('.nxt-btn').forEach(button => {
     button.addEventListener('click', showNextQuestion);
 });
 
+/*document.addEventListener('DOMContentLoaded', () => {
+    const nextButtons = document.querySelectorAll('.nxt-btn');
+    const backButtons = document.querySelectorAll('.back-btn');
+
+    nextButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const currentQuestion = button.closest('.question');
+            const nextQuestionId = button.getAttribute('data-next');
+            const nextQuestion = document.getElementById(nextQuestionId);
+
+            currentQuestion.classList.remove('active-question');
+            nextQuestion.classList.add('active-question');
+        });
+    });
+
+    backButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const currentQuestion = button.closest('.question');
+            const prevQuestionId = button.getAttribute('data-prev');
+            const prevQuestion = document.getElementById(prevQuestionId);
+
+            currentQuestion.classList.remove('active-question');
+            prevQuestion.classList.add('active-question');
+        });
+    });
+});*/
+
 function generateCertificate() {
     //Selects the element with the ID inputname and iinput date.
-  const name = document.getElementById('inputName').value;
-  const date = document.getElementById('inputDate').value;
-  //set the innertext of child name and date
-  document.getElementById('childName').innerText = name;
-  document.getElementById('date').innerText = date;
-  
+    const name = document.getElementById('inputName').value;
+    const date = document.getElementById('inputDate').value;
+    //set the innertext of child name and date
+    document.getElementById('childName').innerText = name;
+    document.getElementById('date').innerText = date;
+
 }
