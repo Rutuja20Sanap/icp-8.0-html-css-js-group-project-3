@@ -1,11 +1,10 @@
-const emojis = ['😍', '😎', '😎', '😇', '😍', '😇', '😈', '😈','😍', '😎', '😎', '😇', '😍', '😇', '😈', '😈'];
+const emojis = [`🐶`,`🐭`,`🦊`,`🐻`,`🦁`,`🐸`,`🐷`,`🐥`,`🐶`,`🐭`,`🦊`,`🐻`,`🦁`,`🐸`,`🐷`,`🐥`];
 
 let shuf_emojis = emojis.sort(shuffleEmojis)
 
 function shuffleEmojis(){
 if(Math.random() > 0.5){
  return  2 ;
- 
 }else{
     return -1 ;
 }
@@ -31,7 +30,7 @@ for (let i = 0; i < emojis.length; i++) {
                     document.querySelectorAll('.boxOpen')[0].classList.remove('boxOpen');
 
                     if (document.querySelectorAll('.boxMatch').length == emojis.length) {
-                        alert('win');
+                        alert('YOU WON THE GAME');
                     }
 
                 } else {
