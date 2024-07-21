@@ -28,7 +28,7 @@ body {
 
 .login-container {
 
-    padding: 30px 40px;
+    padding: 10px 40px;
 }
 
 .login-input-fields {}
@@ -39,13 +39,13 @@ body {
 }
 
 .login-input-fields button {
-
+    background-color: #fff;
     display: flex;
     align-items: center;
     width: 100%;
-    border: none;
+    border: 1px solid rgb(224, 224, 224);
     padding: 9px 15px;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 }
 .login-input-fields button img{
     height: 16px;
