@@ -8,3 +8,5 @@ function ChangeEmojies(){
         return -1 ;
     }  
 }
+for (let i = 0; i < emojis.length; i++) {
+} 
