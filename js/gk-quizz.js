@@ -34,6 +34,8 @@ function showInitialQuestion() {
         }
     });
 
+    document.getElementById('certificate-input').style.display = 'none';
+
     document.getElementById('next-button').style.display = 'inline-block';
     document.getElementById('prev-button').style.display = 'none';
     document.getElementById('finish-button').style.display = 'none';
@@ -130,6 +132,7 @@ function showFinalScore() {
 
     document.getElementById('section-name').style.display = 'none';
     document.getElementById('Quiz-container').style.display = 'none';
+    document.getElementById('certificate-input').style.display = 'inline-block';
 
     // Show the final score section and update content
     const scoreContainer = document.getElementById('final-score-container');

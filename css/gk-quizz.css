@@ -253,6 +253,7 @@ label input[type="radio"] {
 }
 .certificate-p{
     font-size: 20px;
+    margin-bottom: 0px;
 }
 
 #date{
@@ -264,8 +265,13 @@ label input[type="radio"] {
 }
 .form-container {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
-
+.certificate-input{
+    margin-left: auto;
+    margin-right: auto;
+}
 .certificate-input {
     margin-bottom: 20px;
     display: flex;
