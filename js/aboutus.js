@@ -32,9 +32,25 @@ function countAlphabets() {
       document.getElementById('result1').innerText = `Wrong! There are ${alphabetsCount} alphabets.`;
   }
 }
+function countWords() {
+  const sentence = document.getElementById('sentenceInput').value;
+  const wordsCount = sentence.trim().split(/\s+/).length;
+  const userAnswer = parseInt(document.getElementById('wordCountInput').value, 10);
+
+  if (userAnswer === wordsCount) {
+      document.getElementById('result2').innerText = 'Correct!';
+  } else {
+      document.getElementById('result2').innerText = `Wrong! There are ${wordsCount} words.`;
+  }
+}
 
 function resetAlphabetsGame() {
   document.getElementById('textInput').value = '';
   document.getElementById('alphabetCountInput').value = '';
   document.getElementById('result1').innerText = '';
+}
+function resetWordsGame() {
+  document.getElementById('sentenceInput').value = '';
+  document.getElementById('wordCountInput').value = '';
+  document.getElementById('result2').innerText = '';
 }

@@ -290,11 +290,20 @@
     border-radius: 10px;
 }
 #game-submit{
-    font-size: 18px;
+    font-size: 15px;
     padding: 8px;
     background-color: #83D4A9;
     border-radius: 10px;
 }
-#result1{
+#result1 {
+    font-size: 20px;
+}
+#result2 {
+    font-size: 20px;
+}
+#result3 {
+    font-size: 20px;
+}
+#result4 {
     font-size: 20px;
 }
