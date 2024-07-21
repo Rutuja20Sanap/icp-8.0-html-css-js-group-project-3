@@ -4,13 +4,6 @@
     box-sizing: border-box;
     font-family: monospace;
     }
-    body{
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #0a3c2f;
-    }
     .contant{
     margin-top: 100px;
    cursor: pointer;
