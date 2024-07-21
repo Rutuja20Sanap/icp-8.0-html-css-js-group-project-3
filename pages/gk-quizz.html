@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
     <link rel="stylesheet" href="./../css/header.css">
     <link rel="stylesheet" href="./../css/footer.css">
+    <style>
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -524,8 +533,9 @@
                         </div>
 
                         <div class="navigation-buttons">
-                            <button id="prev-question" class="nav-btn" onclick="navigateQuestion(0,-1)">Previous</button>
-                            <button id="next-question" class="nav-btn" onclick="navigateQuestion(0,1)">Next</button>
+                            <button id="prev-button" class="hide" onclick="navigateQuestion(0,-1)">Previous</button>
+                            <button id="next-button" onclick="navigateQuestion(0,1)">Next</button>
+                            <button id="finish-button" class="hide" onclick="showFinalScore()">Finish</button>
                         </div>
                     </section>
 
@@ -602,6 +612,7 @@
         <!--footer section end-->
 
         <script src="./../js/gk-quizz.js"></script>
+        <script src="./../js/header.js"></script>
     </body>
 
 </html>
