@@ -149,7 +149,7 @@ section{
 }
 
 .dark-theme {
-    background-color: #121212;
+    background-color: #222222;
     color: #ffffff;
 
 }
@@ -223,7 +223,7 @@ margin-right:100px;
     filter: drop-shadow(10px 10px 60px #e28605);
   }
   .dark-theme header{
-    background-color: #1d1c1c;
+    background-color: #0b0b0b;
   }
   .dark-theme .dropdown-content{
     background-color: #1d1c1c;
