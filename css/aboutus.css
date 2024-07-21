@@ -1,0 +1,334 @@
+
+
+.top_content {
+    padding: 40px;
+    text-align: center;
+    height: 400px;
+    width: 65%;
+    margin: 100px auto;
+    /* border: 1px solid black; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 30px;
+}
+
+
+#head {
+    margin-top: -30px;
+    font-size: 60px;
+    color: #94458d;
+}
+
+#welcome {
+    margin-top: -10px;
+    margin-bottom: 25px;
+    font-size: 40px;
+    color: #524e66;
+    font-weight: 500;
+}
+
+#para {
+    color: #524e66;
+    font-size: 20px;
+}
+
+.imgcontainer {
+    display: flex;
+    margin: auto;
+    height: 450px;
+    width: 90%;
+    /* border: 1px solid black; */
+}
+
+#kidimg {
+
+    object-fit: contain;
+    width: 40%;
+
+}
+
+#kid {
+    margin: 0 25px;
+    border-radius: 40px;
+}
+
+#kid2 {
+    margin-left: 10px;
+    width: 25%;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+.content {
+    height: 500px;
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid black; */
+    background-color: #83D4A9;
+    border-radius: 30px;
+}
+
+.who {
+    height: 70%;
+    font-size: 20px;
+    width: 500px;
+    /* border: 1px solid black; */
+}
+
+#team-img {
+    margin-left: 20px;
+    height: 80%;
+    border-radius: 30px;
+
+}
+
+.who b {
+    font-size: 50px;
+    font-weight: 600;
+    color: #00967D;
+
+}
+
+/* #btn-learn {
+    margin: 25px;
+    background-color: #F5E7D3;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 25px;
+
+} */
+
+.ourmission {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px auto;
+    height: 500px;
+    width: 90%;
+    /* border: 1px solid black; */
+
+}
+
+.mission-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+    width: 40%;
+    /* border: 1px solid black; */
+
+}
+
+#mission-img {
+    height: 100%;
+    border-radius: 25px;
+}
+
+.miss-img {
+    height: 400px;
+
+}
+
+.mission-content b {
+    font-size: 60px;
+    font-weight: 600;
+    color: #94458d;
+}
+
+.mission-content p {
+    font-size: 25px;
+}
+
+.offer {
+    height: 500px;
+    width: 90%;
+    border: 1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 30px auto;
+    border-radius: 30px;
+    /* background-color: ; */
+
+}
+
+.offer h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #83D4A9;
+
+}
+
+/* .offer p{
+    font-size: 25px;
+    text-align: center;
+    color: #524e66;
+    
+} */
+.cards {
+ 
+    margin: auto;
+    display: flex;
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid black; */
+
+}
+
+.card {
+    border-radius: 40px;
+    padding: 30px;
+    margin: auto;
+    height: 73%;
+    width: 28%;
+    background-color: #F5E7D3;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover{
+    border: none;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin-top: -12px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #94458d;
+
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #524e66;
+}
+.thim-container{
+    margin-top: 120px;
+    display: flex;
+   height: 100px;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   /* border: 1px solid black; */
+
+}
+#theme-icn{
+    height: 60px;
+    width: fit-content;
+}
+#icon{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    height: 100px;
+    width: fit-content;
+    
+}
+
+#icon button{
+    background-color: antiquewhite;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    
+}
+.bg-dark{
+    background-color: rgb(145, 252, 252);
+}
+.bg-light{
+    background-color: white;
+}
+
+.game-demo{
+    padding-bottom: 20px;
+    margin: 50px auto;
+    width: 85%;
+    height: auto;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+}
+.game-demo h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    color: #94458d;
+}
+.eligibility-check{
+    padding: 5px;
+    font-size: 20px;
+    height: 50px;
+    width: 30%;
+    /* border: 1px solid black; */
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #F5E7D3;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#btn-eligible{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #83D4A9;
+
+}
+#age{
+    font-size: 16px;
+}
+.games{
+    margin: auto;
+    height: auto;
+    width: 80%;
+    border: 1px solid white;
+   
+}
+.game-card{
+    text-align: center;
+    padding: 10px;
+    margin: 40px auto;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 50%;
+    border-radius: 10px;
+}
+#game-submit{
+    font-size: 15px;
+    padding: 8px;
+    background-color: #83D4A9;
+    border-radius: 10px;
+}
+#result1 {
+    font-size: 20px;
+}
+#result2 {
+    font-size: 20px;
+}
+#result3 {
+    font-size: 20px;
+}
+#result4 {
+    font-size: 20px;
+}
+#signal {
+    margin: 10px auto;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+#game4 button{
+    margin-top: 10px;
+    padding: 15px;
+    margin: 4px;
+
+    background-color: #83D4A9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.games input{
+    padding: 8px;
+    border-radius: 10px;
+    
+}

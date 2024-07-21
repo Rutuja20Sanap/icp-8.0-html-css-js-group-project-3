@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="../css/aboutus.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+
+
+    <script src="../js/aboutus.js"></script>
+
+
+
+</head>
+<header class="header">
+    <div class="container">
+        <div class="animative-movement">
+            <span id="name1">K</span><span id="name2">I</span><span id="name3">D</span><span id="name4">S</span>
+        </div>
+        <h2>Quizzland</h2>
+    </div>
+
+    <nav class="navbar">
+        <a href="/index.html">Home</a>
+        <a href="./aboutus.html">About</a>
+        <div class="dropdown">
+            <a class="dropbtn" href="#">Quizz Category<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="./educational-quizz.html">Educational Quizz</a>
+                <a href="./fun-quizz.html">Fun Quizz</a>
+                <a href="./gk-quizz.html">General Knowledge Quizz</a>
+            </div>
+        </div>
+        <a href="./contactus.html">Contact Us</a>
+        <a href="./feedback.html">Feedback</a>
+    </nav>
+
+    <div class="icons">
+        <a href="./sign.html">
+            <div class="fas fa-user" id="login-btn"></div>
+        </a>
+    </div>
+    <div class="nav__logo">
+        <a href="#">
+            <img src="../icon/moon.png" alt="dark mode" class="logo-dark" id="dark-logo" onclick="toggleTheme()" />
+            <img src="../icon/sun.png" alt="light mode" class="logo-light" id="light-logo" onclick="toggleTheme()" />
+        </a>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" id="close-btn">
+            <img src="../icon/arrow.png" alt="Close" width="30px">
+        </div>
+        <nav class="sidebar-navbar">
+            <a class="menu-item active-menu" href="/index.html"> <img src="../icon/home.png" class="menu-icon">
+                <span class="menu-text">Home</span></a>
+            <a class="menu-item" href="./aboutus.html">
+                <img src="../icon/aboutus.png" class="menu-icon">
+                <span class="menu-text">AboutUs</span>
+            </a>
+            <a class="menu-item" href="./quizz-list.html">
+                <img src="../icon/quizz.png" class="menu-icon">
+                <span class="menu-text">Quizz-List</span>
+            </a>
+            <a class="menu-item" href="./contactus.html">
+                <img src="../icon/contact-us.png" class="menu-icon">
+                <span class="menu-text">Contact</span>
+            </a>
+            <a class="menu-item" href="./feedback.html">
+                <img src="../icon/feedback.png" class="menu-icon">
+                <span class="menu-text">Feedback</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Open Sidebar Menu Button -->
+    <div class="menu-open" id="menu-open">
+        <img src="../icon/menus.png" alt="Menu" width="30px">
+    </div>
+</header>
+
+<body class="bg-light" id="main-body">
+
+    <div class="thim-container">
+        <div id="icon" onclick="enabledark()">
+            <img src="../images/aboutus/Moon.png" alt="img" id="theme-icn">
+            <button>Dark mode</button>
+        </div>
+
+        <div id="icon" onclick="enablelight()">
+            <img src="../images/aboutus/Sun.png" alt="img" id="theme-icn">
+            <button>Light mode</button>
+        </div>
+
+    </div>
+
+    <div class="top_content">
+        <h1 id="head">About Us</h1>
+
+        <p id="welcome">Welcome to QuizzLand</p>
+
+        <p id="para">At QuizzyKids, we believe that learning should be fun, engaging, and accessible for all children.
+            Our mission
+            is to provide a platform where young learners can explore the wonders of math and English through
+            interactive quizzes designed specifically for their age and skill levels.</p>
+    </div>
+
+    <div class="imgcontainer">
+        <img src="../images/aboutus/kidsimg.webp" alt="img" id="kidimg">
+        <img src="../images/aboutus/kid2.jpg" alt="img" id="kid">
+        <img src="../images/aboutus/kid3.jpeg" alt="img" id="kid2">
+
+    </div>
+
+    <div class="content">
+        <img src="../images/aboutus/developers-team.png" alt="img" id="team-img">
+        <div class="who">
+            <b>Who We Are</b>
+            <p>We are a passionate team of educators, developers, and designers dedicated to creating a positive and
+                enriching online learning environment. With years of experience in education and technology, we aim to
+                make learning an enjoyable journey for every child.</p>
+            <!-- <button id="btn-learn">Learn More</button> -->
+        </div>
+
+    </div>
+
+    <div class="ourmission">
+        <div class="mission-content">
+            <b>Our Vision</b>
+            <p>Our vision is to spark a love for learning in children by making educational content interactive and
+                enjoyable. We strive to help children build a strong foundation in math and English, preparing them for
+                a bright academic future.</p>
+        </div>
+        <div class="miss-img">
+            <img src="../images/aboutus/mission-img.png" alt="img" id="mission-img">
+        </div>
+    </div>
+    <div class="offer">
+        <h1>what we offer</h1>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Engaging Quizzes</h3>
+                <p>Our quizzes cover a wide range of topics in math and English, designed to challenge and entertain
+                    young minds.</p>
+            </div>
+            <div class="card">
+                <h3>Age-Appropriate Content</h3>
+                <p>Each quiz is tailored to be age-appropriate, ensuring that children learn at their own pace and
+                    level.</p>
+            </div>
+            <div class="card">
+                <h3>Interactive Learning</h3>
+                <p>We use fun graphics, animations, and rewards to keep children motivated and engaged throughout their
+                    learning experience.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="game-demo">
+        <h1>Try our games</h1>
+        <div class="eligibility-check">
+            <label for="age">Enter your age:</label>
+            <input type="number" id="age" min="1" max="100">
+            <button onclick="checkEligibility()" id="btn-eligible">Check Eligibility</button>
+
+           
+        </div>
+        <div class="games" id="games" style="display: none;">
+
+            <div class="game-card" id="game1">
+                <h2>Count Alphabets</h2>
+                <input type="text" id="textInput" placeholder="Type something">
+                <input type="number" id="alphabetCountInput" placeholder="How many alphabets?">
+                <button onclick="countAlphabets()" id="game-submit">Submit</button>
+                <p id="result1"></p>
+                <button onclick="resetAlphabetsGame()" id="game-submit">Try Again</button>
+            </div>
+            <div class="game-card" id="game2">
+                <h2>Count Words</h2>
+                <input type="text" id="sentenceInput" placeholder="Type a sentence">
+                <input type="number" id="wordCountInput" placeholder="How many words?">
+                <button onclick="countWords()" id="game-submit">Submit</button>
+                <p id="result2"></p>
+                <button onclick="resetWordsGame()" id="game-submit">Try Again</button>
+            </div>
+            <div class="game-card" id="game3">
+                <h2> Identify Traffic Signal</h2>
+                <div id="signal"></div>
+                <button onclick="chooseSignal('red')">Red</button>
+                <button onclick="chooseSignal('green')">Green</button>
+                <button onclick="chooseSignal('yellow')">Yellow</button>
+                <p id="result3"></p>
+                <button onclick="resetSignalGame()" id="game-submit">Try Again</button>
+            </div>
+            <div class="game-card" id="game4">
+                <h2>Guess the Number</h2>
+                <div id="numberOptions"></div>
+                <p id="result4"></p>
+                <button onclick="resetGuessNumberGame()" id="game-submit">Try Again</button>
+            </div>
+        
+
+            
+        </div>
+
+         
+
+
+          
+    </div>
+
+    <!--footer section start-->
+    <div class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <span id="name1">K</span><span id="name2">I</span><span id="name3">D</span><span
+                    id="name4">S</span><br><span id="text">Quizzland</span>
+
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="./aboutus.html"><i class="fas fa-caret-right"></i>Aboutus</a>
+                <a href="./quizz-list.html"><i class="fas fa-caret-right"></i>Quizz-List</a>
+                <a href="./contactus.html"><i class="fas fa-caret-right"></i>Contactus</a>
+                <a href="./feedback.html"><i class="fas fa-caret-right"></i>Feedback</a>
+            </div>
+
+            <div class="box1" id="social-media">
+                <h3>Connect With Us</h3>
+                <a href="https://www.linkedin.com/in/rutuja-sanap-07096b284/" target="blank"><img
+                        src="../icon/linkdln.png" height="40px" class="social-media"></a>
+                <a href="https://github.com/Rutuja20Sanap"><img src="../icon/github.png" height="40px"
+                        class="social-media"></a>
+                <a href="tel:+919322396408"><img src="../icon/whatsapps.png" height="40px"></a>
+                <a href="#"><img src="../icon/facebook.png" height="40px" class="social-media"></a>
+            </div>
+
+            <div class="box ">
+                <h3>Get in touch</h3>
+                <a href="https://wa.me/+919322396408" target="_blank"><i class="fas fa-caret-right"></i>+91
+                    9322396408</a>
+                <a href="https://wa.me/+917350371422" target="_blank"><i class="fas fa-caret-right"></i>+91
+                    7350371422</a>
+                <a href="https://wa.me/+918010825030" target="_blank"><i class="fas fa-caret-right"></i>+91
+                    918010825030</a>
+                <a href="https://wa.me/+919860312523" target="_blank"><i class="fas fa-caret-right"></i>+91
+                    9860312523</a>
+                <a href="https://wa.me/+918390074057" target="_blank"><i class="fas fa-caret-right"></i>+91
+                    8390074057</a>
+
+                <a href="mailto:dnyaneshwarsanap293@gmail.com"><i class="fas fa-caret-right"></i>kidsquizzland.com</a>
+            </div>
+
+
+        </div>
+
+        <div class="credit"> &copy; copyright @ 2024 by <span>Kids Quizzland</span></div>
+    </div>
+    <!--footer section end-->
+
+</body>
+<script src="../js/header.js"></script>
+
+</html>
