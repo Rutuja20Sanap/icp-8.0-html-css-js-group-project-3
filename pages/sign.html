@@ -5,14 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Here</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
     <link rel="stylesheet" href="../css/sign.css">
+    <link rel="stylesheet" href="../css/header.css">
 </head>
 <body>
+
+     <!--header section start -->
+
+     <body id="body" class="light-theme">
+        <header class="header">
+            <div class="container">
+                <div class="animative-movement">
+                    <span id="name1">K</span><span id="name2">I</span><span id="name3">D</span><span id="name4">S</span>
+                </div>
+                <h2>Quizzland</h2>
+            </div>
+
+            <nav class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="../pages/aboutus.html">About</a>
+                <div class="dropdown">
+                    <a class="dropbtn" href="#">Quizz Category<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../pages/educational-quizz.html">Educational Quizz</a>
+                        <a href="../pages/fun-quizz.html">Fun Quizz</a>
+                        <a href="../pages/gk-quizz.html">General Knowledge Quizz</a>
+                    </div>
+                </div>
+                <a href="../pages/contactus.html">Contact Us</a>
+                <a href="../pages/feedback.html">Feedback</a>
+            </nav>
+
+            <div class="icons">
+                <a href="../pages/sign.html">
+                    <div class="fas fa-user" id="login-btn"></div>
+                </a>
+            </div>
+            <div class="nav__logo">
+                <a href="#">
+                    <img src="../icon/moon.png" alt="dark mode" class="logo-dark" id="dark-logo"
+                        onclick="toggleTheme()" />
+                    <img src="../icon/sun.png" alt="light mode" class="logo-light" id="light-logo"
+                        onclick="toggleTheme()" />
+                </a>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <div class="close-btn" id="close-btn">
+                    <img src="../icon/arrow.png" alt="Close" width="30px">
+                </div>
+                <nav class="sidebar-navbar">
+                    <a class="menu-item active-menu" href="../index.html"> <img src="../icon/home.png"
+                            class="menu-icon">
+                        <span class="menu-text">Home</span></a>
+                    <a class="menu-item" href="../pages/aboutus.html">
+                        <img src="../icon/aboutus.png" class="menu-icon">
+                        <span class="menu-text">AboutUs</span>
+                    </a>
+                    <a class="menu-item" href="../pages/quizz-list.html">
+                        <img src="../icon/quizz.png" class="menu-icon">
+                        <span class="menu-text">Quizz-List</span>
+                    </a>
+                    <a class="menu-item" href="../pages/contactus.html">
+                        <img src="../icon/contact-us.png" class="menu-icon">
+                        <span class="menu-text">Contact</span>
+                    </a>
+                    <a class="menu-item" href="../pages/feedback.html">
+                        <img src="../icon/feedback.png" class="menu-icon">
+                        <span class="menu-text">Feedback</span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Open Sidebar Menu Button -->
+            <div class="menu-open" id="menu-open">
+                <img src="../icon/menus.png" alt="Menu" width="30px">
+            </div>
+        </header>
+        <!--header section end-->
+
+
+
+
+
+
     <section>
         <div class="main-container">
             <div class="regester-login-container">
                 <div class="container-image">
-                    <img src="../images/feedback-signin/Mobile-login.jpg" alt="">
+                    <img src="../images/feedback-signin/m2ga_ad7s_220905.jpg" alt="">
                 </div>
                 <div class="login-container">
                     <div class="login-input-fields" id="Login-page">
@@ -31,26 +113,28 @@
                             </div>
                         </div>
                         <div class="input-fields">
-                            <input type="text" placeholder="Your Email">
-                            <input type="password" placeholder="Your Password">
+                            <input type="text" placeholder="Your Email" id="email">
+                            <input type="password" placeholder="Your Password" id="password">
                         </div>
+
                         <div class="checkbox">
-                            <div>
-                                <input type="checkbox" id="check">Keep me logged in
+                            <div class="checkbox-text">
+                                <input type="checkbox" id="check">&nbsp;Keep me logged in
                             </div>
-                            <a href="#">Forgot Password</a>
+                            <a >Forgot Password</a>
                         </div>
+                        <p id="login-text"></p>
                         <div class="login-btn">
-                            <button>Log in</button>
+                            <button onclick="Login()">Log in</button>
                         </div>
                         <hr>
-                        <span class="last-text" onclick="showRegister()">Don't have an account yet? Sign Up</span>
+                        <span class="last-text" onclick="showRegister()">Don't have an account yet? <a>Sign Up</a></span>
                     </div>
 
 
                     
                     <div class="register-input-fields" id="Register-page">
-                        <h1>Welcome To</h1>
+                        <h1>Welcome To Kids Quizland</h1>
                         <button>
                             <img src="../images/feedback-signin/google.png">
                             <span>Sign up with Google</span>
@@ -65,17 +149,18 @@
                             </div>
                         </div>
                         <div class="input-fields">
-                            <input type="text" placeholder="Your Name">
-                            <input type="text" placeholder="Your Email">
-                            <input type="password" placeholder="Your Password">
+                            <input type="text" placeholder="Your Name" id="name">
+                            <input type="text" placeholder="Your Email" id="email">
+                            <input type="password" placeholder="Your Password" id="password">
                         </div>
                         <div class="checkbox">
-                            <div>
-                                <input type="checkbox" id="check">By Signing up I agree with the terms and Conditions
+                            <div class="checkbox-text">
+                                <input type="checkbox" id="check">&nbsp;I agree with the&nbsp;<a>terms and Conditions</a>
                             </div>
                         </div>
+                        <p id="login-text2"></p>
                         <div class="sign-up-btn">
-                            <button>Sign Up</button>
+                            <button type="submit" onclick="Register()">Sign Up</button>
                         </div>
                         <hr>
                         <span class="last-text" onclick="showLogin()">Already have an account? <a>Log in</a></span>
@@ -86,6 +171,7 @@
     </section>
 
     <script src="../js/sign.js"></script>
+    <script src="../js/header.js"></script>
 </body>
 
 </html>
