@@ -24,7 +24,10 @@ const allQuestions = [
 
 let currentQuestionIndexes = Array(allQuestions.length).fill(0);
 
+const titles = ["Simple Questions", "Medium Questions", "Hard Questions"];
+
 function showInitialQuestions() {
+    updateTitle(0);
     allQuestions.forEach((section, sectionIndex) => {
         section.forEach((question, questionIndex) => {
             if (questionIndex === 0) {
@@ -48,6 +51,7 @@ function showQuestion(sectionIndex, questionIndex) {
             question.classList.remove('show');
         }
     });
+    updateTitle(questionIndex);
 }
 
 function navigateQuestion(sectionIndex, direction) {
@@ -118,6 +122,12 @@ function restartQuiz() {
         });
     });
     showInitialQuestions();
+}
+
+function updateTitle(questionIndex) {
+    const titleElement = document.querySelector('.que-type');
+    const titleIndex = Math.floor(questionIndex / 5);
+    titleElement.innerText = titles[titleIndex];
 }
 
 showInitialQuestions();
