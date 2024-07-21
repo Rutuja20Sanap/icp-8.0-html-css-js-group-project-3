@@ -30,11 +30,11 @@ for (let i = 0; i < emojis.length; i++){
                     if (document.querySelector('.boxMatch').length == emojis.length) {
                         alert('win');
                     }
-                    else {
+                }else {
                         document.querySelector('.boxOpen')[1].classList.remove('boxOpen');
                         document.querySelector('.boxOpen')[0].classList.remove('boxOpen');
                     }
                 }
-                }
-    })
-} }
+                }, 500);
+    };
+} 
