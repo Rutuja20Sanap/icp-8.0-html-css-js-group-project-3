@@ -18,24 +18,28 @@ function Login() {
 
     if(email.value == 0 || password.value == 0)
     {
-         loginText.innerText = 'Filled all Input';
+         loginText.innerText = 'Please Filled all Input';
+         loginText.style.color = 'red';
     }
     else{
-        loginText2.innerText = " Thank You ";
+        loginText.innerText = " Thank You 🙂 ";
+        loginText.style.color = 'green';
     }
 }
 function Register() {
     const name = document.getElementById('name');
     const email = document.getElementById('email');
     const password = document.getElementById('password');
-    const loginText2 = document.getElementById('login-text2');
+    const loginTexts = document.getElementById('login-text2');
 
     if(name.value == 0 || email.value == 0 || password.value == 0)
     {
-        loginText2.innerText = 'Filled all Input';
-        
+        loginTexts.innerText = 'Please Filled all Input';
+        loginTexts.style.color = 'red';
     }
     else{
-        loginText2.innerText = " Thank You ";
+        loginTexts.innerText = 'Thank You 🙂';
+        loginTexts.style.color = 'green';
     }
 }
+

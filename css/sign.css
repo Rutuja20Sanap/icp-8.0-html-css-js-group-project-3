@@ -113,7 +113,7 @@ hr{
 
 .login-btn {
     width: fit-content;
-    margin: 25px auto;
+    margin: 0px auto;
 }
 
 .login-btn button {
@@ -166,7 +166,7 @@ hr{
 }
 .sign-up-btn{
     width: fit-content;
-    margin: 25px auto;
+    margin: 0px auto;
     border: 1px solid rgb(224, 224, 224);
 }
 .sign-up-btn button {
@@ -179,4 +179,11 @@ a{
     text-decoration: underline;
     color: blue;
     cursor: pointer;
+}
+#login-text,#login-text2{
+    
+    font-size: 15px;
+    padding: 15px 0px;
+
+
 }
