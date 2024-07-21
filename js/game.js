@@ -10,4 +10,6 @@ function ChangeEmojies(){
 }
 for (let i = 0; i < emojis.length; i++){
     let box = document.createElement('div');
+    box.className = 'item';
+    box.innerHTML = shuf_emojis[i];
 } 
