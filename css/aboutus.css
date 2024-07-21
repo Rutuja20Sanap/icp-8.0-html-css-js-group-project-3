@@ -280,3 +280,21 @@
     width: 80%;
     border: 1px solid black;
 }
+.game-card{
+    text-align: center;
+    padding: 10px;
+    margin: 40px auto;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 50%;
+    border-radius: 10px;
+}
+#game-submit{
+    font-size: 18px;
+    padding: 8px;
+    background-color: #83D4A9;
+    border-radius: 10px;
+}
+#result1{
+    font-size: 20px;
+}
