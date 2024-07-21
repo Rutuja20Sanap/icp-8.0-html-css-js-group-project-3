@@ -8,12 +8,7 @@ function Light(active) {
             lightElement.src = '../images/feedback-signin/star.png';
         }
     }
-    // const lightElement = document.getElementById(active);
-    // if (lightElement.src.includes('star-color.png')) {
-    //     lightElement.src = '../images/feedback-signin/star.png';
-    // } else {
-    //     lightElement.src = '../images/feedback-signin/star-color.png';
-    // }
+  
 }
 
 function Submit() {
