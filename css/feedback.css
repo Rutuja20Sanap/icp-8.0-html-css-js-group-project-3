@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    margin-top: 160px;
+}
+
+.regester-login-container {
+    width: fit-content;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    padding-top: 10px;
+   
+}
+
+.container-image {}
+
+.container-image img {
+
+    height: 400px;
+    mix-blend-mode: multiply;
+
+
+}
+
+.login-container {
+
+    padding: 30px 40px;
+}
+.login-input-fields{
+  
+}
+.feedback-heading{
+    display: flex;
+    align-items: center;
+}
+.feedback-heading img{
+    height: 18px;
+}
+.feedback-main-heading{
+text-align: center;
+}
+.hr{
+    margin: 15px 0px;
+}
+.imogi-container{
+    display: flex;
+    justify-content: space-around;
+}
+.imogi-container img{
+     display: block;
+     margin-top: 20px;
+        height: 60px;
+}
+.text-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.text-box button{
+    margin-top: 20px;
+    border: none;
+    padding: 10px 0px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+textarea{
+    resize: vertical;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: 1px solid rgb(202, 198, 198);
+    padding: 5px;
+}
+.review-main-container-heading{
+    text-align: center;
+    margin-top: -50px;
+}
+.review-main-container-heading p{
+       font-size: 15px;
+}
+.review-main-container-heading h1{
+    font-size: 20px;
+    line-height: 40px;
+
+}
+.review-main-container{
+           display: flex;
+           justify-content: space-evenly;
+           margin-top: 60px;
+           margin-bottom: 80px;
+}
+.review-container-1{
+         
+          width: 300px;
+          border: 1px solid rgb(202, 198, 198);
+          box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+          padding: 10px ;
+        
+}
+.review-container-1 img{
+    display: block;
+    margin: 0 auto;
+} 
+.review-container-1 p{
+    text-align: center;
+}
+.person-image{
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+
+
