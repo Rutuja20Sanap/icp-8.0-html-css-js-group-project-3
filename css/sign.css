@@ -52,6 +52,7 @@ body {
     border: 1px solid rgb(224, 224, 224);
     padding: 9px 15px;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    cursor: pointer;
 }
 .login-input-fields button img{
     height: 16px;
@@ -119,6 +120,7 @@ hr{
     padding: 8px 136px;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     border: 1px solid rgb(224, 224, 224);
+    cursor: pointer;
 }
 
 .last-text {
@@ -152,6 +154,7 @@ hr{
     border: 1px solid rgb(224, 224, 224);
     padding: 9px 15px;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    cursor: pointer;
 }
 .register-input-fields button img{
     height: 16px;
@@ -170,8 +173,10 @@ hr{
     padding: 8px 144px;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     border: 1px solid rgb(224, 224, 224);
+    cursor: pointer;
 }
 a{
     text-decoration: underline;
     color: blue;
+    cursor: pointer;
 }
