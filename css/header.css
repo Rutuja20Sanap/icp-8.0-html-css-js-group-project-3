@@ -436,7 +436,7 @@ margin-bottom: 10px;
     }
   
   /* desktop devices*/
-  @media (min-width:991px) and (max-width:1200px){
+  @media (min-width:991px) and (min-width:1200px){
     .menu-open{
         display:none ;
     }
