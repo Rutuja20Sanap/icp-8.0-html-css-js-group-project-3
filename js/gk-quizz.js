@@ -8,16 +8,12 @@ const allQuestions = [
         document.getElementById('question2'),
         document.getElementById('question3'),
         document.getElementById('question4'),
-        document.getElementById('question5')
-    ],
-    [
+        document.getElementById('question5'),
         document.getElementById('question6'),
         document.getElementById('question7'),
         document.getElementById('question8'),
         document.getElementById('question9'),
-        document.getElementById('question10')
-    ],
-    [
+        document.getElementById('question10'),
         document.getElementById('question11'),
         document.getElementById('question12'),
         document.getElementById('question13'),
