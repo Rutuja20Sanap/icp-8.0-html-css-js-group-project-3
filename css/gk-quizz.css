@@ -71,12 +71,13 @@
 }
 
 .question {
-    width: 700px;
-    border: 2px solid black;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    position: relative;
 }
 
 .question {
@@ -99,6 +100,10 @@
     padding-top: 10px;
 }
 
+label {
+    display: block;
+    margin-bottom: 10px; /* Adds space between each label */
+}
 .quiz-form {
     text-align: center;
     font-size: 15px;
