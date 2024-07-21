@@ -20,6 +20,10 @@ for (let i = 0; i < emojis.length; i++){
 
             if (document.querySelectorAll('.boxOpen').length > 1) {
                 if (document.querySelector('.boxOpen')[0].innerHTML == document.querySelector('.boxOpen')[1].innerHTML) {
+
+                    document.querySelector('.boxOpen')[0].classList.add('boxMatch');
+                    document.querySelector('.boxOpen')[1].classList.add('boxMatch');
+
                 }}
     })
 } }
