@@ -6,26 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fun Quizz</title>
     <link rel="stylesheet" href="./../css/fun-quizz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <link rel="stylesheet" href="./../css/header.css">
+    <link rel="stylesheet" href="./../css/footer.css">
 </head>
 
-<body class="patrick-hand-regular">
-    <div class="header">
+<body id="body" class="light-theme " >
+    <!--header section start -->
+        <header class="header">
+            <div class="container">
+                <div class="animative-movement">
+                    <span id="name1">K</span><span id="name2">I</span><span id="name3">D</span><span id="name4">S</span>
+                </div>
+                <h2>Quizzland</h2>
+            </div>
+
+            <nav class="navbar">
+                <a href="./../index.html">Home</a>
+                <a href="aboutus.html">About</a>
+                <div class="dropdown">
+                    <a class="dropbtn" href="#">Quizz Category<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="./../pages/educational-quizz.html">Educational Quizz</a>
+                        <a href="./../pages/fun-quizz.html">Fun Quizz</a>
+                        <a href="./../pages/gk-quizz.html">General Knowledge Quizz</a>
+                    </div>
+                </div>
+                <a href="./contactus.html">Contact Us</a>
+                <a href="./feedback.html">Feedback</a>
+            </nav>
+
+            <div class="icons">
+                <a href="./sign.html">
+                    <div class="fas fa-user" id="login-btn"></div>
+                </a>
+            </div>
+            <div class="nav__logo">
+                <a href="#">
+                    <img src="./../icon/moon.png" alt="dark mode" class="logo-dark" id="dark-logo" onclick="toggleTheme()" />
+                    <img src="./../icon/sun.png" alt="light mode" class="logo-light" id="light-logo" onclick="toggleTheme()" />
+                </a>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <div class="close-btn" id="close-btn">
+                    <img src="./../icon/arrow.png" alt="Close" width="30px">
+                </div>
+                <nav class="sidebar-navbar">
+                    <a class="menu-item active-menu" href="./../index.html"> <img src="./../icon/home.png" class="menu-icon">
+                        <span class="menu-text">Home</span></a>
+                    <a class="menu-item" href="./aboutus.html">
+                        <img src="./../icon/aboutus.png" class="menu-icon">
+                        <span class="menu-text">AboutUs</span>
+                    </a>
+                    <a class="menu-item" href="./quizz-list.html">
+                        <img src="./../icon/quizz.png" class="menu-icon">
+                        <span class="menu-text">Quizz-List</span>
+                    </a>
+                    <a class="menu-item" href="./contactus.html">
+                        <img src="./../icon/contact-us.png" class="menu-icon">
+                        <span class="menu-text">Contact</span>
+                    </a>
+                    <a class="menu-item" href="./feedback.html">
+                        <img src="./../icon/feedback.png" class="menu-icon">
+                        <span class="menu-text">Feedback</span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Open Sidebar Menu Button -->
+            <div class="menu-open" id="menu-open">
+                <img src="./../icon/menus.png" alt="Menu" width="30px">
+            </div>
+        </header>
+        <!--header section end-->
+
+        <!--fun-quizz section start--> 
+        <div class="fun-body">
+    <div class="heading ">
         <img src="./../images/fun-quizz/header-img.jpeg" />
         <h1>fun and thematic Quizzes</h1>
         <img src="./../images/fun-quizz/header-img.jpeg" />
     </div>
-    <div class="header2">
-        <h2>Explore and Learn:Quizzes for little Geniuses!</h2>
-    </div>
-    <div class="box">
+    <span class="heading2">
+        <h1>Explore and Learn:Quizzes for little Geniuses!</h1>
+    </span>
+    <div class="box-que">
         <img src="./../images/fun-quizz/header-img2.jpeg" />
-        <h1>Simple Questions </h1>
+        <h1>Moderate Questions </h1>
         <img src="./../images/fun-quizz/header-img2.jpeg" />
     </div>
-    <div class="container">
+    <div class="fun-container">
         <section id="que1" class="question active-question">
             <h1>Epic Emoji Emotion Quiz!</h1>
-            <h2> Question 1 of 15:</h2>
+            <h1> Question 1 of 15:</h1>
             <img src="./../images/fun-quizz/smile.webp" class="img">
             <p>Let's start off easy! What emotion do you associate with this?</p>
             <form>
@@ -55,7 +129,7 @@
 
         <section id="que2" class="question ">
             <h1>Epic Emoji Emotion Quiz!</h1>
-            <h2> Question 2 of 15:</h2>
+            <h1> Question 2 of 15:</h1>
             <img src="./../images/fun-quizz/sad.webp" class="img">
             <p>How about this one?</p>
             <form>
@@ -78,7 +152,7 @@
             </form>
             <div class="btn-count">
                 <div class="btn">
-                    <button class="nxt-btn" data-prev="que1">Back</button>
+                    <button class="nxt-btn" data-prev="que1">Previous</button>
                     <button class="nxt-btn" data-next="que3">Next</button>
                 </div>
             </div>
@@ -86,7 +160,7 @@
 
         <section id="que3" class="question">
             <h1>Epic Emoji Emotion Quiz!</h1>
-            <h2> Question 3 of 15:</h2>
+            <h1> Question 3 of 15:</h1>
             <img src="./../images/fun-quizz/angry.webp" class="img">
             <p>And how about this guy?</p>
             <form>
@@ -109,7 +183,7 @@
             </form>
             <div class="btn-count">
                 <div class="btn">
-                    <button class="back-btn" data-prev="que2">Back</button>
+                    <button class="back-btn" data-prev="que2">Previous</button>
                     <button class="nxt-btn" data-next="que4">Next</button>
                 </div>
             </div>
@@ -117,7 +191,7 @@
 
         <section id="que4" class="question">
             <h1>Epic Emoji Emotion Quiz!</h1>
-            <h2> Question 4 of 15:</h2>
+            <h1> Question 4 of 15:</h1>
             <img src="./../images/fun-quizz/confused.webp" class="img">
             <p>And this emoji?</p>
             <form>
@@ -140,7 +214,7 @@
             </form>
             <div class="btn-count">
                 <div class="btn">
-                    <button class="back-btn" data-prev="que3">Back</button>
+                    <button class="back-btn" data-prev="que3">Previous</button>
                     <button class="nxt-btn" data-next="que5">Next</button>
                 </div>
 
@@ -149,7 +223,7 @@
 
         <section id="que5" class="question">
             <h1>Epic Emoji Emotion Quiz!</h1>
-            <h2> Question 5 of 15:</h2>
+            <h1> Question 5 of 15:</h1>
             <img src="./../images/fun-quizz/relaxed.webp" class="img">
             <p>And how about this emoji?</p>
             <form>
@@ -172,7 +246,7 @@
             </form>
             <div class="btn-count">
                 <div class="btn">
-                    <button class="back-btn" data-prev="que4">Back</button>
+                    <button class="back-btn" data-prev="que4-1">Previous</button>
                     <button class="nxt-btn" data-next="que6">Next</button>
                 </div>
             </div>
@@ -180,7 +254,7 @@
 
         <section id="que6" class="question">
             <h1>Epic Emoji Emotion Quiz!</h1>
-            <h2> Question 6 of 15:</h2>
+            <h1> Question 6 of 15:</h1>
             <img src="./../images/fun-quizz/embarrassment.webp" class="img">
             <p>What's this emoji experiencing?</p>
             <form>
@@ -203,7 +277,7 @@
             </form>
             <div class="btn-count">
                 <div class="btn">
-                    <button class="back-btn" data-prev="que5">Back</button>
+                    <button class="back-btn" data-prev="que5">Previous</button>
                     <button class="nxt-btn" data-next="que7">Next</button>
                 </div>
             </div>
@@ -211,7 +285,7 @@
 
         <section id="que7" class="question">
             <h1>Epic Emoji Emotion Quiz!</h1>
-            <h2> Question 7 of 15:</h2>
+            <h1> Question 7 of 15:</h1>
             <img src="./../images/fun-quizz/scared.webp" class="img">
             <p>Eek! How do you think this emoji is feeling?</p>
             <form>
@@ -234,7 +308,7 @@
             </form>
             <div class="btn-count">
                 <div class="btn">
-                    <button class="back-btn" data-prev="que6">Back</button>
+                    <button class="back-btn" data-prev="que6">Previous</button>
                     <button class="nxt-btn" data-next="que8">Next</button>
                 </div>
 
@@ -243,7 +317,7 @@
 
         <section id="que8" class="question">
             <h1>Epic Emoji Emotion Quiz!</h1>
-            <h2> Question 8 of 15:</h2>
+            <h1> Question 8 of 15:</h1>
             <img src="./../images/fun-quizz/grumpy.webp" class="img">
             <p>How do you think THIS emoji is feeling?</p>
             <form>
@@ -266,7 +340,7 @@
             </form>
             <div class="btn-count">
                 <div class="btn">
-                    <button class="back-btn" data-prev="que7">Back</button>
+                    <button class="back-btn" data-prev="que7">Previous</button>
                     <button class="nxt-btn" data-next="que9">Next</button>
                 </div>
             </div>
@@ -274,7 +348,7 @@
 
         <section id="que9" class="question">
             <h1>Epic Emoji Emotion Quiz!</h1>
-            <h2> Question 9 of 15:</h2>
+            <h1> Question 9 of 15:</h1>
             <img src="./../images/fun-quizz/naughty.webp" class="img">
             <p>And this emoji?</p>
             <form>
@@ -297,7 +371,7 @@
             </form>
             <div class="btn-count">
                 <div class="btn">
-                    <button class="back-btn" data-prev="que8">Back</button>
+                    <button class="back-btn" data-prev="que8">Previous</button>
                     <button class="nxt-btn" data-next="que10">Next</button>
                 </div>
 
@@ -306,7 +380,7 @@
 
         <section id="que10" class="question">
             <h1>Epic Emoji Emotion Quiz!</h1>
-            <h2> Question 10 of 15:</h2>
+            <h1> Question 10 of 15:</h1>
             <img src="./../images/fun-quizz/sadpoop.webp" class="img">
             <p>And finally, what is this feeling?</p>
             <form>
@@ -330,7 +404,7 @@
             </form>
             <div class="btn-count">
                 <div class="btn">
-                    <button class="back-btn" data-prev="que9">Back</button>
+                    <button class="back-btn" data-prev="que9">Previous</button>
                     <button class="nxt-btn" data-next="que11">Next</button>
                 </div>
             </div>
@@ -338,7 +412,7 @@
 
         <section id="que11" class="question">
             <h1>Yum! It's The Food Emoji Quiz</h1>
-            <h2> Question 11 of 15:</h2>
+            <h1> Question 11 of 15:</h1>
             <img src="./../images/fun-quizz/starbucks1.webp" class="img">
             <p>Which food and drink place chain do these emojis represent? </p>
             <form>
@@ -361,7 +435,7 @@
             </form>
             <div class="btn-count">
                 <div class="btn">
-                    <button class="back-btn" data-prev="que10">Back</button>
+                    <button class="back-btn" data-prev="que10">Previous</button>
                     <button class="nxt-btn" data-next="que12">Next</button>
                 </div>
 
@@ -370,7 +444,7 @@
 
         <section id="que12" class="question">
             <h1>Yum! It's The Food Emoji Quiz</h1>
-            <h2> Question 12 of 15:</h2>
+            <h1> Question 12 of 15:</h1>
             <img src="./../images/fun-quizz/toad-in-the-hole1.webp" class="img">
             <p>Which British dish is this? </p>
             <form>
@@ -393,7 +467,7 @@
             </form>
             <div class="btn-count">
                 <div class="btn">
-                    <button class="back-btn" data-prev="que11">Back</button>
+                    <button class="back-btn" data-prev="que11">Previous</button>
                     <button class="nxt-btn" data-next="que13">Next</button>
                 </div>
 
@@ -402,7 +476,7 @@
 
         <section id="que13" class="question">
             <h1>Yum! It's The Food Emoji Quiz</h1>
-            <h2> Question 13 of 15:</h2>
+            <h1> Question 13 of 15:</h1>
             <img src="./../images/fun-quizz/Pear1.png" class="img">
             <p>Which fruit is this?</p>
             <form>
@@ -425,7 +499,7 @@
             </form>
             <div class="btn-count">
                 <div class="btn">
-                    <button class="back-btn" data-prev="que12">Back</button>
+                    <button class="back-btn" data-prev="que12">Previous</button>
                     <button class="nxt-btn" data-next="que14">Next</button>
                 </div>
 
@@ -434,7 +508,7 @@
 
         <section id="que14" class="question">
             <h1>Yum! It's The Food Emoji Quiz</h1>
-            <h2> Question 14 of 15:</h2>
+            <h1> Question 14 of 15:</h1>
             <img src="./../images/fun-quizz/pineapple1.png" class="img">
             <p>This one?</p>
             <form>
@@ -457,7 +531,7 @@
             </form>
             <div class="btn-count">
                 <div class="btn">
-                    <button class="back-btn" data-prev="que13">Back</button>
+                    <button class="back-btn" data-prev="que13">Previous</button>
                     <button class="nxt-btn" data-next="que15">Next</button>
                 </div>
             </div>
@@ -465,7 +539,7 @@
 
         <section id="que15" class="question">
             <h1>Yum! It's The Food Emoji Quiz</h1>
-            <h2> Question 15 of 15:</h2>
+            <h1> Question 15 of 15:</h1>
             <img src="./../images/fun-quizz/shepards-pie1.png" class="img">
             <p>Which food could this be?</p>
             <form>
@@ -488,7 +562,7 @@
             </form>
             <div class="btn-count">
                 <div class="btn">
-                    <button class="back-btn" data-prev="que14">Back</button>
+                    <button class="back-btn" data-prev="que14">Previous</button>
                     <button class="nxt-btn">Finish</button>
                 </div>
             </div>
@@ -499,7 +573,7 @@
             <p id="scoreText"></p>
         </section>
     </div>
-
+</div> 
     <div id="certificate" class="certificate-container-main">
         <div class="certificate-container">
             <h1>Certificate of Achievement</h1>
@@ -519,7 +593,54 @@
             <button class="certificate-button" onclick="generateCertificate()">Generate Certificate</button>
         </div>
     </div>
+     <!--footer section start-->
+     <div class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <span id="name1">K</span><span id="name2">I</span><span id="name3">D</span><span
+                    id="name4">S</span><br><span id="text">Quizzland</span>
+               
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="./aboutus.html"><i class="fas fa-caret-right"></i>Aboutus</a>
+                <a href="./quizz-list.html"><i class="fas fa-caret-right"></i>Quizz-List</a>
+                <a href="./contactus.html"><i class="fas fa-caret-right"></i>Contactus</a>
+                <a href="./feedback.html"><i class="fas fa-caret-right"></i>Feedback</a>
+            </div>
+
+            <div class="box1" id="social-media">
+                <h3>Connect With Us</h3>
+                <a href="https://www.linkedin.com/in/rutuja-sanap-07096b284/" target="blank"><img src="./../icon/linkdln.png"
+                        height="40px" class="social-media"></a>
+                <a href="https://github.com/Rutuja20Sanap"><img src="./../icon/github.png" height="40px"
+                        class="social-media"></a>
+                <a href="tel:+919322396408"><img src="./../icon/whatsapps.png" height="40px"></a>
+                <a href="#"><img src="./../icon/facebook.png" height="40px" class="social-media"></a>
+            </div>
+
+            <div class="box ">
+                <h3>Get in touch</h3>
+                    <a href="https://wa.me/+919322396408" target="_blank"><i class="fas fa-caret-right"></i>+91 9322396408</a>
+                    <a href="https://wa.me/+917350371422" target="_blank"><i class="fas fa-caret-right"></i>+91 7350371422</a>        
+                    <a href="https://wa.me/+918010825030" target="_blank"><i class="fas fa-caret-right"></i>+91 8010825030</a>
+                    <a href="https://wa.me/+919860312523" target="_blank"><i class="fas fa-caret-right"></i>+91 9860312523</a>
+                    <a href="https://wa.me/+918390074057" target="_blank"><i class="fas fa-caret-right"></i>+91 8390074057</a>
+
+                    <a href="mailto:dnyaneshwarsanap293@gmail.com"><i class="fas fa-caret-right"></i>kidsquizzland.com</a>
+            </div>
+           
+
+        </div>
+
+        <div class="credit"> &copy; copyright @ 2024 by <span>Kids Quizzland</span></div>
+    </div>
+     <!--footer section end-->
     <script src="./../js/fun-quizz.js"></script>
+    <script src="./../js/header.js"></script>
 </body>
 
 </html>

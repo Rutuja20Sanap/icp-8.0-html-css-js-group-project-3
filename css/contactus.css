@@ -1,0 +1,64 @@
+body {
+    font-family: "Patrick Hand", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    margin: 0;
+}
+
+.contact-container {
+    background: #e534aa;
+    border-radius: 8px;
+    box-shadow: 15px 15px 15px rgba(9, 9, 9, 0.2);
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-container:hover{
+    width: 500;
+}
+
+
+.contact-container h2 {
+    margin-bottom: 30px;
+}
+
+.contact-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e534aa;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #ff0066;
+    color: rgb(238, 225, 225);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #090808;
+}
+
+.form-response {
+    margin-top: 20px;
+    color: #f7a636;
+}
+
+

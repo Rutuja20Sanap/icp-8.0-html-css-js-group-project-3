@@ -1,71 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+@font-face {
+    font-family: rutu;
+    src: url(../fonts/font-name.otf);
+}
+
 body {
     padding: 0;
-    margin: 0;
+    margin-top: 110px;
     font-family: Arial, sans-serif;
 }
 
-:root {
-    color: #f7a636;
-    color: #e534aa;
-    color: #1d1c1c;
-    color: #fff;
-    color: #55552b;
-    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1);
-}
-
-
-.patrick-hand-regular {
-    font-family: "Patrick Hand", cursive;
-    font-weight: 500;
-    font-size: larger;
-    font-style: normal;
-}
-
-.header {
-
+.heading {
     padding: 10px;
+    margin: 0;
     display: flex;
-
     justify-content: center;
+    align-items: center;
 }
 
-.header img {
+.heading img {
     margin: 0 120px;
     height: 150px;
     width: 250px;
+    border-radius: 30px;
 }
 
-.header h1 {
-    font-size: 30px;
+.heading h1 {
+    font-size: 50px;
+    color: #ff3399;
+    font-family: rutu;
 }
 
-.header2 h2 {
+.heading2 {
     text-align: center;
-    margin: 0;
-    padding: 0;
+    color: black;
 }
 
-.box {
+.box-que {
     display: flex;
     justify-content: center;
     padding: 15px;
-    margin: 50px;
-    border: 1px black solid;
+    margin: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 10px;
 }
 
-.box img {
+.box-que img {
     height: 100px;
     margin: 0 70px;
+    border-radius: 30px;
 }
 
-.box h1 {
+.box-que h1 {
     font-size: 30px;
     align-self: center;
 }
 
-.container {
+.fun-container {
     max-width: 600px;
-    margin: 10px auto;
+    margin: 60px auto;
     padding: 10px 20px;
     background-color: #ffffff;
     border-radius: 8px;
@@ -73,22 +69,26 @@ body {
     position: relative;
 }
 
-h1 {
+.fun-container .question h1 {
     font-size: 24px;
     color: darkslategrey;
     text-align: center;
 }
 
-h2 {
-    font-size: 20px;
-    color: darkslategrey;
+.fun-container .question h2 {
+    font-size: medium;
+
+}
+
+.fun-container .question p {
+    font-size: medium;
 }
 
 .img {
     display: block;
     margin: 10px auto;
-    height: 150px;
-    width: 250px;
+    height: 120px;
+    width: 210px;
     border-radius: 15px;
     transition: all .3s ease-in-out;
     cursor: zoom-out;
@@ -102,10 +102,15 @@ form {
     margin-top: 20px;
 }
 
+.dark-theme div {
+    color: black;
+}
+
 form div {
+    padding: 10px;
     margin-bottom: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-
+    font-size: medium;
 }
 
 .btn {
@@ -117,7 +122,7 @@ form div {
 button {
     padding: 10px 30px;
     border: none;
-    background-color: #990099;
+    background-color: #eb51b7;
     color: white;
     border-radius: 25px 10px;
     font-size: 16px;
@@ -153,27 +158,37 @@ button:hover {
 }
 
 .certificate-container {
+    border-radius: 10px;
     padding: 10px;
     background-color: #ffffff;
-    max-width: 750px;
+    max-width: 650px;
     margin-top: 50px;
     text-align: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .certificate-container h1 {
-    font-size: 2.5em;
+    font-size: 35px;
     color: #4CAF50;
+    margin-top: 20px;
 }
 
 .certificate-container h2 {
-    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
     color: #ff6347;
+    margin-top: 30px;
 }
 
 .certificate-container h3 {
-    font-size: 1.5em;
+    font-size: 30px;
     color: #1e90ff;
+    margin-top: 30px;
+}
+
+.certificate-container p {
+    font-size: 15px;
+    margin-top: 30px;
 }
 
 .form-container {
@@ -211,7 +226,7 @@ button:hover {
 }
 
 /* Hide by default */
-#certificate {
+/*#certificate {
     display: none;
 }
 
@@ -221,28 +236,75 @@ button:hover {
 
 }
 
+/*dark theme*/
+.dark-theme .heading img {
+    filter: drop-shadow(5px 5px 30px #e28605);
+}
+
+.dark-theme .box-que img {
+    filter: drop-shadow(5px 5px 30px #e28605);
+}
+
+.dark-theme .img {
+    filter: drop-shadow(5px 5px 30px #e28605);
+}
+
+.dark-theme .box-que h1 {
+    color: white;
+}
+
+.dark-theme .fun-container {
+    background-color: #4d4d4d;
+}
+
+.dark-theme button {
+    background: #f7a636;
+}
+
+.dark-theme form div {
+    color: white;
+    background-color: gray;
+}
+
+.dark-theme .fun-container h1 {
+    color: #fff;
+}
+
+.dark-theme .heading2 {
+    color: white;
+}
+
+.dark-theme .fun-container p {
+    color: #fff;
+}
+
+.dark-theme .fun-body {
+    background-color: #262626;
+    margin: 0;
+}
+
 @media screen and (max-width: 320px) {
-    .header {
+    .heading {
         padding: 10px;
     }
 
-    .header img {
+    .heading img {
         margin: 0 5px;
         height: 30px;
         width: 50px;
     }
 
-    .header h1 {
+    .heading h1 {
         font-size: 6px;
     }
 
-    .header2 h2 {
+    .heading2 h2 {
         margin: 0;
         padding: 0;
         font-size: 8px;
     }
 
-    .box {
+    .box-que {
         padding: 0;
         margin: 0;
     }
@@ -267,15 +329,19 @@ button:hover {
         color: darkslategrey;
     }
 
-    .container {
+    .fun-container {
         max-width: 450px;
         margin: 10px auto;
         padding: 10px 10px;
 
     }
 
-    .container p {
+    .fun-container h2 {
         font-size: 10px;
+    }
+
+    .fun-container .question p {
+        font-size: smaller;
     }
 
     .img {
@@ -317,38 +383,38 @@ button:hover {
 }
 
 @media screen and (min-width: 320.5px) and (max-width:450px) {
-    .header {
+    .heading {
         padding: 10px;
     }
 
-    .header img {
+    .heading img {
         margin: 0 5px;
         height: 30px;
         width: 50px;
     }
 
-    .header h1 {
+    .heading h1 {
         font-size: 10px;
     }
 
-    .header2 h2 {
+    .heading2 h2 {
         margin: 0;
         padding: 0;
         font-size: 10px;
     }
 
-    .box {
+    .box-que {
         padding: 0;
         margin: 20px;
     }
 
-    .box img {
+    .box-que img {
         height: 50px;
         margin: 0 15px;
         padding: 10px;
     }
 
-    .box h1 {
+    .box-que h1 {
         font-size: 10px;
     }
 
@@ -356,18 +422,18 @@ button:hover {
         font-size: 12px;
     }
 
-    h2 {
+    .h2 {
         font-size: 10px;
     }
 
-    .container {
+    .fun-container {
         max-width: 600px;
         margin: 10px 40px;
         padding: 10px 20px;
 
     }
 
-    .container p {
+    .fun-container h2 {
         font-size: 10px;
     }
 
@@ -401,40 +467,40 @@ button:hover {
 }
 
 @media screen and (min-width: 450.5px) and (max-width:702px) {
-    .header {
+    .heading {
         padding: 10px;
     }
 
-    .header img {
+    .heading img {
         margin: 0 5px;
         height: 80px;
         width: 100px;
     }
 
-    .header h1 {
+    .heading h1 {
         font-size: 15px;
     }
 
-    .header2 h2 {
+    .heading2 h2 {
         margin: 10px;
         padding: 10px;
     }
 
-    .box {
+    .box-que {
         padding: 10px;
         margin: 10px;
     }
 
-    .box img {
+    .box-que img {
         height: 100px;
         margin: 0;
     }
 
-    .box h1 {
+    .box-que h1 {
         font-size: 20px;
     }
 
-    .container {
+    .fun-container {
         max-width: 600px;
         margin: 10px 40px;
         padding: 10px 20px;
@@ -444,7 +510,7 @@ button:hover {
         font-size: 24px
     }
 
-    h2 {
+    .fun-container h2 {
         font-size: 20px;
     }
 
@@ -477,41 +543,41 @@ button:hover {
 }
 
 @media screen and (min-width: 702.5px) and (max-width:900px) {
-    .header {
+    .heading {
         padding: 10px;
     }
 
-    .header img {
+    .heading img {
         margin: 0 5px;
         height: 80px;
         width: 100px;
     }
 
-    .header h1 {
+    .heading h1 {
         font-size: 15px;
     }
 
-    .header2 h2 {
+    .heading2 h2 {
         margin: 10px;
         padding: 10px;
     }
 
-    .box {
+    .box-que {
         padding: 10px;
         margin: 10px;
 
     }
 
-    .box img {
+    .box-que img {
         height: 100px;
         margin: 0;
     }
 
-    .box h1 {
+    .box-que h1 {
         font-size: 20px;
     }
 
-    .container {
+    .fun-container {
         max-width: 600px;
         margin: 10px auto;
         padding: 10px 20px;
@@ -521,7 +587,7 @@ button:hover {
         font-size: 24px;
     }
 
-    h2 {
+    .fun-container h2 {
         font-size: 20px;
     }
 
@@ -550,41 +616,41 @@ button:hover {
 }
 
 @media screen and (min-width: 902.5px) and (max-width:1304px) {
-    .header {
+    .heading {
         padding: 10px;
     }
 
-    .header img {
+    .heading img {
         margin: 0 auto;
         height: 100px;
         width: 120px;
     }
 
-    .header h1 {
+    .heading h1 {
         font-size: 25px;
     }
 
-    .header2 h2 {
+    .heading2 h2 {
         margin: 10px;
         padding: 10px;
     }
 
-    .box {
+    .box-que {
         padding: 10px;
         margin: 10px;
     }
 
-    .box img {
+    .box-que img {
         height: 100px;
         margin: 0 70px;
     }
 
-    .box h1 {
+    .box-que h1 {
         font-size: 20px;
         align-self: center;
     }
 
-    .container {
+    .fun-container {
         max-width: 600px;
         margin: 10px auto;
         padding: 10px 20px;
@@ -594,7 +660,7 @@ button:hover {
         font-size: 24px;
     }
 
-    h2 {
+    .fun-container h2 {
         font-size: 20px;
     }
 
