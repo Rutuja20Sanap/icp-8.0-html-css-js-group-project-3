@@ -1,0 +1,63 @@
+body {
+    font-family: "Patrick Hand", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1cf9e;
+    margin: 0;
+}
+
+.contact-container {
+    background: #e534aa;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(9, 9, 9, 0.2);
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+}
+
+.background{
+    width: 400px;
+    height: 300px;
+    background-image: url("../images/contactus/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-container h2 {
+    margin-bottom: 30px;
+}
+
+.contact-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f60491;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: rgb(240, 219, 219);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #6a133e;
+}
+
+.form-response {
+    margin-top: 20px;
+    color: #ff0066;
+}
