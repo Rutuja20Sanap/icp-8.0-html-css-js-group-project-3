@@ -1,0 +1,468 @@
+
+
+.top_content {
+    padding: 40px;
+    text-align: center;
+    height: 400px;
+    width: 65%;
+    margin: 150px auto;
+    /* border: 1px solid black; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 30px;
+}
+
+
+#head {
+    margin-top: -30px;
+    font-size: 60px;
+    color: #f7a636;
+}
+
+#welcome {
+    margin-top: -10px;
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#para {
+    
+    font-size: 20px;
+}
+
+.imgcontainer {
+    display: flex;
+    margin: auto;
+    height: 450px;
+    width: 90%;
+    /* border: 1px solid black; */
+}
+
+#kidimg {
+
+    object-fit: contain;
+    width: 40%;
+
+}
+
+#kid {
+    margin: 0 25px;
+    border-radius: 40px;
+}
+
+#kid2 {
+    margin-left: 10px;
+    width: 25%;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+.content {
+    height: 500px;
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid black; */
+    /* background-color: #e534aa; */
+    border-radius: 30px;
+}
+
+.who {
+    height: 70%;
+    font-size: 20px;
+    width: 500px;
+    /* border: 1px solid black; */
+}
+
+#team-img {
+    margin-left: 20px;
+    height: 80%;
+    border-radius: 30px;
+
+}
+
+.who b {
+    font-size: 50px;
+    font-weight: 600;
+    color: #f7a636;
+
+}
+
+/* #btn-learn {
+    margin: 25px;
+    background-color: #F5E7D3;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 25px;
+
+} */
+
+.ourmission {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px auto;
+    height: 500px;
+    width: 90%;
+    /* border: 1px solid black; */
+}
+
+.mission-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+    width: 40%;
+    /* border: 1px solid black; */
+
+}
+
+#mission-img {
+    height: 100%;
+    border-radius: 25px;
+}
+
+.miss-img {
+    height: 400px;
+
+}
+
+.mission-content b {
+    font-size: 60px;
+    font-weight: 600;
+    color: #f7a636;
+}
+
+.mission-content p {
+    font-size: 25px;
+}
+
+.offer {
+    height: 500px;
+    width: 90%;
+    border: 1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 30px auto;
+    border-radius: 30px;
+    /* background-color: ; */
+
+}
+.dark-theme .offer{
+    border: 1px solid black;
+    box-shadow: white 0px 7px 29px 0px;
+
+}
+
+
+.offer h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #f7a636;
+
+}
+
+/* .offer p{
+    font-size: 25px;
+    text-align: center;
+    color: #524e66;
+    
+} */
+.cards {
+ 
+    margin: auto;
+    display: flex;
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid black; */
+
+}
+
+.card {
+    border-radius: 40px;
+    padding: 30px;
+    margin: auto;
+    height: 73%;
+    width: 28%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.dark-theme .card{
+    box-shadow: white 0px 4px 12px;
+}
+.dark-theme .card:hover{
+    box-shadow: white 0px 30px 60px -12px, white 0px 18px 36px -18px;
+}
+.card:hover{
+    border: none;
+    transform: translateY(-10px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.card h3 {
+    margin-top: -12px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #e534aa;
+
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+.thim-container{
+    margin-top: 120px;
+    display: flex;
+   height: 100px;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   /* border: 1px solid black; */
+
+}
+#theme-icn{
+    height: 60px;
+    width: fit-content;
+}
+#icon{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    height: 100px;
+    width: fit-content;
+    
+}
+
+#icon button{
+    background-color: antiquewhite;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    
+}
+.bg-dark{
+    background-color: rgb(145, 252, 252);
+}
+.bg-light{
+    background-color: white;
+}
+
+.game-demo{
+    padding-bottom: 20px;
+    margin: 50px auto;
+    width: 85%;
+    height: auto;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+}
+.dark-theme .game-demo{
+    box-shadow: white 0px 2px 8px 0px;
+
+}
+
+.game-demo h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    color: #f7a636;
+}
+.eligibility-check{
+    padding: 5px;
+    font-size: 20px;
+    height: 50px;
+    width: 30%;
+    /* border: 1px solid black; */
+    margin: 20px auto;
+    border-radius: 10px;
+    /* background-color: #F5E7D3; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.dark-theme .eligibility-check{
+    box-shadow: white 0px 6px 24px 0px, white 0px 0px 0px 1px;
+}
+#btn-eligible{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #83D4A9;
+
+}
+#age{
+    font-size: 16px;
+}
+.games{
+    margin: auto;
+    height: auto;
+    width: 80%;
+    border: 1px solid white;
+   
+}
+.dark-theme .games{
+    border: none
+}
+.game-card{
+    text-align: center;
+    padding: 10px;
+    margin: 40px auto;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 50%;
+    border-radius: 10px;
+}
+.dark-theme .game-card{
+    box-shadow: white 0px 5px 15px;
+}
+
+#game-submit{
+    font-size: 15px;
+    padding: 8px;
+    background-color: #83D4A9;
+    border-radius: 10px;
+}
+#result1 {
+    font-size: 20px;
+}
+#result2 {
+    font-size: 20px;
+}
+#result3 {
+    font-size: 20px;
+}
+#result4 {
+    font-size: 20px;
+}
+#signal {
+    margin: 10px auto;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+#game4 button{
+    margin-top: 10px;
+    padding: 15px;
+    margin: 4px;
+
+    background-color: #83D4A9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.games input{
+    padding: 8px;
+    border-radius: 10px;
+    
+}
+/* Small Devices */
+@media screen and (max-width: 600px){
+    .top_content{
+       
+        height: 500px;
+        width: 500px;
+    }
+    .imgcontainer{
+       
+        display: flex;
+        flex-direction: column;
+        
+        width:  auto;
+        height: 1000px;
+        /* border: 1px solid black */
+    }
+    #kidimg{
+        margin: 20px auto;
+        /* border: 1px solid black; */
+        height: 400px;
+        width: 400px;
+    }
+    #kid{
+        margin: 20px auto;
+        /* border: 1px solid black; */
+        height: 200px;
+        width: 300px;
+    }
+    #kid2{
+        margin: auto;
+        /* border: 1px solid black; */
+        height: 300px;
+        width: 400px;
+    }
+    .content{
+       height: auto;
+        width: 550px;
+        /* border: 1px solid black; */
+    }
+    #team-img{
+        height: 200px;
+    }
+    .who p{
+        margin: auto 20px;
+        font-size: 15px;
+    }
+    .who b{
+        font-size: 30px;
+        margin: auto 20px;
+    }
+    #mission-img{
+        height: 250px;
+    }
+    .ourmission{
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        height: 600px;
+    }
+    .mission-content b{
+        text-align: center;
+        width: 400px;
+        font-size: 40px;
+
+    }
+    .mission-content p{
+        /* border: 1px solid black; */
+        width: 400px;
+        font-size: 15px;
+        line-height: normal;
+    }
+    .offer{
+
+        height: 800px;
+        /* border: 1px solid black; */
+    }
+    .offer h1{
+        font-size: 30px;
+    }
+    .offer h3{
+        font-size: 20px;
+    }
+    .cards{
+        height: fit-content;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+    }
+    .cards p{
+        font-size: 15px;
+    }
+    .card{
+        margin: 20px auto;
+        height: 200px;
+        width: 400px;
+    }
+    .game-demo{
+        height: 250px;
+    }
+    .eligibility-check{
+        height: 130px;
+        width: 250px;
+       
+    }
+    #btn-eligible{
+        margin-top: 20px;
+    }
+    
+   
+}
