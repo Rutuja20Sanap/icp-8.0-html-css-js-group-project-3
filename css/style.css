@@ -142,6 +142,12 @@ h4{
     margin-left: 25%;
 
 }
+.activities .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
 .activities .box-container .box {
   height: 360px;
   width: 300px;
