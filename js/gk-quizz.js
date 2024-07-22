@@ -1,5 +1,5 @@
 let score = 0;
-let totalQuestions = 15; 
+let totalQuestions = 15;
 let answeredQuestions = 0;
 
 const allQuestions = [
@@ -20,9 +20,12 @@ const allQuestions = [
     document.getElementById('question15')
 ];
 
+const sectionTitles = ["Simple Questions", "Medium Questions", "Hard Questions"];
+
 let currentQuestionIndex = 0;
 
 function showInitialQuestion() {
+    updateSectionTitle();
     allQuestions.forEach((question, qIndex) => {
         if (qIndex === 0) {
             question.style.display = 'block';
@@ -31,12 +34,15 @@ function showInitialQuestion() {
         }
     });
 
+    document.getElementById('certificate-input').style.display = 'none';
+
     document.getElementById('next-button').style.display = 'inline-block';
     document.getElementById('prev-button').style.display = 'none';
     document.getElementById('finish-button').style.display = 'none';
 }
 
 function showQuestion(questionIndex) {
+    updateSectionTitle();
     allQuestions.forEach((question, qIndex) => {
         if (qIndex === questionIndex) {
             question.style.display = 'block';
@@ -76,6 +82,17 @@ function navigateQuestion(direction) {
     showQuestion(currentQuestionIndex);
 }
 
+function updateSectionTitle() {
+    const sectionTitle = document.getElementById('section-title');
+    if (currentQuestionIndex < 5) {
+        sectionTitle.innerText = sectionTitles[0];
+    } else if (currentQuestionIndex < 10) {
+        sectionTitle.innerText = sectionTitles[1];
+    } else {
+        sectionTitle.innerText = sectionTitles[2];
+    }
+}
+
 function checkAnswer(questionId, formId, resultId) {
     const questionDiv = document.getElementById(questionId);
     const correctAnswer = questionDiv.getAttribute('data-correct');
@@ -93,7 +110,7 @@ function checkAnswer(questionId, formId, resultId) {
     if (selectedAnswer) {
         if (selectedAnswer === correctAnswer) {
             resultElement.innerText = "Your Answer Is Correct!";
-            score += 2; 
+            score += 2;
         } else {
             resultElement.innerText = "Your Answer Is Incorrect!";
         }
@@ -113,24 +130,26 @@ function showFinalScore() {
         question.style.display = 'none';
     });
 
-    // Show the final score section and the certificate section
-    const mainContainer = document.getElementById('final-score-container');
-    mainContainer.innerHTML = `
-        <h2>Quiz Completed!</h2>
-        <p>Your final score is: ${score} out of ${totalQuestions * 2}</p>
-        <p id="score-line"></p>
-    `;
-    
-    // Get the score line element
-    const scorecontent = document.getElementById('score-line');
+    document.getElementById('section-name').style.display = 'none';
+    document.getElementById('Quiz-container').style.display = 'none';
+    document.getElementById('certificate-input').style.display = 'inline-block';
 
-    // Display Custom Message Based on Score
+    // Show the final score section and update content
+    const scoreContainer = document.getElementById('final-score-container');
+    const scoreContent = document.getElementById('score-container');
+    const scoreLine = document.getElementById('score-line');
+
+    scoreContainer.classList.remove('hide');
+    scoreContainer.classList.add('show');
+    
+    scoreContent.innerText = `Your final score is: ${score} out of ${totalQuestions * 2}`;
+    
     if (score < 8) {
-        scorecontent.innerText = `Your score: ${score}/${totalQuestions * 2}\nOoh, not quite! Don't worry, you can always take the quiz and try again!`;
+        scoreLine.innerText = `Your score: ${score}/${totalQuestions * 2}\nOoh, not quite! Don't worry, you can always take the quiz and try again!`;
     } else if (score >= 8 && score < 13) {
-        scorecontent.innerText = `Your score: ${score}/${totalQuestions * 2}\nVery good! You love your emojis, no doubt about that! We bet you can get a perfect score, though - why not try again and see?`;
+        scoreLine.innerText = `Your score: ${score}/${totalQuestions * 2}\nVery good! You love your emojis, no doubt about that! We bet you can get a perfect score, though - why not try again and see?`;
     } else {
-        scorecontent.innerText = `Your score: ${score}/${totalQuestions * 2}\nPerfect - you're totally in touch with your emotions! You're definitely the emoji expert in your friend group!`;
+        scoreLine.innerText = `Your score: ${score}/${totalQuestions * 2}\nPerfect - you're totally in touch with your emotions! You're definitely the emoji expert in your friend group!`;
     }
 
     // Show the certificate section
@@ -143,14 +162,13 @@ function showFinalScore() {
     document.getElementById('prev-button').style.display = 'none';
     document.getElementById('finish-button').style.display = 'none';
 }
+
 function generateCertificate() {
-    //Selects the element with the ID inputname and iinput date.
     const name = document.getElementById('inputName').value;
     const date = document.getElementById('inputDate').value;
-    //set the innertext of child name and date
+
     document.getElementById('childName').innerText = name;
     document.getElementById('date').innerText = date;
-
 }
 
 document.getElementById('next-button').addEventListener('click', () => navigateQuestion(1));
@@ -158,4 +176,3 @@ document.getElementById('prev-button').addEventListener('click', () => navigateQ
 document.getElementById('finish-button').addEventListener('click', showFinalScore);
 
 showInitialQuestion();
-
