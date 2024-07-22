@@ -21,6 +21,7 @@ body {
     align-items: center;
     padding: 10px 50px;
     padding-top: 10px;
+    border-radius: 5px;
 
 }
 
@@ -75,21 +76,35 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
+    border-radius: 10px;
 }
 
 .text-box button {
     border: none;
     padding: 10px 0px;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        font-size: 1.7rem;
+        display: inline-block;
+        border-radius: .5rem;
+        color: #fffefe;
+        background-color: #222222;
+        cursor: pointer;
+      
 }
+button:hover{
+        background: var(--orange);
+        color: var(--white);
+        border:none;
+      }
 
 textarea {
     resize: vertical;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-    border: 1px solid rgb(202, 198, 198);
+    border:0.5px solid rgb(84, 82, 82);
     padding: 5px;
     padding-left: 13px;
     padding-top: 13px;
+    border-radius: 5px;
 }
 
 .review-main-container-heading {
@@ -123,6 +138,7 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    border-radius: 5px;
 
 }
 
@@ -153,7 +169,8 @@ textarea {
     padding: 13px;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     border: none;
-    border: 1px solid rgb(202, 198, 198);
+    border:0.5px solid rgb(84, 82, 82);
+    border-radius: 5px;
 }
 
 #msg-show {
@@ -210,6 +227,61 @@ textarea {
     
 }
 
+body .dark-theme {
+    background-color: #222222;
+    color: #ffffff;
+}
+section .main-container .dark-theme{
+    background-color:#ffffff;
+    box-shadow: 0 0.125rem 0.25rem #ffffff;
+
+}
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-theme {
+    background-color: #222222;
+    color: #0e0e0e;
+}
+
+.dark-theme .regester-login-container {
+    box-shadow: 0 10px 30px #e28605;
+    background-color: #ffffff;
+}
 
 
+.dark-theme .review-container-1 {
+    border: 1px solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(255, 255, 255, .15);
+}
 
+.dark-theme .hr {
+    background-color: rgba(18, 18, 18, 0.5);
+}
+
+.dark-theme #textarea,
+.dark-theme #input-boxx {
+    border: .2rem solid var(--orange);
+    background-color: #ffffff;
+    color: #090909;
+}
+
+.dark-theme .text-box button{
+    border: .2rem solid var(--orange);
+}
+.dark-theme .review-container-1 #review-text {
+    color:#ffffff;
+}
+.dark-theme .review-main-container-heading
+{
+    color:#ffffff;
+}
+.dark-theme .review-container-1 p{
+    color:#ffffff;
+   
+}
+.dark-theme .review-container-1{
+    box-shadow: 0 8px 15px #e28605;
+}
