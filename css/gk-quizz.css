@@ -8,11 +8,11 @@
 }
 
 .Main-container {
-    margin-top: 160px;
+    margin-top: 120px;
 }
 
 .header-name {
-    font-size: 60px;
+    font-size: 70px;
     color: #ff3399;
     font-family: rutu;
     margin-top: 30px;
@@ -49,14 +49,18 @@
     gap: 60px;
 }
 
+.section-title{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
 .que-no {
-    margin-top: 20px;
     display: block;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 20px;
     max-width: 600px;
-    margin: 10px auto;
+    margin: 30px auto;
     padding: 10px 20px;
     background-color: #ffffff;
     border-radius: 8px;
@@ -136,6 +140,7 @@ label input[type="radio"] {
     display: flex;
     justify-content: center;
     margin: 10px 0;
+    gap: 20px;
     /* Ensure buttons are visible and properly spaced */
 }
 
@@ -146,13 +151,33 @@ label input[type="radio"] {
     background-color: #990099;
     color: white;
     cursor: pointer;
-    border-radius: 25px 10px;
+    border-radius: 10px 10px;
     display: inline-block;
 }
 
 .navigation-buttons button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+}
+#prev-button{
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#next-button{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#finish-button{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Ensure buttons have some space around them */
