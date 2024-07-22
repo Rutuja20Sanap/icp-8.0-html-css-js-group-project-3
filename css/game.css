@@ -55,7 +55,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: 2em;
+                font-size: 8em;
                 background:#fff;
                 transform: rotatey(180deg);
                 transition: 0.25s;
@@ -79,6 +79,18 @@
                      transform: rotatey(180deg);
                     }
 
+                    .dark-theme h1{
+                        color: #fff;
+                    }
+
+                    .dark-theme .reset{
+                        color: #f7a636;
+                        background-color:#1d1c1c;
+                    }
+                    .dark-theme .item{
+                        background-color: #1d1c1c;
+                    }
+                    
                       /* Media query */
 
                       /* Mobile devices*/
