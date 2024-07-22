@@ -411,17 +411,17 @@ margin-bottom: 10px;
   margin-bottom: 70px;
 }
   
-  .img-quizz .img-1{
-    width:200px;
-    border-radius: 50px;
-    box-shadow: 0 10px 30px #ff3399;
-    padding:2px;
-    background-color: #fff;
-    height:300px;
-    display:flex;
-    margin-right: 20%;
-    margin-left:0%;
-  }
+.img-quizz .img-1 {
+  width:10%;
+  margin-left: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px #ff3399;
+  background-color: #fff;
+  height:300px;
+}
   .img-quizz h4{
     font-size:30px;
     margin-top: 50px;
