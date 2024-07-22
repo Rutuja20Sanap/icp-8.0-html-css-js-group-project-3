@@ -119,3 +119,26 @@
     padding: 1rem 0;
     line-height: 2;
   }
+  .img-quizz {
+   
+    top:auto;
+    margin-left: 40px;
+    
+   
+}
+.img-quizz .img-1{
+    width:fit-content;
+    border-radius: 50px;
+   box-shadow: 0 10px 30px #ff3399 ;
+    padding:30px;
+    background-color: #fff;
+}
+h4{
+    position:absolute;
+    color:#ff3399 ;
+    margin-top: 140px;
+    font-size: 50px;
+    font-family: rutu;
+    margin-left: 25%;
+
+}
