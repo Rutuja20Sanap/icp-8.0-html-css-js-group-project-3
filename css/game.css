@@ -131,6 +131,24 @@ background-color: #1d1c1c;
    margin-top: 20px;
    padding: 15px 10px;
  }
+ .reset{
+  display: inline;
+  margin: auto;
+  display: flex;
+  margin-top: 20px;
+  padding: 15px 10px;
+}
+h1{
+display: block;
+text-align: none;
+margin:auto ;
+}
+.game{
+margin: auto;
+}
+.img{
+display: none;
+}
   }
 
 
@@ -150,4 +168,15 @@ background-color: #1d1c1c;
         margin-top: 20px;
         padding: 15px 10px;
       }
+     h1{
+      display: block;
+      text-align: none;
+      margin:auto ;
+     }
+     .game{
+      margin: auto;
+     }
+     .img{
+      display: none;
+     }
 }
