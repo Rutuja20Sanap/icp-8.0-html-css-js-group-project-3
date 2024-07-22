@@ -178,3 +178,9 @@ h4{
  #font-color{
   color:#0e0e0e;
  }
+ .dark-theme .activities .box-container .box{
+  box-shadow: 0 .6rem 1.5rem #e28605;
+}
+.dark-theme .activities .box-container .box .text-color{
+  color: #000000;
+}
