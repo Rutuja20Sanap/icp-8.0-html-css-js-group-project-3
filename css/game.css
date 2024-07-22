@@ -30,7 +30,7 @@
         text-transform: uppercase;
         cursor: pointer;
         font-weight: 600;
-       
+        margin-left: 120px;
         }
         .reset:focus{
             
@@ -76,3 +76,16 @@
                      transform: rotatey(180deg);
                 
                       }
+                      @media screen and (max-width: 600px) {
+                    
+                       .item{
+                        flex-wrap: wrap;
+                        width: auto;
+                        height: auto;
+                       } 
+
+                        }
+
+                        
+   
+                       
