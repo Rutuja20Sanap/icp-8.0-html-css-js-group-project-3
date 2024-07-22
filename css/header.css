@@ -363,27 +363,70 @@ margin-bottom: 10px;
     }
 /* Media query */
 
-   /*mobile devices*/
-   @media screen and  (max-width:600px) {
-    .menu-open{
-        top: 50px;
-    }
-    .nav__logo{
-        margin-right:50px;
-    }
-    .dark-theme .menu-open{
-        padding: 3px;
-        border-radius: 4px;
-        
-    }  
-    .container{
-        margin-left:20px;
-        margin-right: 0%;
-      } 
-      html{
-        font-size: 50%;
-      }  
+  /* Mobile devices*/
+@media screen and (max-width: 600px) {
+  .menu-open {
+    top: 40px;
+    right: 10px;
   }
+
+  .nav__logo {
+    margin-right: 45px;
+  } 
+
+  .container {
+    margin-left: 5px;
+    margin-right: 0%;
+  } 
+
+  html {
+    font-size: 50%;
+  }  
+
+  .header .navbar {
+    display: none;
+  }
+
+  #login-btn {
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    margin-top: 20px;
+  }
+
+  section .activities {
+    margin-left: 50%;
+  }
+
+  .div .footer .box-container .box {
+    margin-left: 30px;
+  }
+
+  .footer .box-container .box #name-1 {
+    margin-left: 30px;
+    height: 500px;
+  }
+.image{
+  margin-bottom: 70px;
+}
+  }
+  .img-quizz .img-1  {
+    width: 110%;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px #ff3399;
+    padding: 10px;
+    background-color: #fff;
+    margin-right:30%;
+    height:300px;
+    margin-left: 5px auto;
+    display:flex;
+  }
+  .img-quizz h4{
+    font-size:30px;
+    margin-top: 50px;
+  }
+
    /*normal devices*/
   @media (max-width:768px){
   
