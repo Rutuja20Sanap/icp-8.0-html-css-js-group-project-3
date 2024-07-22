@@ -122,12 +122,12 @@
   .img-quizz {
    
     top:auto;
-    margin-left: 40px;
+    margin-left:20px;
     
    
 }
 .img-quizz .img-1{
-    width:fit-content;
+  width:1200px;
     border-radius: 50px;
    box-shadow: 0 10px 30px #ff3399 ;
     padding:30px;
