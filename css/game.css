@@ -1,114 +1,121 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: monospace;
-    }
-    .contant{
-    margin-top: 100px;
-   cursor: pointer;
+ margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: monospace;
+}
+.contant{
+margin-top: 100px;
+cursor: pointer;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 30px;
+padding: 40px 60px;
+}
+h1{
+font-size: 4.5em;
+color:black;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+text-shadow: 2px 2px;
+}
+
+.reset{
+ height: 50px;
+ width: auto;
+ padding: 10px 15px;
+ color: black;
+background: skyblue;
+border: none;
+ border-radius: 15px;
+ font-size: 2.6em;
+ letter-spacing: 0.1em;
+text-transform: uppercase;
+ cursor: pointer;
+ font-weight: 700;
+margin-left: 120px;
+margin-top: 15px;
+}
+ .reset:focus{
+   background: #eb51b7;
+}
+ .game{
+  width: 440px;
+  height: 440px;
+  display: flex;
+ flex-wrap: wrap;
+ gap: 10px;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  
+  }
+.item{
+position: relative;
+width: 100px;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 8em;
+background:#fff;
+transform: rotatey(180deg);
+transition: 0.25s;
+border-radius: 15px;
+}
+.item.boxOpen{
+transform: rotatey(0deg);
+background-color: #eb51b7;
+}
+.item::after{
+content: '';
+position: absolute;
+inset: 0;
+background: skyblue;
+border-radius: 15px;
+/*opacity: 0.85;*/
+transition: 0.25s;
+transform: rotate(0deg);
+backface-visibility: hidden;
+}
+.boxOpen:after,
+.boxMatch:after{
+transform: rotatey(180deg);
+}
+
+/* dark-theme */
+
+.dark-theme h1{
+color: #fff;
+text-shadow: 2px 2px;
+}
+.dark-theme .reset{
+color: #f7a636;
+text-shadow: 2px 2px;
+background-color:#1d1c1c;
+}
+.dark-theme .item{
+background-color: #1d1c1c;
+}
+
+/* Media query */
+
+/* Mobile devices*/
+
+ @media screen and (max-width: 600px) {
+   .game {
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-   padding: 40px 60px;
-    }
-    h1{
-        font-size: 4.5em;
-        color:black;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        }
-        .reset{
-        height: 50px;
-        width: auto;
-        padding: 10px 15px;
-        color: black;
-        background: skyblue;
-        border: none;
-        border-radius: 15px;
-        font-size: 2.6em;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        cursor: pointer;
-        font-weight: 700;
-        margin-left: 120px;
-        margin-top: 15px;
-        }
-        .reset:focus{
-            
-            background: #eb51b7;
-            }
-            .game{
-            width: 440px;
-            height: 440px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            transform-style: preserve-3d;
-            perspective: 500px;
-            }
-            .item{
-                position: relative;
-                width: 100px;
-                height: 100px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 8em;
-                background:#fff;
-                transform: rotatey(180deg);
-                transition: 0.25s;
-                }
-                .item.boxOpen{
-                    transform: rotatey(0deg);
-                  }
-                  .item::after{
-                    content: '';
-                    position: absolute;
-                    inset: 0;
-                    background: skyblue;
-                    border-radius: 15px;
-                    /*opacity: 0.85;*/
-                    transition: 0.25s;
-                    transform: rotate(0deg);
-                    backface-visibility: hidden;
-                    }
-                    .boxOpen:after,
-                    .boxMatch:after{
-                     transform: rotatey(180deg);
-                    }
-
-                    .dark-theme h1{
-                        color: #fff;
-                    }
-
-                    .dark-theme .reset{
-                        color: #f7a636;
-                        background-color:#1d1c1c;
-                    }
-                    .dark-theme .item{
-                        background-color: #1d1c1c;
-                    }
-                    
-                      /* Media query */
-
-                      /* Mobile devices*/
-
-                      @media screen and (max-width: 600px) {
-                        .game {
-                            justify-content: center;
-                            width: auto;
-                            height: auto;
-                      }
-                      .reset{
-                        display: inline;
-                        margin: auto;
-                        display: flex;
-                        margin-top: 20px;
-                        padding: 15px 10px;
-                      }
-                    }
+ width: auto;
+  height: auto;
+  }
+.reset{
+   display: inline;
+  margin: auto;
+  display: flex;
+   margin-top: 20px;
+   padding: 15px 10px;
+ }
+  }
 
 
                       /* Normal devices  */
