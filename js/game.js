@@ -10,6 +10,10 @@ if(Math.random() > 0.5){
 }
 }
 
+function initializeGame() {
+    const gameContainer = document.querySelector('.game');
+    gameContainer.innerHTML = ''; // Clear existing emojis
+
 for (let i = 0; i < emojis.length; i++) {
      let box = document.createElement('div');
      box.className = 'item';
@@ -42,4 +46,12 @@ for (let i = 0; i < emojis.length; i++) {
         }, 500);
     };
     document.querySelector('.game').appendChild(box);
+}}
+
+function resetGame() {
+    create_emojis = emojis.sort(createEmojis);
+    initializeGame();
 }
+
+// Initialize the game on page load
+initializeGame();
