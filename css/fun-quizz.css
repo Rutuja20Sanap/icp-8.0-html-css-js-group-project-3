@@ -29,7 +29,7 @@ body {
 }
 
 .heading h1 {
-    font-size: 50px;
+    font-size: 42px;
     color: #ff3399;
     font-family: rutu;
 }
@@ -147,9 +147,11 @@ button:hover {
 }
 
 #score {
-    text-align: center;
+    text-align: center;    
 }
-
+#score h1{
+    color: #4CAF50;  
+}
 .certificate-container-main {
     display: block;
     max-width: 650px;
@@ -197,6 +199,7 @@ button:hover {
 
 .form-container input {
     border: none;
+    border-radius: 5px;
     padding: 10px;
     margin: 5px;
     font-size: 1em;
@@ -226,7 +229,7 @@ button:hover {
 }
 
 /* Hide by default */
-/*#certificate {
+#certificate {
     display: none;
 }
 
@@ -281,6 +284,12 @@ button:hover {
 .dark-theme .fun-body {
     background-color: #262626;
     margin: 0;
+}
+.dark-theme .certificate-container{
+    background-color: #4d4d4d; 
+}
+.dark-theme .certificate-container p{
+    color: #ffffff;
 }
 
 @media screen and (max-width: 320px) {

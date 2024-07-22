@@ -64,6 +64,7 @@ function showPrevQuestion() {
     }
 }
 
+
 function showScore() {
     //Hide All Questions
     document.querySelectorAll('.question').forEach(q => q.classList.remove('active-question'));
