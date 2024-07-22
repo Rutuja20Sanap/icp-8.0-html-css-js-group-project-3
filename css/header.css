@@ -412,10 +412,10 @@ margin-bottom: 10px;
 }
   
   .img-quizz .img-1  {
-    width: 110%;
+    width:400px;
     border-radius: 50px;
     box-shadow: 0 10px 30px #ff3399;
-    padding: 10px;
+    padding:5px;
     background-color: #fff;
     margin-right:30%;
     height:300px;
@@ -429,7 +429,6 @@ margin-bottom: 10px;
   }
   .img-quizz{
     margin-left:0%;
-    margin-right:20px;
   }
 }
   /* Normal devices  */
