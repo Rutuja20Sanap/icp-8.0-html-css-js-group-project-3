@@ -356,3 +356,113 @@
     border-radius: 10px;
     
 }
+/* Small Devices */
+@media screen and (max-width: 600px){
+    .top_content{
+       
+        height: 500px;
+        width: 500px;
+    }
+    .imgcontainer{
+       
+        display: flex;
+        flex-direction: column;
+        
+        width:  auto;
+        height: 1000px;
+        /* border: 1px solid black */
+    }
+    #kidimg{
+        margin: 20px auto;
+        /* border: 1px solid black; */
+        height: 400px;
+        width: 400px;
+    }
+    #kid{
+        margin: 20px auto;
+        /* border: 1px solid black; */
+        height: 200px;
+        width: 300px;
+    }
+    #kid2{
+        margin: auto;
+        /* border: 1px solid black; */
+        height: 300px;
+        width: 400px;
+    }
+    .content{
+       height: auto;
+        width: 550px;
+        /* border: 1px solid black; */
+    }
+    #team-img{
+        height: 200px;
+    }
+    .who p{
+        margin: auto 20px;
+        font-size: 15px;
+    }
+    .who b{
+        font-size: 30px;
+        margin: auto 20px;
+    }
+    #mission-img{
+        height: 250px;
+    }
+    .ourmission{
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        height: 600px;
+    }
+    .mission-content b{
+        text-align: center;
+        width: 400px;
+        font-size: 40px;
+
+    }
+    .mission-content p{
+        /* border: 1px solid black; */
+        width: 400px;
+        font-size: 15px;
+        line-height: normal;
+    }
+    .offer{
+
+        height: 800px;
+        /* border: 1px solid black; */
+    }
+    .offer h1{
+        font-size: 30px;
+    }
+    .offer h3{
+        font-size: 20px;
+    }
+    .cards{
+        height: fit-content;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+    }
+    .cards p{
+        font-size: 15px;
+    }
+    .card{
+        margin: 20px auto;
+        height: 200px;
+        width: 400px;
+    }
+    .game-demo{
+        height: 250px;
+    }
+    .eligibility-check{
+        height: 130px;
+        width: 250px;
+       
+    }
+    #btn-eligible{
+        margin-top: 20px;
+    }
+    
+   
+}
