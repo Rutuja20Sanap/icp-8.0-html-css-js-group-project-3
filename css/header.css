@@ -569,10 +569,64 @@ margin-bottom: 10px;
   
   }
   /* desktop devices*/
-  @media (min-width:991px) and (min-width:1200px){
-    .menu-open{
-        display:none ;
-    }
-  }
+  @media screen and (min-width: 992px) and (max-width: 1200px) 
+  {
+   .header .navbar a{
+     display:inline;
+     margin-right:20px;
+     margin-left:0%;
+     }
+   
+   .menu-open {
+     display: none;
+   }
+   .nav__logo {
+     margin-right:2px;
+     
+   
+   }
+   .icons a{
+     margin-right: 5px;
+   }
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width:260px;
+     height:auto;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+     padding: 20px;
+     z-index: 1;
+   
+   }
+ 
+   .dropdown-content a {
+     color: black;
+     padding: 10px 20px; 
+     text-decoration: none;
+     display: block;
+     font-size: 16px;
+     margin:20px 20px;  }
+ 
+     .img-quizz .img-1 {
+       width:1050px;
+       border-radius: 50px;
+       box-shadow: 0 10px 30px #ff3399;
+       padding: 20px;
+       background-color: #fff;
+       height:700px
+     }
+     .img-quizz h4{
+       font-size:50px;
+       margin-top: 150px;
+     }
+     .img-quizz{
+       margin-left:0%;
+      
+     }
+     .activities .box-container{
+       gap:40px;
+     }
+ }
   
   
