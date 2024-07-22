@@ -1,55 +1,153 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Categories - Quizland</title>
     <link rel="stylesheet" href="../css/quizz-list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
-
-<body>
-    <header>
-        <h1>Quizland</h1>
-        <nav>
-            <div class="container">
-                <ul>
-                    <li><a href="../Index.html">Home</a></li>
-                    <li><a href="./aboutus.html">aboutus</a></li>
-                    <li><a href="./quizz-list.html">categories</a></li>
-                    <li><a href="./result.html">result</a></li>
-                    <li><a href="./feedback.html">feedback</a></li>
-                    <li><a href="./sign.html">sign-up</a></li>
-                    <li><a href="./contactus.html">contact</a></li>
-                </ul>
+<body id="body" class="light-theme">
+    <!--header section start -->
+    <header class="header">
+        <div class="container">
+            <div class="animative-movement">
+                <span id="name1">K</span><span id="name2">I</span><span id="name3">D</span><span id="name4">S</span>
             </div>
+            <h2>Quizzland</h2>
+        </div>
+
+        <nav class="navbar">
+            <a href="../home.html">Home</a>
+            <a href="../pages/aboutus.html">About</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="#">Quizz Category<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../pages/educational-quizz.html">Educational Quizz</a>
+                    <a href="../pages/fun-quizz.html">Fun Quizz</a>
+                    <a href="../pages/gk-quizz.html">General Knowledge Quizz</a>
+                </div>
+            </div>
+            <a href="../pages/contactus.html">Contact Us</a>
+            <a href="../pages/feedback.html">Feedback</a>
         </nav>
 
+        <div class="icons">
+            <a href="../pages/sign.html">
+                <div class="fas fa-user" id="login-btn"></div>
+            </a>
+        </div>
+        <div class="nav__logo">
+            <a href="#">
+                <img src="../icon/moon.png" alt="dark mode" class="logo-dark" id="dark-logo" onclick="toggleTheme()" />
+                <img src="../icon/sun.png" alt="light mode" class="logo-light" id="light-logo" onclick="toggleTheme()" />
+            </a>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="close-btn" id="close-btn">
+                <img src="../icon/arrow.png" alt="Close" width="30px">
+            </div>
+            <nav class="sidebar-navbar">
+                <a class="menu-item active-menu" href="../home.html"> <img src="../icon/home.png" class="menu-icon">
+                    <span class="menu-text">Home</span></a>
+                <a class="menu-item" href="../pages/aboutus.html">
+                    <img src="../icon/aboutus.png" class="menu-icon">
+                    <span class="menu-text">About Us</span>
+                </a>
+                <a class="menu-item" href="../pages/quizz-list.html">
+                    <img src="../icon/quizz.png" class="menu-icon">
+                    <span class="menu-text">Quizz List</span>
+                </a>
+                <a class="menu-item" href="../pages/contactus.html">
+                    <img src="../icon/contact-us.png" class="menu-icon">
+                    <span class="menu-text">Contact</span>
+                </a>
+                <a class="menu-item" href="../pages/feedback.html">
+                    <img src="../icon/feedback.png" class="menu-icon">
+                    <span class="menu-text">Feedback</span>
+                </a>
+            </nav>
+        </div>
+
+        <!-- Open Sidebar Menu Button -->
+        <div class="menu-open" id="menu-open">
+            <img src="../icon/menus.png" alt="Menu" width="30px">
+        </div>
     </header>
+    <!--header section end-->
 
     <div class="body-container">
-        <h1>Quiz categories</h1>
+        <h1>Quiz Categories</h1>
         <p>Welcome to Quizland! Choose a category to test your knowledge and learn new things.</p>
         
         <div class="categories">
             <div class="category">
-                <img src="../images/quizz-list/education quiz.jpeg" alt="Educational">
-                <h2>Educational</h2>
-                <p>Explore quizzes on various science topics, from physics to biology, and expand your educational horizons.</p>
+                <a href="../pages/educational-quizz.html">
+                    <img src="../images/quizz-list/educational quiz.jpg" alt="Educational">
+                    <h2>Educational</h2>
+                    <p>Explore quizzes on various science topics, from physics to biology, and expand your educational horizons.</p>
+                </a>
             </div>
 
             <div class="category">
-                <img src="" alt="Fun and Thematic">
-                <h2>Fun and Thematic</h2>
-                <p>Dive into quizzes covering different themes and periods, including mythology, literature, and more.</p>
+                <a href="../pages/fun-quizz.html">
+                    <img src="../images/quizz-list/fun.webp" alt="Fun and Thematic">
+                    <h2>Fun and Thematic</h2>
+                    <p>Dive into quizzes covering different themes and periods, including mythology, literature, and more.</p>
+                </a>
             </div>
 
             <div class="category">
-                <img src="../images/quizz-list/gk.jpeg" alt="General Knowledge">
-                <h2>General Knowledge</h2>
-                <p>Challenge yourself with quizzes on a wide range of topics, from history and geography to pop culture.</p>
+                <a href="../pages/gk-quizz.html">
+                    <img src="../images/quizz-list/gk.jpeg" alt="General Knowledge">
+                    <h2>General Knowledge</h2>
+                    <p>Challenge yourself with quizzes on a wide range of topics, from history and geography to pop culture.</p>
+                </a>
             </div>
         </div>
     </div>
-    <footer>
-        <p>&copy; 2024 Quizland. All rights reserved.</p>
-    </footer> 
+    
+    <!--footer section start-->
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <span id="name1">K</span><span id="name2">I</span><span id="name3">D</span><span id="name4">S</span><br><span id="text">Quizzland</span>
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="../pages/aboutus.html"><i class="fas fa-caret-right"></i> About Us</a>
+                <a href="../pages/quizz-list.html"><i class="fas fa-caret-right"></i> Quizz List</a>
+                <a href="../pages/contactus.html"><i class="fas fa-caret-right"></i> Contact Us</a>
+                <a href="../pages/feedback.html"><i class="fas fa-caret-right"></i> Feedback</a>
+            </div>
+
+            <div class="box1" id="social-media">
+                <h3>Connect With Us</h3>
+                <a href="https://www.linkedin.com/in/rutuja-sanap-07096b284/" target="_blank"><img src="../icon/linkdln.png" height="40px" class="social-media"></a>
+                <a href="https://github.com/Rutuja20Sanap"><img src="../icon/github.png" height="40px" class="social-media"></a>
+                <a href="tel:+919322396408"><img src="../icon/whatsapps.png" height="40px"></a>
+                <a href="#"><img src="../icon/facebook.png" height="40px" class="social-media"></a>
+            </div>
+
+            <div class="box">
+                <h3>Get in Touch</h3>
+                <a href="https://wa.me/+919322396408" target="_blank"><i class="fas fa-caret-right"></i> +91 9322396408</a>
+                <a href="https://wa.me/+917350371422" target="_blank"><i class="fas fa-caret-right"></i> +91 7350371422</a>
+                <a href="https://wa.me/+918010825030" target="_blank"><i class="fas fa-caret-right"></i> +91 8010825030</a>
+                <a href="https://wa.me/+919860312523" target="_blank"><i class="fas fa-caret-right"></i> +91 9860312523</a>
+                <a href="https://wa.me/+918390074057" target="_blank"><i class="fas fa-caret-right"></i> +91 8390074057</a>
+                <a href="mailto:dnyaneshwarsanap293@gmail.com"><i class="fas fa-caret-right"></i> kidsquizzland.com</a>
+            </div>
+        </div>
+
+        <div class="credit"> &copy; 2024 by <span>Kids Quizzland</span></div>
+    </footer>
+    <!--footer section end-->
+    <script src="../js/quizz-list.js"></script>
+    <script src="../js/header.js"></script> 
 </body>
 </html>
