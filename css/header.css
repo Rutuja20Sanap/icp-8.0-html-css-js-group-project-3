@@ -410,23 +410,23 @@ margin-bottom: 10px;
 .image{
   margin-bottom: 70px;
 }
-  }
-  .img-quizz .img-1  {
-    width: 110%;
+  
+  .img-quizz .img-1{
+    width:200px;
     border-radius: 50px;
     box-shadow: 0 10px 30px #ff3399;
-    padding: 10px;
+    padding:2px;
     background-color: #fff;
-    margin-right:30%;
     height:300px;
-    margin-left: 5px auto;
     display:flex;
+    margin-right: 20%;
+    margin-left:0%;
   }
   .img-quizz h4{
     font-size:30px;
     margin-top: 50px;
   }
-
+}
    /*normal devices*/
   @media (max-width:768px){
   
