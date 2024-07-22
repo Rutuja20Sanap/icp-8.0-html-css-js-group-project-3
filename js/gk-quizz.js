@@ -93,11 +93,10 @@ function updateSectionTitle() {
     }
 }
 
-function checkAnswer(questionId, formId, resultId) {
+function checkAnswer(questionId, formId) {
     const questionDiv = document.getElementById(questionId);
     const correctAnswer = questionDiv.getAttribute('data-correct');
     const form = document.getElementById(formId);
-    const resultElement = document.getElementById(resultId);
     let selectedAnswer;
 
     const radios = form.getElementsByTagName('input');
@@ -109,30 +108,25 @@ function checkAnswer(questionId, formId, resultId) {
     }
     if (selectedAnswer) {
         if (selectedAnswer === correctAnswer) {
-            resultElement.innerText = "Your Answer Is Correct!";
-            score += 2;
-        } else {
-            resultElement.innerText = "Your Answer Is Incorrect!";
+            score++;
         }
         answeredQuestions++;
-
-        if (answeredQuestions === totalQuestions) {
-            showFinalScore();
-        }
-    } else {
-        resultElement.innerText = "Please select an answer!";
     }
 }
 
 function showFinalScore() {
+    allQuestions.forEach((question, index) => {
+        checkAnswer(`question${index + 1}`, `quiz-form${index + 1}`);
+    });
+
     // Hide all questions
     allQuestions.forEach(question => {
         question.style.display = 'none';
     });
 
-    document.getElementById('section-name').style.display = 'none';
-    document.getElementById('Quiz-container').style.display = 'none';
+    document.getElementById('section-title').style.display = 'none';
     document.getElementById('certificate-input').style.display = 'inline-block';
+    document.getElementById('Quiz-container').style.display = 'none';
 
     // Show the final score section and update content
     const scoreContainer = document.getElementById('final-score-container');
@@ -142,14 +136,14 @@ function showFinalScore() {
     scoreContainer.classList.remove('hide');
     scoreContainer.classList.add('show');
     
-    scoreContent.innerText = `Your final score is: ${score} out of ${totalQuestions * 2}`;
+    scoreContent.innerText = `Your final score is: ${score} out of ${totalQuestions}`;
     
     if (score < 8) {
-        scoreLine.innerText = `Your score: ${score}/${totalQuestions * 2}\nOoh, not quite! Don't worry, you can always take the quiz and try again!`;
+        scoreLine.innerText = `Your score: ${score}/${totalQuestions}\nOoh, not quite! Don't worry, you can always take the quiz and try again!`;
     } else if (score >= 8 && score < 13) {
-        scoreLine.innerText = `Your score: ${score}/${totalQuestions * 2}\nVery good! You love your emojis, no doubt about that! We bet you can get a perfect score, though - why not try again and see?`;
+        scoreLine.innerText = `Your score: ${score}/${totalQuestions}\nVery good! You love your emojis, no doubt about that! We bet you can get a perfect score, though - why not try again and see?`;
     } else {
-        scoreLine.innerText = `Your score: ${score}/${totalQuestions * 2}\nPerfect - you're totally in touch with your emotions! You're definitely the emoji expert in your friend group!`;
+        scoreLine.innerText = `Your score: ${score}/${totalQuestions}\nPerfect - you're totally in touch with your emotions! You're definitely the emoji expert in your friend group!`;
     }
 
     // Show the certificate section
