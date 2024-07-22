@@ -19,6 +19,8 @@ color:black;
 text-transform: uppercase;
 letter-spacing: 0.1em;
 text-shadow: 2px 2px;
+text-align: center;
+margin-left: 250px;
 }
 
 .reset{
@@ -37,6 +39,20 @@ text-transform: uppercase;
 margin-left: 120px;
 margin-top: 15px;
 }
+
+.img{
+  display: flex;
+  justify-content: end;
+}
+.tom{
+  height: 430px;
+
+}
+.jerry{
+  height: 150px;
+  margin-top: 230px;
+  margin-right: 50px;
+}
  .reset:focus{
    background: #eb51b7;
 }
@@ -48,7 +64,7 @@ margin-top: 15px;
  gap: 10px;
   transform-style: preserve-3d;
   perspective: 500px;
-  
+  margin-top: -460px;
   }
 .item{
 position: relative;
