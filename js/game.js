@@ -1,8 +1,8 @@
 const emojis = [`🐶`,`🐭`,`🦊`,`🐻`,`🦁`,`🐸`,`🐷`,`🐥`,`🐶`,`🐭`,`🦊`,`🐻`,`🦁`,`🐸`,`🐷`,`🐥`];
 
-let shuf_emojis = emojis.sort(shuffleEmojis)
+let create_emojis = emojis.sort(createEmojis)
 
-function shuffleEmojis(){
+function createEmojis(){
 if(Math.random() > 0.5){
  return  2 ;
 }else{
@@ -13,7 +13,7 @@ if(Math.random() > 0.5){
 for (let i = 0; i < emojis.length; i++) {
      let box = document.createElement('div');
      box.className = 'item';
-    box.innerHTML = shuf_emojis[i];
+    box.innerHTML = create_emojis[i];
 
     box.onclick = function() {
         this.classList.add('boxOpen');
