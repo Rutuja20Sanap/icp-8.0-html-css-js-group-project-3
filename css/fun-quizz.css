@@ -1,21 +1,16 @@
-body {
-    padding: 0;
-    margin-top:110px;
-    font-family: Arial, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 @font-face {
-    font-family:rutu ;
+    font-family: rutu;
     src: url(../fonts/font-name.otf);
 }
 
-
-.patrick-hand-regular {
-    font-family: "Patrick Hand", cursive;
-    font-weight: 500;
-    font-size: larger;
-    font-style: normal;
+body {
+    padding: 0;
+    margin-top: 110px;
+    font-family: Arial, sans-serif;
 }
 
 .heading {
@@ -34,14 +29,14 @@ body {
 }
 
 .heading h1 {
-    font-size: 30px;
+    font-size: 50px;
+    color: #ff3399;
+    font-family: rutu;
 }
 
-.heading2  {
+.heading2 {
     text-align: center;
-
-    padding: 0;
-    margin: 0;
+    color: black;
 }
 
 .box-que {
@@ -49,7 +44,8 @@ body {
     justify-content: center;
     padding: 15px;
     margin: 30px;
-    border: 1px black solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 10px;
 }
 
 .box-que img {
@@ -65,7 +61,7 @@ body {
 
 .fun-container {
     max-width: 600px;
-    margin: 10px auto ;
+    margin: 60px auto;
     padding: 10px 20px;
     background-color: #ffffff;
     border-radius: 8px;
@@ -81,10 +77,11 @@ body {
 
 .fun-container .question h2 {
     font-size: medium;
-   
+
 }
-.fun-container .question p{
-    font-size: medium; 
+
+.fun-container .question p {
+    font-size: medium;
 }
 
 .img {
@@ -104,9 +101,11 @@ body {
 form {
     margin-top: 20px;
 }
-.dark-theme div{
+
+.dark-theme div {
     color: black;
 }
+
 form div {
     padding: 10px;
     margin-bottom: 10px;
@@ -159,27 +158,37 @@ button:hover {
 }
 
 .certificate-container {
+    border-radius: 10px;
     padding: 10px;
     background-color: #ffffff;
-    max-width: 750px;
+    max-width: 650px;
     margin-top: 50px;
     text-align: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .certificate-container h1 {
-    font-size: 2.5em;
+    font-size: 35px;
     color: #4CAF50;
+    margin-top: 20px;
 }
 
 .certificate-container h2 {
-    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
     color: #ff6347;
+    margin-top: 30px;
 }
 
 .certificate-container h3 {
-    font-size: 1.5em;
+    font-size: 30px;
     color: #1e90ff;
+    margin-top: 30px;
+}
+
+.certificate-container p {
+    font-size: 15px;
+    margin-top: 30px;
 }
 
 .form-container {
@@ -217,7 +226,7 @@ button:hover {
 }
 
 /* Hide by default */
-#certificate {
+/*#certificate {
     display: none;
 }
 
@@ -228,37 +237,52 @@ button:hover {
 }
 
 /*dark theme*/
-.dark-theme  .img{
-    filter:drop-shadow(5px 5px 30px #e28605);
+.dark-theme .heading img {
+    filter: drop-shadow(5px 5px 30px #e28605);
 }
 
-.dark-theme .box-que h1{
+.dark-theme .box-que img {
+    filter: drop-shadow(5px 5px 30px #e28605);
+}
+
+.dark-theme .img {
+    filter: drop-shadow(5px 5px 30px #e28605);
+}
+
+.dark-theme .box-que h1 {
     color: white;
 }
 
-.dark-theme .fun-container{
-   background-color: #4d4d4d;
+.dark-theme .fun-container {
+    background-color: #4d4d4d;
 }
+
 .dark-theme button {
     background: #f7a636;
 }
-.dark-theme form div{
+
+.dark-theme form div {
     color: white;
     background-color: gray;
 }
-.dark-theme .fun-container h1{
+
+.dark-theme .fun-container h1 {
     color: #fff;
 }
-.dark-theme .heading2{
+
+.dark-theme .heading2 {
     color: white;
 }
-.dark-theme .fun-container p{
+
+.dark-theme .fun-container p {
     color: #fff;
 }
-.dark-theme .fun-body{
+
+.dark-theme .fun-body {
     background-color: #262626;
     margin: 0;
 }
+
 @media screen and (max-width: 320px) {
     .heading {
         padding: 10px;
@@ -315,9 +339,11 @@ button:hover {
     .fun-container h2 {
         font-size: 10px;
     }
-    .fun-container .question p{
-        font-size:smaller; 
+
+    .fun-container .question p {
+        font-size: smaller;
     }
+
     .img {
         display: block;
         margin: 10px auto;
