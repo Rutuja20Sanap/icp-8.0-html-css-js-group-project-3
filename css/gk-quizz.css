@@ -139,7 +139,6 @@ label input[type="radio"] {
 .navigation-buttons {
     display: flex;
     justify-content: center;
-    margin: 10px 0;
     gap: 20px;
     /* Ensure buttons are visible and properly spaced */
 }
