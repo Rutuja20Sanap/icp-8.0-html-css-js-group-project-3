@@ -180,3 +180,52 @@ display: none;
       display: none;
      }
 }
+/* tablet Devices */
+@media (max-width: 991px){
+
+.reset{
+    display: inline;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    padding: 15px 10px;
+  }
+ h1{
+  display: block;
+  text-align: none;
+  margin:auto ;
+ }
+ .game{
+  margin: auto;
+ }
+ .img{
+  display: none;
+ }
+}
+
+/* large Devices */
+@media screen and (min-width: 993px) and (max-width: 1200px){
+
+.reset{
+    display: inline;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    padding: 15px 10px;
+  }
+ h1{
+  display: block;
+  text-align: none;
+  margin:auto ;
+ }
+ .game{
+  margin: auto;
+ }
+ .img{
+  display: none;
+ }
+}
+
+
+
+
