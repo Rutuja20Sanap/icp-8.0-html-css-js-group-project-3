@@ -1,33 +1,37 @@
 
- // Dark/Light Theme Toggle
-    function toggleTheme() {
-        const body = document.getElementById('body');
-        body.classList.toggle('dark-theme');
-        body.classList.toggle('light-theme');
-        localStorage.setItem('theme', body.classList.contains('dark-theme') ? 'dark' : 'light');
+document.addEventListener("DOMContentLoaded", () => {
+    // Random Quiz Suggestion
+    const quizzes = [
+        {name: "English Quiz", link: "../pages/educational-quizz.html"},
+        {name: "Games and Fun Quiz", link: "../pages/game.html"},
+        {name: "Math Quiz", link: "../pages/educational-quizz.html"},
+        {name: "Geographic Quiz", link: "../pages/gk-quizz.html"},
+        {name: "Fun and Thematic Quiz", link: "../pages/fun-quizz.html"},
+        {name: "GK Quiz", link: "../pages/gk-quizz.html"}
+    ];
+
+    function suggestRandomQuiz() {
+        const randomIndex = Math.floor(Math.random() * quizzes.length);
+        const randomQuiz = quizzes[randomIndex];
+        const suggestionBox = document.getElementById("random-quiz-suggestion");
+        suggestionBox.innerHTML = `How about trying our <a href="${randomQuiz.link}" class="random-quiz-link">${randomQuiz.name}</a>?`;
     }
 
-    // Load the theme from localStorage
-    document.addEventListener('DOMContentLoaded', (event) => {
-        const body = document.getElementById('body');
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            body.classList.add(savedTheme + '-theme');
+    suggestRandomQuiz();
+
+    // Greeting Message
+    function getGreetingMessage() {
+        const hour = new Date().getHours();
+        if (hour < 12) {
+            return "Good Morning!";
+        } else if (hour < 18) {
+            return "Good Afternoon!";
         } else {
-            body.classList.add('light-theme'); 
+            return "Good Evening!";
         }
-    });
+    }
 
-    // Sidebar Toggle
-    const sidebar = document.getElementById('sidebar');
-    const menuOpenBtn = document.getElementById('menu-open');
-    const closeBtn = document.getElementById('close-btn');
-
-    menuOpenBtn.addEventListener('click', function() {
-        sidebar.style.width = '250px';
-    });
-
-    closeBtn.addEventListener('click', function() {
-        sidebar.style.width = '0';
-    });
+    const greetingMessage = getGreetingMessage();
+    document.getElementById("greeting-message").innerText = greetingMessage;
+});
 
