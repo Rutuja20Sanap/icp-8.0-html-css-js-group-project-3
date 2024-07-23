@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 @font-face {
@@ -8,14 +7,21 @@
 }
 
 .Main-container {
-    margin-top: 160px;
+    margin-top: 120px;
 }
 
 .header-name {
-    font-size: 60px;
+    font-size: 80px;
     color: #ff3399;
     font-family: rutu;
-    margin-top: 30px;
+    margin-top: 45px;
+}
+
+#head{
+    font-size: 80px;
+    color: #ff3399;
+    font-family: rutu;
+    margin-top: 45px;
 }
 
 .GK-header {
@@ -39,8 +45,17 @@
     margin: 20px 0;
 }
 
+.bg-img{
+    background-image: url('./../images/gk-quizz/bg.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position: center;
+    margin-bottom: 0px;
+}
+
 .Quiz-container {
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 .type-container {
@@ -49,16 +64,20 @@
     gap: 60px;
 }
 
+.section-title{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
 .que-no {
-    margin-top: 20px;
     display: block;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 20px;
     max-width: 600px;
-    margin: 10px auto;
+    margin: 30px auto;
     padding: 10px 20px;
-    background-color: #ffffff;
+    background-color: #ccebff;
     border-radius: 8px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     position: relative;
@@ -84,6 +103,7 @@
 .active-question {
     display: block;
 }
+
 .question.show {
     display: block;
 }
@@ -131,26 +151,50 @@ label input[type="radio"] {
     height: 40px;
 }
 
-
 .navigation-buttons {
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    gap: 20px;
 }
 
 .navigation-buttons button {
     margin-right: 10px;
     padding: 10px 20px;
     border: none;
-    background-color: #990099;
+    background-color: rgb(2, 175, 255);
     color: white;
     cursor: pointer;
-    border-radius: 25px 10px;
+    border-radius: 10px 10px;
+    display: inline-block;
 }
 
 .navigation-buttons button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+}
+#prev-button{
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#next-button{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#finish-button{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navigation-buttons button {
+    margin: 0 5px;
 }
 
 .hide {
@@ -158,107 +202,129 @@ label input[type="radio"] {
 }
 
 .show {
-    display: block;
+    display: block !important;
 }
 
-.res-contanier {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
 
-.res-btn {
-    margin: 0 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.result {
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 10px;
-}
-
-.check-btn-container {
-    display: flex;
-    justify-content: center;
-}
-
-.check-btn {
-    height: 30px;
+#score-container {
+    font-size: 24px;
+    font-weight: bold;
     margin-bottom: 10px;
-    display: none;
 }
 
-.final-score-container {
-    margin-top: 0;
-    margin-bottom: 0;
+#score-line {
+    font-size: 18px;
+    line-height: 1.5;
 }
 
-.res-btn {
-    margin-top: 30px;
+#final-score-container {
+    padding: 20px;
+    background-color: #ffffff;
+    max-width: 750px;
+    text-align: center;
+    box-shadow: rgba(65, 65, 83, 0.25) 0px 30px 80px -20px,
+                rgba(60, 60, 60, 0.3) 0px 30px 40px -30px,
+                rgba(65, 76, 88, 0.35) 0px 1px 6px 0px inset;
+    border-radius: 10px; 
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none; 
 }
+
 
 .certificate-container-main {
     display: block;
     max-width: 650px;
+    height: 600px;
     margin: 10px auto;
     padding: 10px 30px;
 }
 
-.certificate-container {
-    padding: 10px;
+#certificate {
+    padding: 20px;
     background-color: #ffffff;
     max-width: 750px;
-    margin-top: 50px;
     text-align: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: none;
 }
 
 .certificate-container h1 {
-    font-size: 2.5em;
+    font-size: 40px; 
     color: #4CAF50;
+    margin: 10px 10px; 
 }
 
 .certificate-container h2 {
-    font-size: 2em;
+    font-size: 35px; 
     color: #ff6347;
+    margin: 10px 0; 
 }
 
 .certificate-container h3 {
-    font-size: 1.5em;
+    font-size: 25px; 
     color: #1e90ff;
+    margin: 10px 10px; 
+}
+
+.certificate-p {
+    font-size: 25px; 
+    margin-bottom: 20px; 
+}
+
+#date {
+    font-size: 20px;
+}
+.date{
+    font-size: 20px;
+}
+.quiz-Organizer {
+    font-size: 20px;
+}
+#organizerName {
+    font-size: 20px;
 }
 
 .form-container {
     margin-top: 20px;
-}
-
-.form-container input {
-    border: none;
-    padding: 10px;
-    margin: 5px;
-    font-size: 1em;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-.certificate-input {
     display: flex;
     justify-content: center;
+}
 
+.certificate-input {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.certificate-input {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.certificate-input input {
+    padding: 8px;
+    width: calc(50% - 20px); 
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .certificate-button {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 8px 16px; 
+    margin-bottom: 0;
+    border: none;
     background-color: #4CAF50;
     color: #fff;
-    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    font-size: 18px; 
 }
 
 .certificate-button:hover {
@@ -274,223 +340,190 @@ label input[type="radio"] {
 }
 
 
-
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
+    .Main-container {
+        margin-top: 120px;
+    }
+    
     .header-name {
-        font-size: 30px;
-        margin-top: 7px;
-    }
-
-    .header-img {
-        height: 30px;
-        margin-top: 0;
-    }
-
-    .tagline {
-        font-size: 15px;
-    }
-
-    .Quiz-container {
-        margin-top: 10px;
-    }
-
-    .type-container {
-        gap: 25px;
-        padding: 5px;
-    }
-
-    .que-no {
-        margin-top: 20px;
-        gap: 20px;
-        margin: 10px 10px;
-        padding: 10px 20px;
-    }
-
-    .que-type {
-        font-size: 20px;
-        margin-top: 7px;
-        margin-bottom: 0;
-    }
-
-    .que-type-img {
-        height: 35px;
-    }
-
-    .question {
-        display: none;
-    }
-
-    .question.show {
-        display: block;
-    }
-
-    .question.hide {
-        display: none;
-    }
-
-    .que-name {
-        font-size: 15px;
-        margin-bottom: 5px;
-        padding-top: 10px;
-    }
-
-    .quiz-form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-
-    .opt-img {
-        height: 25px;
-    }
-
-
-    .final-score-container {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-
-}
-
-@media (max-width:768px) {
-    .header-name {
-        font-size: 40px;
-        margin-top: 7px;
-    }
-
-    .header-img {
-        height: 35px;
-        margin-top: 0;
-    }
-
-    .tagline {
-        font-size: 20px;
-    }
-
-    .Quiz-container {
-        margin-top: 10px;
-    }
-
-    .type-container {
-        gap: 25px;
-        padding: 5px;
-    }
-
-    .que-no {
-        margin-top: 20px;
-        gap: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .que-type {
-        font-size: 20px;
-        margin-top: 7px;
-        margin-bottom: 0;
-    }
-
-    .que-type-img {
-        height: 35px;
-    }
-
-    .question {
-        display: none;
-    }
-
-    .question.show {
-        display: block;
-    }
-
-    .question.hide {
-        display: none;
-    }
-
-    .que-name {
-        font-size: 20px;
-        margin-bottom: 5px;
-        padding-top: 10px;
-    }
-
-    .quiz-form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-
-    .opt-img {
-        height: 30px;
-    }
-
-}
-
-@media (max-width:991px) {
-    .header-name {
-        font-size: 50px;
-        margin-top: 7px;
-    }
-
-    .header-img {
-        height: 55px;
-    }
-
-    .tagline {
         font-size: 25px;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
-
-    .Quiz-container {
-        margin-top: 10px;
-    }
-
-    .type-container {
-        gap: 25px;
-        padding: 5px;
-    }
-
-    .que-no {
-        margin-top: 20px;
-        gap: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .que-type {
+    #head{ 
         font-size: 25px;
-        margin-top: 7px;
-        margin-bottom: 0;
+        margin-top: 15px;
+        margin-left: 45px;
     }
-
-    .que-type-img {
+    .header-img {
         height: 40px;
+        margin-top: 0;
     }
-
-    .question {
-        display: none;
+    
+    .tagline {
+        font-size: 15px;
     }
-
-    .question.show {
-        display: block;
+    
+    .Quiz-container {
+        margin-top: 20px;
     }
-
-    .question.hide {
-        display: none;
+    
+    .type-container {
+        gap: 30px;
     }
-
-    .que-name {
-        font-size: 25px;
-        margin-bottom: 5px;
-        padding-top: 10px;
+    
+    .section-title{
+        font-size: 20px;
     }
-
-    .quiz-form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    
+    .que-no {
         gap: 20px;
+        max-width: 600px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
-
-    .opt-img {
+    
+    .que-type {
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .que-type-img {
         height: 35px;
     }
+    
+    .que-name {
+        font-size: 20px;
+    }
+    
+    form {
+        text-align: left;
+    }
+    
+    label {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    
+    .quiz-form {
+        font-size: 15px;
+    }
+    
+    .opt-img {
+        height: 20px;
+    }
 
-
+    #prev-button{
+        height: 30px;
+        width: 80px;
+        font-size: 10px;
+        margin: auto;
+    }
+    
+    #next-button{
+        height: 30px;
+        width: 60px;
+        font-size: 10px;
+        margin: auto;
+    }
+    
+    #finish-button{
+        height: 30px;
+        width: 80px;
+        font-size: 10px;
+        margin: auto;
+    }
+    
+    
+    #score-container {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    #score-line {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    
+    #final-score-container {
+        max-width: 750px; 
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    
+    .certificate-container-main {
+        max-width: 650px;
+        height: 500px;
+        padding: 10px 30px;
+    }
+    
+    #certificate {
+        max-width: 750px;
+        margin-left: 20px;
+        margin-right: 20px;
+        display: none;
+    }
+    
+    .certificate-container h1 {
+        font-size: 20px; 
+        margin: 10px 10px; 
+    }
+    
+    .certificate-container h2 {
+        font-size: 30px; 
+        margin: 10px 0; 
+    }
+    
+    .certificate-container h3 {
+        font-size: 20px; 
+        margin: 10px 10px; 
+    }
+    
+    .certificate-p {
+        font-size: 18px; 
+        margin-bottom: 10px; 
+    }
+    
+    #date {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+    .date{
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+    .quiz-Organizer {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+    #organizerName {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+    
+    .form-container {
+        margin-top: 20px;
+    }
+    
+    .certificate-input {
+        margin-left: 20px;
+        margin-right: 2opx;
+    }
+    
+    .certificate-input {
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+    
+    .certificate-button {
+        padding: 8px 14px; 
+        margin-bottom: 0;
+        font-size: 15px; 
+    }
+        
 }
