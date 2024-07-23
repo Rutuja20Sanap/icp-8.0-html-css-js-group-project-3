@@ -141,9 +141,6 @@ section{
     
   }
   
-  .menu-open{
-    display: none;
-  }
   body {
     transition: background-color 0.3s, color 0.3s;
 }
@@ -372,11 +369,11 @@ margin-bottom: 10px;
   }
 
   .nav__logo {
-    margin-right: 45px;
+   margin-right: 100%;
   } 
 
   .container {
-    margin-left: 5px;
+    margin-left: 2px;
     margin-right: 0%;
   } 
 
@@ -384,12 +381,14 @@ margin-bottom: 10px;
     font-size: 50%;
   }  
 
-  .header .navbar {
+  .header .navbar a{
     display: none;
   }
 
-  #login-btn {
+  .icons {
     margin-bottom: 10px;
+    margin-right: 60%;
+    
   }
 
   .footer {
@@ -628,4 +627,9 @@ margin-bottom: 10px;
        gap:40px;
      }
  }
- 
+
+  @media screen and (min-width: 1200px) {
+.menu-open{
+  display: none;
+}
+  }
