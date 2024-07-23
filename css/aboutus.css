@@ -359,61 +359,44 @@
 /* Small Devices */
 @media screen and (max-width: 600px){
     .top_content{
-       
-        height: 500px;
-        width: 500px;
+     
+        /* border: 1px solid black; */
+        height: 550px;
+        width: 440px;
     }
     .imgcontainer{
-       
-        display: flex;
-        flex-direction: column;
-        
-        width:  auto;
-        height: 1000px;
-        /* border: 1px solid black */
-    }
-    #kidimg{
-        margin: 20px auto;
-        /* border: 1px solid black; */
-        height: 400px;
-        width: 400px;
-    }
-    #kid{
-        margin: 20px auto;
-        /* border: 1px solid black; */
-        height: 200px;
-        width: 300px;
-    }
-    #kid2{
-        margin: auto;
-        /* border: 1px solid black; */
-        height: 300px;
-        width: 400px;
+        display: none;
     }
     .content{
-       height: auto;
-        width: 550px;
+       
+        display: block;
+       height: 600px;
+        width: 450px;
         /* border: 1px solid black; */
     }
     #team-img{
-        height: 200px;
+      margin-bottom: 50px;
+      height: 270px;
     }
     .who p{
         margin: auto 20px;
         font-size: 15px;
     }
     .who b{
+      
         font-size: 30px;
-        margin: auto 20px;
+        margin: 20px;   
     }
     #mission-img{
-        height: 250px;
+        height: 200px;
     }
     .ourmission{
+       
         display: flex;
         flex-direction: column;
         /* border: 1px solid black; */
-        height: 600px;
+        height: 580px;
+        width: 400px;
     }
     .mission-content b{
         text-align: center;
@@ -423,20 +406,22 @@
     }
     .mission-content p{
         /* border: 1px solid black; */
-        width: 400px;
-        font-size: 15px;
-        line-height: normal;
+        width: 350px;
+        height: 300px;
+        font-size: 18px;
+        line-height: 30px;
     }
     .offer{
 
         height: 800px;
+        width: 400px    ;
         /* border: 1px solid black; */
     }
     .offer h1{
-        font-size: 30px;
+        font-size: 35px;
     }
     .offer h3{
-        font-size: 20px;
+        font-size: 25px;
     }
     .cards{
         height: fit-content;
@@ -445,7 +430,7 @@
         flex-direction: column;
     }
     .cards p{
-        font-size: 15px;
+        font-size: 18px;
     }
     .card{
         margin: 20px auto;
@@ -454,10 +439,12 @@
     }
     .game-demo{
         height: 250px;
+        width: 400px;
+        /* border: 1px solid black; */
     }
     .eligibility-check{
-        height: 130px;
-        width: 250px;
+        height: 100px;
+        width: 300px;
        
     }
     #btn-eligible{
