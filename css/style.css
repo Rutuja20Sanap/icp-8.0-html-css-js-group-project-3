@@ -194,12 +194,43 @@ h4{
 }
 /* Media query */
 
-  /* Mobile devices*/
-  @media screen and (max-width: 600px) {
-   .image{
-    margin-bottom: 70px;
+@media screen and (max-width: 600px) {
+ 
+
+  .container {
+    margin-left: 5px;
+    margin-right: 0%;
+  } 
+
+  html {
+    font-size: 50%;
+  }  
+
+  .header .navbar {
+    display: none;
   }
-    
+
+
+  .footer {
+    margin-top: 20px;
+  }
+
+  section .activities {
+    margin-left: 50%;
+  }
+
+  .div .footer .box-container .box {
+    margin-left: 30px;
+  }
+
+  .footer .box-container .box #name-1 {
+    margin-left: 30px;
+    height: 500px;
+  }
+.image{
+  margin-bottom: 70px;
+}
+  
   .img-quizz .img-1  {
     width: 110%;
     border-radius: 50px;
@@ -220,4 +251,4 @@ h4{
     margin-left:0%;
     margin-right:20px;
   }
-  }
+}
