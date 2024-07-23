@@ -71,15 +71,19 @@ function showQuestion(questionIndex) {
 }
 
 function navigateQuestion(direction) {
-    currentQuestionIndex += direction;
+    if (checkAnswer(`question${currentQuestionIndex + 1}`, `quiz-form${currentQuestionIndex + 1}`)) {
+        currentQuestionIndex += direction;
 
-    if (currentQuestionIndex < 0) {
-        currentQuestionIndex = 0;
-    } else if (currentQuestionIndex >= allQuestions.length) {
-        currentQuestionIndex = allQuestions.length - 1;
+        if (currentQuestionIndex < 0) {
+            currentQuestionIndex = 0;
+        } else if (currentQuestionIndex >= allQuestions.length) {
+            currentQuestionIndex = allQuestions.length - 1;
+        }
+
+        showQuestion(currentQuestionIndex);
+    } else {
+        alert('Please select an answer before proceeding.');
     }
-
-    showQuestion(currentQuestionIndex);
 }
 
 function updateSectionTitle() {
@@ -111,6 +115,10 @@ function checkAnswer(questionId, formId) {
             score++;
         }
         answeredQuestions++;
+        return true;
+    } else {
+        return false;
+        
     }
 }
 
