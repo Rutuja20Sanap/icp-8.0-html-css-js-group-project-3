@@ -149,9 +149,9 @@ function showFinalScore() {
     if (score < 8) {
         scoreLine.innerText = `Your score: ${score}/${totalQuestions}\nOoh, not quite! Don't worry, you can always take the quiz and try again!`;
     } else if (score >= 8 && score < 13) {
-        scoreLine.innerText = `Your score: ${score}/${totalQuestions}\nVery good! You love your emojis, no doubt about that! We bet you can get a perfect score, though - why not try again and see?`;
+        scoreLine.innerText = `Your score: ${score}/${totalQuestions}\nVery good! You love to study, no doubt about that! We bet you can get a perfect score, though - why not try again and see?`;
     } else {
-        scoreLine.innerText = `Your score: ${score}/${totalQuestions}\nPerfect - you're totally in touch with your emotions! You're definitely the emoji expert in your friend group!`;
+        scoreLine.innerText = `Your score: ${score}/${totalQuestions}\nPerfect - you're really good in studies! You're definitely the expert in your friend group!`;
     }
 
     // Show the certificate section
