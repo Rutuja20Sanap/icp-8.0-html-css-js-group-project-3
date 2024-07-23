@@ -146,7 +146,7 @@ h4{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
 }
 .activities .box-container .box {
   height: 360px;
@@ -157,7 +157,7 @@ h4{
   border-radius: 10px;
   outline: 0.1rem solid rgba(0, 0, 0, 0.1);
   outline-offset: -1rem;
-  background-color: #fff;
+  background-color: #dadad6;
 }
 .activities .box-container .box img{
   height: 8rem;
@@ -180,6 +180,8 @@ h4{
  #btn-1{
   margin-top: 20px;
   border-radius: 25px 10px;
+  background-color: #ff3399;
+  color: #fff;
  }
  #font-color{
   color:#0e0e0e;
