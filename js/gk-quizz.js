@@ -117,7 +117,8 @@ function checkAnswer(questionId, formId) {
         answeredQuestions++;
         return true;
     } else {
-        return false;   
+        return false;
+        
     }
 }
 
