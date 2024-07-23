@@ -6,7 +6,7 @@
 }
 :root{
     --orange:#f7a636;
-    --pink:#e534aa;
+    --pink:#ff3399;
     --black: #1d1c1c;
     --white: #fff;
     --light-color:#55552b;
@@ -113,7 +113,7 @@ section{
     align-items: center;
     justify-content: space-between;
     padding:5px;
-    background: var(--white);
+    background:#dadad6;
     box-shadow: var(--box-shadow);
   }
   
