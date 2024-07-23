@@ -70,10 +70,17 @@
 }
 
 .dark-theme .section-title{
+    color: white;
+}
+.dark-theme .Quiz-container {
     color: black;
 }
-
-
+.dark-theme #final-score-container{
+    color: black;
+}
+.dark-theme .certificate-container-main{
+    color: black;
+}
 .que-no {
     display: block;
     flex-wrap: wrap;
