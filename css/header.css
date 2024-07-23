@@ -141,7 +141,7 @@ section{
     
   }
   
-  #menu-btn{
+  .menu-open{
     display: none;
   }
   body {
@@ -255,9 +255,10 @@ margin-right:100px;
 .logo-light {
     display: inline;
     width: 40px;
-    box-shadow: 0 0 10px #e7e1e5;
+    box-shadow: 0 0 10px #e28605;
     padding: 8px;
     border-radius: 50px;
+    background-color: #f1f1f1;
 }
 
 .light-theme .logo-dark {
@@ -576,7 +577,7 @@ margin-bottom: 10px;
      margin-left:0%;
      }
    
-   .menu-open {
+    .menu-open{
      display: none;
    }
    .nav__logo {
@@ -627,5 +628,4 @@ margin-bottom: 10px;
        gap:40px;
      }
  }
-  
-  
+ 
