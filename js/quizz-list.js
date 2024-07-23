@@ -1,37 +1,22 @@
-
 document.addEventListener("DOMContentLoaded", () => {
-    // Random Quiz Suggestion
-    const quizzes = [
-        {name: "English Quiz", link: "../pages/educational-quizz.html"},
-        {name: "Games and Fun Quiz", link: "../pages/game.html"},
-        {name: "Math Quiz", link: "../pages/educational-quizz.html"},
-        {name: "Geographic Quiz", link: "../pages/gk-quizz.html"},
-        {name: "Fun and Thematic Quiz", link: "../pages/fun-quizz.html"},
-        {name: "GK Quiz", link: "../pages/gk-quizz.html"}
+    const sentences = [
+        "Test your English skills with fun and engaging questions!",
+        "Join us for a fun-filled quiz adventure with games and laughter!",
+        "Challenge your math skills with our exciting quiz!",
+        "Explore the world with our fun and educational geography quiz!",
+        "Discover amazing themes with our fun and engaging quiz!",
+        "Expand your general knowledge with our fun and informative quiz!"
     ];
+    const colors = ["red", "green", "skyblue", "orange", "black", "pink"];
+    let currentSentenceIndex = 0;
 
-    function suggestRandomQuiz() {
-        const randomIndex = Math.floor(Math.random() * quizzes.length);
-        const randomQuiz = quizzes[randomIndex];
-        const suggestionBox = document.getElementById("random-quiz-suggestion");
-        suggestionBox.innerHTML = `How about trying our <a href="${randomQuiz.link}" class="random-quiz-link">${randomQuiz.name}</a>?`;
+    function changeSentence() {
+        const sentenceElement = document.getElementById("changing-sentence");
+        sentenceElement.innerText = sentences[currentSentenceIndex];
+        sentenceElement.style.color = colors[currentSentenceIndex];
+        currentSentenceIndex = (currentSentenceIndex + 1) % sentences.length;
     }
 
-    suggestRandomQuiz();
-
-    // Greeting Message
-    function getGreetingMessage() {
-        const hour = new Date().getHours();
-        if (hour < 12) {
-            return "Good Morning!";
-        } else if (hour < 18) {
-            return "Good Afternoon!";
-        } else {
-            return "Good Evening!";
-        }
-    }
-
-    const greetingMessage = getGreetingMessage();
-    document.getElementById("greeting-message").innerText = greetingMessage;
+    setInterval(changeSentence, 3000); // Change sentence every 3 seconds
+    changeSentence(); // Initialize with the first sentence immediately
 });
-
