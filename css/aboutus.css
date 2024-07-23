@@ -450,6 +450,10 @@
     #btn-eligible{
         margin-top: 20px;
     }
+    .footer{
+        position: relative;
+        top: 1200px;
+    }
     
    
 }
@@ -559,6 +563,10 @@
     }
     #btn-eligible{
         margin-top: 20px;
+    }
+    .footer{
+        position: relative;
+        top: 1200px;
     }
     
 
@@ -672,6 +680,10 @@
     #btn-eligible{
         margin-top: 20px;
     }
+    .footer{
+        position: relative;
+        top: 1200px;
+    }
 
 }
 /* Large Devices */
@@ -782,5 +794,13 @@
     #btn-eligible{
         margin-top: 20px;
     }
+    .games{
+        border: 1px solid black;
+    }
+    .footer{
+        position: relative;
+        top: 1200px;
+    }
+   
 
 }
