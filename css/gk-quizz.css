@@ -5,7 +5,11 @@
     font-family: rutu;
     src: url(../fonts/font-name.otf);
 }
-
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 .Main-container {
     margin-top: 120px;
 }
@@ -43,15 +47,6 @@
 .divider {
     border-bottom: 2px solid #ccc;
     margin: 20px 0;
-}
-
-.bg-img{
-    background-image: url('./../images/gk-quizz/bg.avif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment:scroll;
-    background-position: center;
-    margin-bottom: 0px;
 }
 
 .Quiz-container {
@@ -351,6 +346,16 @@ label input[type="radio"] {
     display: block;
 }
 
+.bg-img{
+    background-image: url('./../images/gk-quizz/bg.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    min-height: 100vh; /* Ensure it covers at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+}
 
 @media screen and (max-width: 600px) {
     .Main-container {
