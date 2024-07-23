@@ -1,149 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educational-Quizz</title>
-    <link rel="stylesheet" href="../css/education-quizz.css">
+    <title>GK-Quiz</title>
+    <link rel="stylesheet" href="./../css/education-quizz.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="./../css/header.css">
+    <link rel="stylesheet" href="./../css/footer.css">
+
 </head>
-<!--header section start -->
-<body id="body" class="light-theme">
-    <header class="header">
-        <div class="container">
-            <div class="animative-movement">
-                <span id="name1">K</span><span id="name2">I</span><span id="name3">D</span><span id="name4">S</span>
-            </div>
-            <h2>Quizzland</h2>
-        </div>
 
-        <nav class="navbar">
-            <a href="/index.html">Home</a>
-            <a href="./aboutus.html">About</a>
-            <div class="dropdown">
-                <a class="dropbtn" href="#">Quizz Category<i class="fas fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="./educational-quizz.html">Educational Quizz</a>
-                    <a href="./fun-quizz.html">Fun Quizz</a>
-                    <a href="./gk-quizz.html">General Knowledge Quizz</a>
+<body>
+
+    <body id="body" class="light-theme">
+        <header class="header">
+            <div class="container">
+                <div class="animative-movement">
+                    <span id="name1">K</span><span id="name2">I</span><span id="name3">D</span><span id="name4">S</span>
                 </div>
+                <h2>Quizzland</h2>
             </div>
-            <a href="./contactus.html">Contact Us</a>
-            <a href="./feedback.html">Feedback</a>
-        </nav>
 
-        <div class="icons">
-            <a href="./sign.html">
-                <div class="fas fa-user" id="login-btn"></div>
-            </a>
-        </div>
-        <div class="nav__logo">
-            <a href="#">
-                <img src="../icon/moon.png" alt="dark mode" class="logo-dark" id="dark-logo" onclick="toggleTheme()" />
-                <img src="../icon/sun.png" alt="light mode" class="logo-light" id="light-logo" onclick="toggleTheme()" />
-            </a>
-        </div>
-        <div class="sidebar" id="sidebar">
-            <div class="close-btn" id="close-btn">
-                <img src="../icon/arrow.png" alt="Close" width="30px">
-            </div>
-            <nav class="sidebar-navbar">
-                <a class="menu-item active-menu" href="/index.html"> <img src="../icon/home.png" class="menu-icon">
-                    <span class="menu-text">Home</span></a>
-                <a class="menu-item" href="./aboutus.html">
-                    <img src="../icon/aboutus.png" class="menu-icon">
-                    <span class="menu-text">AboutUs</span>
-                </a>
-                <a class="menu-item" href="./quizz-list.html">
-                    <img src="../icon/quizz.png" class="menu-icon">
-                    <span class="menu-text">Quizz-List</span>
-                </a>
-                <a class="menu-item" href="./contactus.html">
-                    <img src="../icon/contact-us.png" class="menu-icon">
-                    <span class="menu-text">Contact</span>
-                </a>
-                <a class="menu-item" href="./feedback.html">
-                    <img src="../icon/feedback.png" class="menu-icon">
-                    <span class="menu-text">Feedback</span>
-                </a>
+            <nav class="navbar">
+                <a href="./../index.html">Home</a>
+                <a href="./../pages/aboutus.html">About</a>
+                <div class="dropdown">
+                    <a class="dropbtn" href="#">Quizz Category<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="./../pages/educational-quizz.html">Educational Quizz</a>
+                        <a href="./../pages/fun-quizz.html">Fun Quizz</a>
+                        <a href="./../pages/gk-quizz.html">General Knowledge Quizz</a>
+                    </div>
+                </div>
+                <a href="./../pages/contactus.html">Contact Us</a>
+                <a href="./../pages/feedback.html">Feedback</a>
             </nav>
-        </div>
 
-        <!-- Open Sidebar Menu Button -->
-        <div class="menu-open" id="menu-open">
-            <img src="../icon/menus.png" alt="Menu" width="30px">
-        </div>
-    </header>
-    <!--header section end-->
-    <div class="main-section">
-    <div class="header-d">
-        <h1 class="font-h">Educational Quizz </h1>
-        <h3 class="font-h">Explore and Learn: Quizz for little Geniuses!</h3>
-    </div>
-    <main>
-        <div class="quizz-container">
-            <h2 id="question"></h2>
-            <div id="choices"></div>
-        </div>
-        <div id="navigation-buttons">
-            <button id="prev-button" onclick="previousQuestion()">Back</button>
-            <button id="next-button" onclick="nextQuestion()">Next</button>
-        </div>
-        <div id="result-container" style="display: none;">
-            <h2 id="question">Your Score: <span id="score"></span></h2>
-            <button onclick="restartQuiz()">Restart Quiz</button>
-        </div>
-    </main>
-    </div>
-     <!--footer section start-->
-     <div class="footer">
-
-        <div class="box-container">
-
-            <div class="box">
-                <span id="name1">K</span><span id="name2">I</span><span id="name3">D</span><span
-                    id="name4">S</span><br><span id="text">Quizzland</span>
-               
+            <div class="icons">
+                <a href="./../pages/sign.html">
+                    <div class="fas fa-user" id="login-btn"></div>
+                </a>
+            </div>
+            <div class="nav__logo">
+                <a href="#">
+                    <img src="./../icon/moon.png" alt="dark mode" class="logo-dark" id="dark-logo"
+                        onclick="toggleTheme()" />
+                    <img src="./../icon/moon.png" alt="light mode" class="logo-light" id="light-logo"
+                        onclick="toggleTheme()" />
+                </a>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <div class="close-btn" id="close-btn">
+                    <img src="icon/arrow.png" alt="Close" width="30px">
+                </div>
+                <nav class="sidebar-navbar">
+                    <a class="menu-item active-menu" href="./index.html"> <img src="./../icon/home.png"
+                            class="menu-icon">
+                        <span class="menu-text">Home</span></a>
+                    <a class="menu-item" href="./../pages/aboutus.html">
+                        <img src="./../icon/aboutus.png" class="menu-icon">
+                        <span class="menu-text">AboutUs</span>
+                    </a>
+                    <a class="menu-item" href="./../pages/quizz-list.html">
+                        <img src="./../icon/quizz.png" class="menu-icon">
+                        <span class="menu-text">Quizz-List</span>
+                    </a>
+                    <a class="menu-item" href="./../pages/contactus.html">
+                        <img src="./../icon/contact-us.png" class="menu-icon">
+                        <span class="menu-text">Contact</span>
+                    </a>
+                    <a class="menu-item" href="./../pages/feedback.html">
+                        <img src="./../icon/feedback.png" class="menu-icon">
+                        <span class="menu-text">Feedback</span>
+                    </a>
+                </nav>
             </div>
 
-            <div class="box">
-                <h3>quick links</h3>
-                <a href="./aboutus.html"><i class="fas fa-caret-right"></i>Aboutus</a>
-                <a href="./quizz-list.html"><i class="fas fa-caret-right"></i>Quizz-List</a>
-                <a href="./contactus.html"><i class="fas fa-caret-right"></i>Contactus</a>
-                <a href="./feedback.html"><i class="fas fa-caret-right"></i>Feedback</a>
+            <!-- Open Sidebar Menu Button -->
+            <div class="menu-open" id="menu-open">
+                <img src="./../icon/menus.png" alt="Menu" width="30px">
             </div>
+        </header>
+        <!--header section end-->
 
-            <div class="box1" id="social-media">
-                <h3>Connect With Us</h3>
-                <a href="https://www.linkedin.com/in/rutuja-sanap-07096b284/" target="blank"><img src="../icon/linkdln.png"
-                        height="40px" class="social-media"></a>
-                <a href="https://github.com/Rutuja20Sanap"><img src="../icon/github.png" height="40px"
-                        class="social-media"></a>
-                <a href="tel:+919322396408"><img src="../icon/whatsapps.png" height="40px"></a>
-                <a href="#"><img src="../icon/facebook.png" height="40px" class="social-media"></a>
+        <div class="Main-container">
+            <div class="header-container">
+                <div class="GK-header">
+                    <img src="./../images/gk-quizz/gk-1.jpeg" alt="kids" class="header-img">
+                    <h1 class="header-name">General Knowledge Quizes</h1>
+                    <img src="./../images/gk-quizz/gk-1.jpeg" alt="kids" class="header-img">
+                </div>
+                <h1 class="tagline">Explore and Learn: Quizzes for Little Geniuses!</h1>
+
+                <div class="divider"></div>
+
+                <div class="Quiz-container" id="Quiz-container">
+                    <div id="section-name" class="type-container">
+                        <img src="./../images/gk-quizz/type.png" alt="study" class="que-type-img">
+                        <h1 id="section-title" class="section-title">Simple Questions</h1>
+                        <img src="./../images/gk-quizz/type.png" alt="study" class="que-type-img">
+                    </div>
+
+
+                    <section id="questions" class="que-no">
+                        <div class="question" id="question1" data-correct="C">
+                            <p class="que-name">1. What is 5 + 3?</p>
+                            <form class="quiz-form" id="quiz-form1">
+                                <label>
+                                    <input type="radio" name="q1" value="A">
+                                    A. 6
+                                </label>
+                                <label>
+                                    <input type="radio" name="q1" value="B">
+                                    B. 7
+                                </label>
+                                <label>
+                                    <input type="radio" name="q1" value="C">
+                                    C. 8
+                                </label>
+                                <label>
+                                    <input type="radio" name="q1" value="D">
+                                    D. 9
+                                </label>
+                            </form>
+                           
+                        </div>
+
+                        <div class="question" id="question2" data-correct="A">
+                            <p class="que-name">2. What is the opposite of 'hot'?</p>
+                            <form class="quiz-form" id="quiz-form2">
+                                <label>
+                                    <input type="radio" name="q2" value="A">
+                                    A. Cold
+                                </label>
+                                <label>
+                                    <input type="radio" name="q2" value="B">
+                                    B. Warm
+                                </label>
+                                <label>
+                                    <input type="radio" name="q2" value="C">
+                                    C. Cool
+                                </label>
+                                <label>
+                                    <input type="radio" name="q2" value="D">
+                                    D. Heat
+                                </label>
+                            </form>
+                           
+                        </div>
+
+                        <div class="question" id="question3" data-correct="C">
+                            <p class="que-name" id="Question">3. What is the value of 9 - 4?
+                            </p>
+                            <form class="quiz-form" id="quiz-form3">
+                                <label>
+                                    <input type="radio" name="q3" value="A">
+                                    A. 3
+                                </label>
+                                <label>
+                                    <input type="radio" name="q3" value="B">
+                                    B. 4
+                                </label>
+                                <label>
+                                    <input type="radio" name="q3" value="C">
+                                    C. 5
+                                </label>
+                                <label>
+                                    <input type="radio" name="q3" value="D">
+                                    D. 6
+                                </label>
+                            </form>
+                           
+                        </div>
+
+                        <div class="question" id="question4" data-correct="C">
+                            <p class="que-name" id="Question">4. Which one is a noun?</p>
+                            <form class="quiz-form" id="quiz-form4">
+                                <label>
+                                    <input type="radio" name="q4" value="A">
+                                    A. Quickly
+                                </label>
+                                <label>
+                                    <input type="radio" name="q4" value="B">
+                                    B. Run
+                                </label>
+                                <label>
+                                    <input type="radio" name="q4" value="C">
+                                    C. Apple
+                                </label>
+                                <label>
+                                    <input type="radio" name="q4" value="D">
+                                    D. Blue
+                                </label>
+                            </form>
+                           
+                        </div>
+
+                        <div class="question" id="question5" data-correct="B">
+                            <p class="que-name" id="Question">5. What is the next number after 15?</p>
+                            <form class="quiz-form" id="quiz-form5">
+                                <label>
+                                    <input type="radio" name="q5" value="A">
+                                    A. 14
+                                </label>
+                                <label>
+                                    <input type="radio" name="q5" value="B">
+                                    B. 16
+                                </label>
+                                <label>
+                                    <input type="radio" name="q5" value="C">
+                                    C. 17
+                                </label>
+                                <label>
+                                    <input type="radio" name="q5" value="D">
+                                    D. 18
+                                </label>
+                            </form>
+                            
+                        </div>
+                        <div class="question" id="question6" data-correct="A">
+                            <p class="que-name">1. What is 7 x 6?</p>
+                            <form class="quiz-form" id="quiz-form6">
+                                <label>
+                                    <input type="radio" name="q6" value="A">
+                                    A. 42
+                                </label>
+                                <label>
+                                    <input type="radio" name="q6" value="B">
+                                    B. 48
+                                </label>
+                                <label>
+                                    <input type="radio" name="q6" value="C">
+                                    C. 36
+                                </label>
+                                <label>
+                                    <input type="radio" name="q6" value="D">
+                                    D. 56
+                                </label>
+                            </form>
+                           
+                        </div>
+
+                        <div class="question" id="question7" data-correct="A">
+                            <p class="que-name">2. Which word is an adjective?</p>
+                            <form class="quiz-form" id="quiz-form7">
+                                <label>
+                                    <input type="radio" name="q7" value="A">
+                                    A. Happy
+                                </label>
+                                <label>
+                                    <input type="radio" name="q7" value="B">
+                                    B. Jump
+                                </label>
+                                <label>
+                                    <input type="radio" name="q7" value="C">
+                                    C. Dance
+                                </label>
+                                <label>
+                                    <input type="radio" name="q7" value="D">
+                                    D. And
+                                </label>
+                            </form>
+                           
+                        </div>
+                        <div class="question" id="question8" data-correct="C">
+                            <p class="que-name" id="Question">3. What is the perimeter of a square with side length 5?
+                            </p>
+                            <form class="quiz-form" id="quiz-form8">
+                                <label>
+                                    <input type="radio" name="q8" value="A">
+                                    A. 10
+                                </label>
+                                <label>
+                                    <input type="radio" name="q8" value="B">
+                                    B. 15
+                                </label>
+                                <label>
+                                    <input type="radio" name="q8" value="C">
+                                    C. 20
+                                </label>
+                                <label>
+                                    <input type="radio" name="q8" value="D">
+                                    D. 25
+                                </label>
+                            </form>
+                            
+                        </div>
+
+                        <div class="question" id="question9" data-correct="C">
+                            <p class="que-name" id="Question">4. Which sentence is in past tense?</p>
+                            <form class="quiz-form" id="quiz-form9">
+                                <label>
+                                    <input type="radio" name="q9" value="A">
+                                    A. She will go to the store.
+                                </label>
+                                <label>
+                                    <input type="radio" name="q9" value="B">
+                                    B. She is going to the store.
+                                </label>
+                                <label>
+                                    <input type="radio" name="q9" value="C">
+                                    C. She went to the store.
+                                </label>
+                                <label>
+                                    <input type="radio" name="q9" value="D">
+                                    D. She goes to the store.
+                                </label>
+                            </form>
+                            <h1 class="result" id="result9"></h1>
+                            
+                        </div>
+
+                        <div class="question" id="question10" data-correct="B">
+                            <p class="que-name" id="Question">5. What is 50 ÷ 5?</p>
+                            <form class="quiz-form" id="quiz-form10">
+                                <label>
+                                    <input type="radio" name="q10" value="A">
+                                    A. 5
+                                </label>
+                                <label>
+                                    <input type="radio" name="q10" value="B">
+                                    B. 10
+                                </label>
+                                <label>
+                                    <input type="radio" name="q10" value="C">
+                                    C. 15
+                                </label>
+                                <label>
+                                    <input type="radio" name="q10" value="D">
+                                    D. 20
+                                </label>
+                            </form>
+                           
+                        </div>
+                        <div class="question" id="question11" data-correct="C">
+                            <p class="que-name">1. What is the square root of 81?</p>
+                            <form class="quiz-form" id="quiz-form11">
+                                <label>
+                                    <input type="radio" name="q11" value="A">
+                                    A. 7
+                                </label>
+                                <label>
+                                    <input type="radio" name="q11" value="B">
+                                    B. 8
+                                </label>
+                                <label>
+                                    <input type="radio" name="q11" value="C">
+                                    C. 9
+                                </label>
+                                <label>
+                                    <input type="radio" name="q11" value="D">
+                                    D. 10
+                                </label>
+                            </form>
+                            
+                        </div>
+
+                        <div class="question" id="question12" data-correct="B">
+                            <p class="que-name">2. What is 12 x 7?</p>
+                            <form class="quiz-form" id="quiz-form12">
+                                <label>
+                                    <input type="radio" name="q12" value="A">
+                                    A. 72
+                                </label>
+                                <label>
+                                    <input type="radio" name="q12" value="B">
+                                    B. 84
+                                </label>
+                                <label>
+                                    <input type="radio" name="q12" value="C">
+                                    C. 96
+                                </label>
+                                <label>
+                                    <input type="radio" name="q12" value="D">
+                                    D. 108
+                                </label>
+                            </form>
+                            
+                        </div>
+
+                        <div class="question" id="question13" data-correct="B">
+                            <p class="que-name" id="Question">3. Solve for x: 2x + 3 = 7
+                            </p>
+                            <form class="quiz-form" id="quiz-form13">
+                                <label>
+                                    <input type="radio" name="q13" value="A">
+                                    A. 8
+                                </label>
+                                <label>
+                                    <input type="radio" name="q13" value="B">
+                                    B. 2
+                                </label>
+                                <label>
+                                    <input type="radio" name="q13" value="C">
+                                    C. 5
+                                </label>
+                                <label>
+                                    <input type="radio" name="q13" value="D">
+                                    D. 1
+                                </label>
+                            </form>
+                           
+                        </div>
+
+                        <div class="question" id="question14" data-correct="B">
+                            <p class="que-name" id="Question">4. Identify the adverb in the sentence: 'She quickly ran to the store.'</p>
+                            <form class="quiz-form" id="quiz-form14">
+                                <label>
+                                    <input type="radio" name="q14" value="A">
+                                    A. She
+                                </label>
+                                <label>
+                                    <input type="radio" name="q14" value="B">
+                                    B. Quickly
+                                </label>
+                                <label>
+                                    <input type="radio" name="q14" value="C">
+                                    C. Ran
+                                </label>
+                                <label>
+                                    <input type="radio" name="q14" value="D">
+                                    D. Store
+                                </label>
+                            </form>
+                            
+                        </div>
+
+                        <div class="question" id="question15" data-correct="B">
+                            <p class="que-name" id="Question">5. Which sentence is in passive voice?
+                            </p>
+                            <form class="quiz-form" id="quiz-form15">
+                                <label>
+                                    <input type="radio" name="q15" value="A">
+                                    A. The cat chased the mouse.
+                                </label>
+                                <label>
+                                    <input type="radio" name="q15" value="B">
+                                    B. The mouse was chased by the cat.
+                                </label>
+                                <label>
+                                    <input type="radio" name="q15" value="C">
+                                    C. The cat is chasing the mouse.
+                                </label>
+                                <label>
+                                    <input type="radio" name="q15" value="D">
+                                    D. The mouse is chasing the cat.
+                                </label>
+                            </form>
+                           
+                        </div>
+
+                        <div class="navigation-buttons">
+                            <button id="prev-button" class="hide" onclick="navigateQuestion(0,-1)">Previous</button>
+                            <button id="next-button" onclick="navigateQuestion(0,1)">Next</button>
+                            <button id="finish-button" class="hide" onclick="showFinalScore()">Finish</button>
+                        </div>
+                    </section>
+
             </div>
-
-            <div class="box ">
-                <h3>Get in touch</h3>
-                    <a href="https://wa.me/+919322396408" target="_blank"><i class="fas fa-caret-right"></i>+91 9322396408</a>
-                    <a href="https://wa.me/+917350371422" target="_blank"><i class="fas fa-caret-right"></i>+91 7350371422</a>        
-                    <a href="https://wa.me/+918010825030" target="_blank"><i class="fas fa-caret-right"></i>+91 918010825030</a>
-                    <a href="https://wa.me/+919860312523" target="_blank"><i class="fas fa-caret-right"></i>+91 9860312523</a>
-                    <a href="https://wa.me/+918390074057" target="_blank"><i class="fas fa-caret-right"></i>+91 8390074057</a>
-
-                    <a href="mailto:dnyaneshwarsanap293@gmail.com"><i class="fas fa-caret-right"></i>kidsquizzland.com</a>
-            </div>
-           
-
+        </div>
+        </div>
         </div>
 
-        <div class="credit"> &copy; copyright @ 2024 by <span>Kids Quizzland</span></div>
-    </div>
-     <!--footer section end-->
-    <script src="../js/education-quizz.js"></script>
-</body>
+        <div id="final-score-container" class="hide">
+            <h1 id="score-container"></h1>
+            <p id="score-line"></p>
+        </div>
+        
+        <div id="certificate" class="certificate-container-main">
+            <div class="certificate-container">
+                <h1>Certificate of Achievement</h1>
+                <p class="certificate-p">This certificate is awarded to:</p>
+                <h2 id="childName">[Child's Name]</h2>
+                <p class="certificate-p">For their outstanding performance and participation in the</p>
+                <h3>Fun Quiz for Kids</h3>
+                <p class="certificate-p">Congratulations on your amazing efforts and knowledge!</p>
+                <p>Date: <span id="date">[Date]</span></p>
+                <p>Quiz Organizer: <span id="organizerName">Suhas Dhawale</span></p>
+            </div>
+        
+                <button class="certificate-button" onclick="generateCertificate()">Generate Certificate</button>
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="certificate-input" id="certificate-input">
+                <input type="text" id="inputName" placeholder="Enter Child's Name" required>
+                <input type="text" id="inputDate" placeholder="Enter Date" required>
+            </div>
+        </div>
+        <!--footer section start-->
+        <div class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <span id="name1">K</span><span id="name2">I</span><span id="name3">D</span><span
+                        id="name4">S</span><br><span id="text">Quizzland</span>
+
+                </div>
+
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="./../pages/aboutus.html"><i class="fas fa-caret-right"></i>Aboutus</a>
+                    <a href="./../pages/quizz-list.html"><i class="fas fa-caret-right"></i>Quizz-List</a>
+                    <a href="./../pages/contactus.html"><i class="fas fa-caret-right"></i>Contactus</a>
+                    <a href="./../pages/feedback.html"><i class="fas fa-caret-right"></i>Feedback</a>
+                </div>
+
+                <div class="box1" id="social-media">
+                    <h3>Connect With Us</h3>
+                    <a href="https://www.linkedin.com/in/rutuja-sanap-07096b284/" target="blank"><img
+                            src="./../icon/linkdln.png" height="40px" class="social-media"></a>
+                    <a href="https://github.com/Rutuja20Sanap"><img src="./../icon/github.png" height="40px"
+                            class="social-media"></a>
+                    <a href="tel:+919322396408"><img src="./../icon/whatsapps.png" height="40px"></a>
+                    <a href="#"><img src="./../icon/facebook.png" height="40px" class="social-media"></a>
+                </div>
+
+                <div class="box ">
+                    <h3>Get in touch</h3>
+                    <a href="https://wa.me/+919322396408" target="_blank"><i class="fas fa-caret-right"></i>+91
+                        9322396408</a>
+                    <a href="https://wa.me/+917350371422" target="_blank"><i class="fas fa-caret-right"></i>+91
+                        7350371422</a>
+                    <a href="https://wa.me/+918010825030" target="_blank"><i class="fas fa-caret-right"></i>+91
+                        8010825030</a>
+                    <a href="https://wa.me/+919860312523" target="_blank"><i class="fas fa-caret-right"></i>+91
+                        9860312523</a>
+                    <a href="https://wa.me/+918390074057" target="_blank"><i class="fas fa-caret-right"></i>+91
+                        8390074057</a>
+
+                    <a href="mailto:dnyaneshwarsanap293@gmail.com"><i
+                            class="fas fa-caret-right"></i>kidsquizzland.com</a>
+                </div>
+
+
+            </div>
+
+            <div class="credit"> &copy; copyright @ 2024 by <span>Kids Quizzland</span></div>
+        </div>
+        <!--footer section end-->
+
+        <script src="./../js/education-quizz.js"></script>
+        <script src="./../js/header.js"></script>
+    </body>
+
 </html>
