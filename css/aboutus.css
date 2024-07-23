@@ -687,3 +687,113 @@
     }
 
 }
+/* Large Devices */
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    .top_content{
+       
+        height: 450px;
+        width: 700px;
+    }
+    .imgcontainer{
+       
+        /* display: flex;
+        flex-direction: column; */
+        
+       align-items: center;
+        height: 400px;
+        /* border: 1px solid black */
+    }
+    #kidimg{
+        margin: 20px auto;
+        /* border: 1px solid black; */
+        height: 200px;
+        width: 400px;
+    }
+    #kid{
+        margin: 20px auto;
+        /* border: 1px solid black; */
+        height: 200px;
+        /* width: 150px; */
+    }
+    #kid2{
+        margin: auto;
+        /* border: 1px solid black; */
+        height: 200px;
+        /* width: 0px; */
+    }
+    .content{
+       height: auto;
+        width: 900px;
+        /* border: 1px solid black; */
+    }
+    #team-img{
+        height: 400px;
+    }
+    .who p{
+        /* border: 1px solid black; */
+        margin: auto 20px;
+        font-size: 18px;
+    }
+    .who b{
+        font-size: 30px;
+        margin: auto 20px;
+    }
+    #mission-img{
+        margin-top: 40px;
+        height: 250px;
+    }
+    .ourmission{
+       
+        /* border: 1px solid black; */
+        height: 400px;
+    }
+    .mission-content b{
+        text-align: center;
+        width: 400px;
+        font-size: 40px;
+
+    }
+    .mission-content p{
+        /* border: 1px solid black; */
+        width: 400px;
+        font-size: 18px;
+        line-height: normal;
+    }
+    .offer{
+
+        height: 350px;
+        width: 950px;
+        /* border: 1px solid black; */
+    }
+    .offer h1{
+        font-size: 30px;
+    }
+    .offer h3{
+        font-size: 20px;
+    }
+    .cards{
+        height: fit-content;
+        /* border: 1px solid black; */
+        
+    }
+    .cards p{
+        font-size: 15px;
+    }
+    .card{
+        margin: 20px auto;
+        height: 250px;
+        width: 300px;
+    }
+    .game-demo{
+        height: 200px;
+    }
+    .eligibility-check{
+        height: 100px;
+        width: 420px;
+       
+    }
+    #btn-eligible{
+        margin-top: 20px;
+    }
+
+}
