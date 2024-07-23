@@ -195,14 +195,7 @@ h4{
 /* Media query */
 
 @media screen and (max-width: 600px) {
-  .menu-open {
-    top: 40px;
-    right: 10px;
-  }
-
-  .nav__logo {
-    margin-right: 45px;
-  } 
+ 
 
   .container {
     margin-left: 5px;
@@ -217,9 +210,6 @@ h4{
     display: none;
   }
 
-  #login-btn {
-    margin-bottom: 10px;
-  }
 
   .footer {
     margin-top: 20px;
