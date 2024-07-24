@@ -364,10 +364,11 @@ margin-bottom: 10px;
   .menu-open {
     top: 40px;
     right: 10px;
+    
   }
 
   .nav__logo{
-    margin-right:45px;
+    margin-right:50px;
     }
 
   .container {
@@ -389,6 +390,9 @@ margin-bottom: 10px;
 
   .footer {
     margin-top: 20px;
+  }
+   .dark-theme #dark-logo {
+    margin-right:15px;
   }
 }
  
