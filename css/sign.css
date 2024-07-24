@@ -53,6 +53,11 @@ body {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
     cursor: pointer;
 }
+button:hover{
+    background: var(--orange);
+    color: var(--white);
+    border:none;
+  }
 .login-input-fields button img{
     height: 16px;
 }
@@ -122,9 +127,14 @@ hr{
     cursor: pointer;
     border-radius: .5rem;
     color: #fffefe;
-    background-color: #222222;
+    background-color: var(--orange);
 
 }
+button:hover{
+    background: var(--orange);
+    color: var(--white);
+    border:none;
+  }
 
 .last-text {
     display: block;
@@ -159,6 +169,11 @@ hr{
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
     cursor: pointer;
 }
+button:hover{
+        background: var(--orange);
+        color: var(--white);
+        border:none;
+      }
 .register-input-fields button img{
     height: 16px;
 }
@@ -177,7 +192,13 @@ hr{
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     border: 1px solid rgb(224, 224, 224);
     cursor: pointer;
+    background-color: var(--orange);
 }
+button:hover{
+    background: var(--orange);
+    color: var(--white);
+    border:none;
+  }
 a{
     text-decoration: underline;
     color: blue;
