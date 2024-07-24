@@ -159,7 +159,7 @@ button:hover{
 }
 
 .register-input-fields button {
-
+    
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -188,6 +188,7 @@ button:hover{
     border: 1px solid rgb(224, 224, 224);
 }
 .sign-up-btn button {
+    color: #fff;
     padding: 8px 144px;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     border: 1px solid rgb(224, 224, 224);

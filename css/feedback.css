@@ -87,15 +87,10 @@ body {
         display: inline-block;
         border-radius: .5rem;
         color: #fffefe;
-        background-color: #222222;
+        background-color:  var(--orange);
         cursor: pointer;
       
 }
-button:hover{
-        background: var(--orange);
-        color: var(--white);
-        border:none;
-      }
 
 textarea {
     resize: vertical;
