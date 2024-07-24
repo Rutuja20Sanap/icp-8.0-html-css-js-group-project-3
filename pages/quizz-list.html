@@ -10,135 +10,114 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
 </head>
-
-
-         <!--header section start -->
-
-    <body id="body" class="light-theme">
-        <header class="header">
-            <div class="container">
-                <div class="animative-movement">
-                    <span id="name1">K</span><span id="name2">I</span><span id="name3">D</span><span id="name4">S</span>
-                </div>
-                <h2>Quizzland</h2>
+<body id="body" class="light-theme">
+    <!--header section start-->
+    <header class="header">
+        <div class="container">
+            <div class="animative-movement">
+                <span id="name1">K</span><span id="name2">I</span><span id="name3">D</span><span id="name4">S</span>
             </div>
-
-            <nav class="navbar">
-                <a href="../index.html">Home</a>
-                <a href="../pages/aboutus.html">About</a>
-                <div class="dropdown">
-                    <a class="dropbtn" href="#">Quizz Category<i class="fas fa-caret-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="../pages/educational-quizz.html">Educational Quizz</a>
-                        <a href="../pages/fun-quizz.html">Fun Quizz</a>
-                        <a href="../pages/gk-quizz.html">General Knowledge Quizz</a>
-                    </div>
+            <h2>Quizzland</h2>
+        </div>
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../pages/aboutus.html">About</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="#">Quizz Category<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../pages/educational-quizz.html">Educational Quizz</a>
+                    <a href="../pages/fun-quizz.html">Fun Quizz</a>
+                    <a href="../pages/gk-quizz.html">General Knowledge Quizz</a>
                 </div>
-                <a href="../pages/contactus.html">Contact Us</a>
-                <a href="../pages/feedback.html">Feedback</a>
+            </div>
+            <a href="../pages/contactus.html">Contact Us</a>
+            <a href="../pages/feedback.html">Feedback</a>
+        </nav>
+        <div class="icons">
+            <a href="../pages/sign.html">
+                <div class="fas fa-user" id="login-btn"></div>
+            </a>
+        </div>
+        <div class="nav__logo">
+            <a href="#">
+                <img src="../icon/moon.png" alt="dark mode" class="logo-dark" id="dark-logo" onclick="toggleTheme()" />
+                <img src="../icon/sun.png" alt="light mode" class="logo-light" id="light-logo" onclick="toggleTheme()" />
+            </a>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="close-btn" id="close-btn">
+                <img src="../icon/arrow.png" alt="Close" width="30px">
+            </div>
+            <nav class="sidebar-navbar">
+                <a class="menu-item active-menu" href="../index.html"> <img src="../icon/home.png" class="menu-icon">
+                    <span class="menu-text">Home</span></a>
+                <a class="menu-item" href="../pages/aboutus.html">
+                    <img src="../icon/aboutus.png" class="menu-icon">
+                    <span class="menu-text">AboutUs</span>
+                </a>
+                <a class="menu-item" href="../pages/quizz-list.html">
+                    <img src="../icon/quizz.png" class="menu-icon">
+                    <span class="menu-text">Quizz-List</span>
+                </a>
+                <a class="menu-item" href="../pages/contactus.html">
+                    <img src="../icon/contact-us.png" class="menu-icon">
+                    <span class="menu-text">Contact</span>
+                </a>
+                <a class="menu-item" href="../pages/feedback.html">
+                    <img src="../icon/feedback.png" class="menu-icon">
+                    <span class="menu-text">Feedback</span>
+                </a>
             </nav>
+        </div>
+        <div class="menu-open" id="menu-open">
+            <img src="../icon/menus.png" alt="Menu" width="30px">
+        </div>
+    </header>
+    <!--header section end-->
 
-            <div class="icons">
-                <a href="../pages/sign.html">
-                    <div class="fas fa-user" id="login-btn"></div>
-                </a>
-            </div>
-            <div class="nav__logo">
-                <a href="#">
-                    <img src="../icon/moon.png" alt="dark mode" class="logo-dark" id="dark-logo"
-                        onclick="toggleTheme()" />
-                    <img src="../icon/sun.png" alt="light mode" class="logo-light" id="light-logo"
-                        onclick="toggleTheme()" />
-                </a>
-            </div>
-            <div class="sidebar" id="sidebar">
-                <div class="close-btn" id="close-btn">
-                    <img src="../icon/arrow.png" alt="Close" width="30px">
-                </div>
-                <nav class="sidebar-navbar">
-                    <a class="menu-item active-menu" href="../index.html"> <img src="../icon/home.png"
-                            class="menu-icon">
-                        <span class="menu-text">Home</span></a>
-                    <a class="menu-item" href="../pages/aboutus.html">
-                        <img src="../icon/aboutus.png" class="menu-icon">
-                        <span class="menu-text">AboutUs</span>
-                    </a>
-                    <a class="menu-item" href="../pages/quizz-list.html">
-                        <img src="../icon/quizz.png" class="menu-icon">
-                        <span class="menu-text">Quizz-List</span>
-                    </a>
-                    <a class="menu-item" href="../pages/contactus.html">
-                        <img src="../icon/contact-us.png" class="menu-icon">
-                        <span class="menu-text">Contact</span>
-                    </a>
-                    <a class="menu-item" href="../pages/feedback.html">
-                        <img src="../icon/feedback.png" class="menu-icon">
-                        <span class="menu-text">Feedback</span>
-                    </a>
-                </nav>
-            </div>
-
-            <!-- Open Sidebar Menu Button -->
-            <div class="menu-open" id="menu-open">
-                <img src="../icon/menus.png" alt="Menu" width="30px">
-            </div>
-        </header>
-        <!--header section end-->
-
-        <!------body content-------->
-        
-       
-        
-        <section class="activities">
+    <!------body content-------->
+    <section class="activities">
         <h1 class="heading">Our <span>Activities</span></h1>
         <div id="changing-sentence" class="changing-sentence">Loading....</div>
-            <div class="box-container">
-                <div class="box">
-                    <img src="../images/homepage/activities1.png" alt="">
-                    <h3 id="font-color">English Quizz</h3>
-                    <p class="text-color">Hey there, Superstars! 🌟 Ready to put on your thinking caps and have some
-                        fun? Our English
-                        Quiz <br>Adventure is just for you! 🚀.</p>
-                    <a href="../pages/educational-quizz.html" class="btn" id="btn-1">Start Quizz</a>
-                </div>
-                <div class="box">
-                    <img src="../images/homepage/games.gif" alt="">
-                    <h3 id="font-color">Games and fun Quizz</h3>
-                    <p class="text-color">Awesome kids! Ready to have a blast? 🎊 Welcome to the Fun and Games Quiz,
-                        where laughter and
-                        learning go hand in hand.🌟</p>
-                    <a href="../pages/game.html" class="btn" id="btn-1">Start Quizz</a>
-                </div>
-                <div class="box">
-                    <img src="../images/homepage/math.gif" alt="">
-                    <h3 id="font-color">Math Quizz</h3>
-                    <p class="text-color">Welcome to the Math Funland!✨Are you ready to become math whiz?Our Math Quiz
-                        is packed with exciting question.📚</p>
-                        <a href="../pages/educational-quizz.html" class="btn" id="btn-1">Start Quizz</a>
-                </div>
-                <div class="box">
-                    <img src="../images/homepage/earth.gif" alt="">
-                    <h3 id="font-color">Geographic Quizz</h3>
-                    <p class="text-color">Hey,little explorers!It's all learning placea and what makes
-                        them special🌎✈️.Let's get start amazing world of geography📚.</p>
-                        <a href="../pages/gk-quizz.html" class="btn" id="btn-1">Start Quizz</a>
-                </div>
-                <div class="box">
-                    <img src="../images/homepage/fun-fact.gif" alt="">
-                    <h3>Fun and Thematic Quizz</h3>
-                    <p class="text-color">Do you love playing games and learn new things?🧐Then 
-                         Let's start the what amazing themes.</p>
-                         <a href="../pages/fun-quizz.html" class="btn" id="btn-1">Start Quizz</a>
-                </div>
-                <div class="box">
-                    <img src="../images/homepage/gk.gif" alt="">
-                    <h3 id="font-color">GK Quizz</h3>
-                    <p class="text-color">Hey kids!🤗Let's learn some<br>cool and fun facts together!<br>General knowledge is all knowing
-                    interesting thing world around.</p>
-                    <a href="../pages/gk-quizz.html" class="btn" id="btn-1">Start Quizz</a>
-                </div>
+        <div class="box-container">
+            <div class="box">
+                <img src="../images/homepage/activities1.png" alt="">
+                <h3 id="font-color">English Quizz</h3>
+                <p class="text-color">Hey there, Superstars! 🌟 Ready to put on your thinking caps and have some fun? Our English Quiz <br>Adventure is just for you! 🚀.</p>
+                <a href="../pages/educational-quizz.html" class="btn" onclick="startQuiz('English Quizz')">Start Quizz</a>
             </div>
-        </section>
+            <div class="box">
+                <img src="../images/homepage/games.gif" alt="">
+                <h3 id="font-color">Games and fun Quizz</h3>
+                <p class="text-color">Awesome kids! Ready to have a blast? 🎊 Welcome to the Fun and Games Quiz, where laughter and learning go hand in hand.🌟</p>
+                <a href="../pages/game.html" class="btn" onclick="startQuiz('Games and Fun Quizz')">Start Quizz</a>
+            </div>
+            <div class="box">
+                <img src="../images/homepage/math.gif" alt="">
+                <h3 id="font-color">Math Quizz</h3>
+                <p class="text-color">Welcome to the Math Funland!✨Are you ready to become math whiz?Our Math Quiz is packed with exciting question.📚</p>
+                <a href="../pages/educational-quizz.html" class="btn" onclick="startQuiz('Math Quizz')">Start Quizz</a>
+            </div>
+            <div class="box">
+                <img src="../images/homepage/earth.gif" alt="">
+                <h3 id="font-color">Geographic Quizz</h3>
+                <p class="text-color">Hey,little explorers!It's all learning placea and what makes them special🌎✈️.Let's get start amazing world of geography📚.</p>
+                <a href="../pages/gk-quizz.html" class="btn" onclick="startQuiz('Geographic Quizz')">Start Quizz</a>
+            </div>
+            <div class="box">
+                <img src="../images/homepage/fun-fact.gif" alt="">
+                <h3>Fun and Thematic Quizz</h3>
+                <p class="text-color">Do you love playing games and learn new things?🧐Then Let's start the what amazing themes.</p>
+                <a href="../pages/fun-quizz.html" class="btn" onclick="startQuiz('Fun and Thematic Quizz')">Start Quizz</a>
+            </div>
+            <div class="box">
+                <img src="../images/homepage/gk.gif" alt="">
+                <h3 id="font-color">GK Quizz</h3>
+                <p class="text-color">Hey kids!🤗Let's learn some<br>cool and fun facts together!<br>General knowledge is all knowing interesting thing world around.</p>
+                <a href="../pages/gk-quizz.html" class="btn" onclick="startQuiz('GK Quizz')">Start Quizz</a>
+            </div>
+        </div>
+    </section>
 
     <!--footer section start-->
     <footer class="footer">
@@ -146,7 +125,6 @@
             <div class="box">
                 <span id="name1">K</span><span id="name2">I</span><span id="name3">D</span><span id="name4">S</span><br><span id="text">Quizzland</span>
             </div>
-
             <div class="box">
                 <h3>Quick Links</h3>
                 <a href="../pages/aboutus.html"><i class="fas fa-caret-right"></i> About Us</a>
@@ -154,7 +132,6 @@
                 <a href="../pages/contactus.html"><i class="fas fa-caret-right"></i> Contact Us</a>
                 <a href="../pages/feedback.html"><i class="fas fa-caret-right"></i> Feedback</a>
             </div>
-
             <div class="box1" id="social-media">
                 <h3>Connect With Us</h3>
                 <a href="https://www.linkedin.com/in/rutuja-sanap-07096b284/" target="_blank"><img src="../icon/linkdln.png" height="40px" class="social-media"></a>
@@ -162,7 +139,6 @@
                 <a href="tel:+919322396408"><img src="../icon/whatsapps.png" height="40px"></a>
                 <a href="#"><img src="../icon/facebook.png" height="40px" class="social-media"></a>
             </div>
-
             <div class="box">
                 <h3>Get in Touch</h3>
                 <a href="https://wa.me/+919322396408" target="_blank"><i class="fas fa-caret-right"></i> +91 9322396408</a>
@@ -173,11 +149,22 @@
                 <a href="mailto:dnyaneshwarsanap293@gmail.com"><i class="fas fa-caret-right"></i> kidsquizzland.com</a>
             </div>
         </div>
-
         <div class="credit"> &copy; 2024 by <span>Kids Quizzland</span></div>
     </footer>
     <!--footer section end-->
+    
     <script src="../js/quizz-list.js"></script>
     <script src="../js/header.js"></script> 
+    <script>
+        function startQuiz(quizName) {
+            const userResponse = prompt(`Are you ready to start the ${quizName}?`);
+            if (userResponse) {
+                alert(`Great! Let's start the ${quizName}.`);
+                // Here you can add more actions like redirecting to the quiz page, etc.
+            } else {
+                alert(`No worries! Take your time and start the ${quizName} when you are ready.`);
+            }
+        }
+    </script>
 </body>
 </html>
