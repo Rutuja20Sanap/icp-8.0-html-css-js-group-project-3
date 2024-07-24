@@ -1,3 +1,14 @@
+function startQuiz(quizName) {
+    const userResponse = prompt(`Are you ready to start the ${quizName}?`);
+
+    if (userResponse) {
+        alert(`Great! Let's start the ${quizName}.`);
+
+    } else {
+        alert(`No worries! Take your time and start the ${quizName} when you are ready.`);
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const sentences = [
         "Test your English skills with fun and engaging questions!",
@@ -17,6 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
         currentSentenceIndex = (currentSentenceIndex + 1) % sentences.length;
     }
 
-    setInterval(changeSentence, 3000); // Change sentence every 3 seconds
-    changeSentence(); // Initialize with the first sentence immediately
+    setInterval(changeSentence, 3000);
+    changeSentence();
 });
