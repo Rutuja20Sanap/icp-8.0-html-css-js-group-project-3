@@ -62,15 +62,21 @@ h1{
     color: white;
     font-size: 3vmin;
     margin-top: 3rem;
+ 
 }
 
 #msg{
     color: green;
     font-size: 7vmin;
+    
 }
 
 .msg-container{
+    margin-top: 150px;
     height : 100vmin;
+    justify-content: center;
+    text-align: center;
+   
 }
 
 .hide{

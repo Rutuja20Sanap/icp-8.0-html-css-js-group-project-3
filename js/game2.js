@@ -1,4 +1,8 @@
 let boxes = document.querySelectorAll(".box2");
+let resetbtn = document.querySelector("#reset-btn");
+let newGameBtn = document.querySelector("#new-btn");
+let msg = document.querySelector("#msg");
+let msgContainer = document.querySelector(".msg-container");
 
 let turno = true;
 let turn = 0;
@@ -56,3 +60,4 @@ boxes.forEach(function (box2) {
       box.disabled = true;
     }
   }
+  
