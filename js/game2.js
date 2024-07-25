@@ -12,7 +12,8 @@ function handleClick(box) {
         turno = true;
       }
     box.disabled = true;
-
+    
+    checkWinner();
   }
 
   let winPattern= [
