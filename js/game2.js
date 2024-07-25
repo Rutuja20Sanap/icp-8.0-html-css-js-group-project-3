@@ -66,3 +66,8 @@ boxes.forEach(function (box2) {
       box.innerText = "";
     }
   }
+  function resetGAme() {
+    turno = true;  
+    enableBoxes();
+    msgContainer.classList.add("hide");
+  }
