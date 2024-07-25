@@ -73,4 +73,6 @@ h1{
     height : 100vmin;
 }
 
-
+.hide{
+    display: none;
+}
