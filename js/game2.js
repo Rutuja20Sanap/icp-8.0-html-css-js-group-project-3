@@ -60,4 +60,9 @@ boxes.forEach(function (box2) {
       box.disabled = true;
     }
   }
-  
+  function enableBoxes() {
+    for (let box of boxes) {
+      box.disabled = false;
+      box.innerText = "";
+    }
+  }
