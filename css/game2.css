@@ -54,3 +54,23 @@ h1{
     position: absolute;
     margin: -80px ;
 }
+#new-btn{
+    height: 7vmin;
+    width: 20vmin;
+    background-color: black;
+    border-radius: 1rem;
+    color: white;
+    font-size: 3vmin;
+    margin-top: 3rem;
+}
+
+#msg{
+    color: green;
+    font-size: 7vmin;
+}
+
+.msg-container{
+    height : 100vmin;
+}
+
+
