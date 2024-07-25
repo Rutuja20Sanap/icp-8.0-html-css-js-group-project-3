@@ -1,5 +1,4 @@
 let boxes = document.querySelectorAll(".box2");
-let resetbtn = document.querySelector("#reset-btn");
 let newGameBtn = document.querySelector("#new-btn");
 let msg = document.querySelector("#msg");
 let msgContainer = document.querySelector(".msg-container");
@@ -17,6 +16,12 @@ let winPattern= [
   [3,4,5],
   [6,7,8],
 ];
+
+function resetGAme() {
+    turno = true;  
+    enableBoxes();
+    msgContainer.classList.add("hide");
+  }
 
 boxes.forEach(function (box2) {
     box2.addEventListener("click", function () {
@@ -65,9 +70,4 @@ boxes.forEach(function (box2) {
       box.disabled = false;
       box.innerText = "";
     }
-  }
-  function resetGAme() {
-    turno = true;  
-    enableBoxes();
-    msgContainer.classList.add("hide");
   }
