@@ -1,6 +1,4 @@
 let boxes = document.querySelectorAll(".box2");
-let newGameBtn = document.querySelector("#new-btn");
-let msg = document.querySelector("#msg");
 let msgContainer = document.querySelector(".msg-container");
 
 let turno = true;
@@ -71,3 +69,4 @@ boxes.forEach(function (box2) {
       box.innerText = "";
     }
   }
+  
