@@ -1,31 +1,35 @@
-let boxes = document.querySelectorAll(".box");
+let boxes = document.querySelectorAll(".box2");
 
 let turno = true;
+let turn = 0;
 
-function handleClick(box) {
-    console.log("click the box");
-    if (turno){
-        box.innerText = "o";
+let winPattern= [
+  [0,1,2],
+  [0,3,6],
+  [0,4,8],
+  [1,4,7],
+  [2,5,8],
+  [2,4,6],
+  [3,4,5],
+  [6,7,8],
+];
+
+boxes.forEach(function (box2) {
+    box2.addEventListener("click", function () {
+      console.log("click the box");
+  
+      if (turno) {
+        box2.innerText = "o";
         turno = false;
       } else {
-        box.innerText = "x";
+        box2.innerText = "x";
         turno = true;
       }
-    box.disabled = true;
-    
-    checkWinner();
-  }
-
-  let winPattern= [
-    [0,1,2],
-    [0,3,6],
-    [0,4,8],
-    [1,4,7],
-    [2,5,8],
-    [2,4,6],
-    [3,4,5],
-    [6,7,8]
-  ];
+      box2.disabled = true;
+  
+      checkWinner();
+    });
+  });
 
   function checkWinner() {
     for (let pattern of winPattern) {
@@ -36,7 +40,7 @@ function handleClick(box) {
       if (pos1Val != "" && pos2Val != "" && pos3Val != "") {
         if (pos1Val === pos2Val && pos2Val === pos3Val) {
           console.log("winner", pos1Val);
-          showWinner(pos1Val);
+          
           return true;
         }
       }
