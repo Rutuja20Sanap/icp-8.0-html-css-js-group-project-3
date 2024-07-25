@@ -51,3 +51,8 @@ boxes.forEach(function (box2) {
     msgContainer.classList.remove("hide");
     disableBoxes();
   }
+  function disableBoxes() {
+    for (let box of boxes) {
+      box.disabled = true;
+    }
+  }
