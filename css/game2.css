@@ -31,3 +31,26 @@ h1{
        
 }
 
+.box2{
+    height: 17vmin;
+    width: 17vmin;
+    border-radius: 1.5rem;
+    border-color:rgba(0, 0, 0, 0.283) ;
+    color: black;
+    font-size: 8vmin;
+    color: red;
+    background-color: aquamarine;
+}
+
+
+#reset-btn{
+    height: 7vmin;
+    width: 20vmin;
+    background-color: black;
+    border-radius: 1rem;
+    color: white;
+    font-size: 2.5vmin;
+    text-align: center;
+    position: absolute;
+    margin: -80px ;
+}
