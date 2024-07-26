@@ -77,6 +77,21 @@ h1{
     display: none;
 }
 
+.fix{
+    position: absolute;
+    right: 20px;
+    top: 150px;
+    height: 60px;
+    width: 60px;
+    border-radius: 20px;
+    background-color: #1d1c1c;
+    padding: 7px;
+  }
+
+  .dark-theme .fix{
+    background-color:white;
+  }
+
 /* Media query */
 
 /* Mobile devices */

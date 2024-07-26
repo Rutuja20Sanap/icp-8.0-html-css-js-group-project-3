@@ -56,6 +56,7 @@ boxes.forEach(function (box2) {
   function showWinner(winner) {
     msg.innerText = `Congratulations, Winner is ${winner}`;
     msgContainer.classList.remove("hide");
+    
     disableBoxes();
   }
   function disableBoxes() {
