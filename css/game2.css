@@ -82,17 +82,25 @@ h1{
 /* Mobile devices */
 
 @media screen and (max-width: 400px) {
+    .msg-container{
+        height : auto;
+      }
   
 }
      /* Normal devices  */
 @media screen and (min-width: 601px) and (max-width: 768px) {
+    .msg-container{
+        height : 120vmin;
+      }
 }
 
  /*tablet devices*/
  @media screen and (min-width: 769px) and (max-width: 992px) {
     h1{
         margin-top: 150px;
-        
+     }
+     .msg-container{
+       height : 110vmin;
      }
  }
 
