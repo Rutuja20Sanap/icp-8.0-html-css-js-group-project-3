@@ -414,7 +414,7 @@
     .offer{
 
         height: 800px;
-        width: 400px    ;
+        width: 500px    ;
         /* border: 1px solid black; */
     }
     .offer h1{
@@ -428,6 +428,7 @@
         /* border: 1px solid black; */
         display: flex;
         flex-direction: column;
+
     }
     .cards p{
         font-size: 18px;
@@ -449,6 +450,14 @@
     }
     #btn-eligible{
         margin-top: 20px;
+    }
+    .games{
+        position: relative;
+        top: 100px;
+        right: 30px;
+    }
+    .game-card{
+        width: 400px;
     }
     .footer{
         position: relative;
@@ -566,7 +575,7 @@
     }
     .footer{
         position: relative;
-        top: 1200px;
+        top: 1400px;
     }
     
 
