@@ -1,5 +1,6 @@
 let score = 0;
 let totalQuestions = 15;
+let totalMarks = 15;
 let answeredQuestions = 0;
 
 const allQuestions = [
@@ -111,23 +112,22 @@ function checkAnswer(questionId, formId) {
         }
     }
     if (selectedAnswer) {
+        console.log(`Question ${questionId} answered with ${selectedAnswer}. Correct answer is ${correctAnswer}.`);
         if (selectedAnswer === correctAnswer) {
-            score++;
+            if (!questionDiv.getAttribute('data-scored')) { 
+                score++; 
+                questionDiv.setAttribute('data-scored', 'true');
+            }
         }
         answeredQuestions++;
         return true;
     } else {
+        console.log(`Question ${questionId} not answered.`);
         return false;
-        
     }
 }
 
 function showFinalScore() {
-    allQuestions.forEach((question, index) => {
-        checkAnswer(`question${index + 1}`, `quiz-form${index + 1}`);
-    });
-
-    // Hide all questions
     allQuestions.forEach(question => {
         question.style.display = 'none';
     });
@@ -136,7 +136,6 @@ function showFinalScore() {
     document.getElementById('certificate-input').style.display = 'inline-block';
     document.getElementById('Quiz-container').style.display = 'none';
 
-    // Show the final score section and update content
     const scoreContainer = document.getElementById('final-score-container');
     const scoreContent = document.getElementById('score-container');
     const scoreLine = document.getElementById('score-line');
@@ -144,22 +143,20 @@ function showFinalScore() {
     scoreContainer.classList.remove('hide');
     scoreContainer.classList.add('show');
     
-    scoreContent.innerText = `Your final score is: ${score} out of ${totalQuestions}`;
+    scoreContent.innerText = `Your final score is: ${score} out of ${totalMarks}`;
     
     if (score < 8) {
-        scoreLine.innerText = `Your score: ${score}/${totalQuestions}\nOoh, not quite! Don't worry, you can always take the quiz and try again!`;
+        scoreLine.innerText = `Your score: ${score}/${totalMarks}\nOoh, not quite! Don't worry, you can always take the quiz and try again!`;
     } else if (score >= 8 && score < 13) {
-        scoreLine.innerText = `Your score: ${score}/${totalQuestions}\nVery good! You love your emojis, no doubt about that! We bet you can get a perfect score, though - why not try again and see?`;
+        scoreLine.innerText = `Your score: ${score}/${totalMarks}\nVery good!!!`;
     } else {
-        scoreLine.innerText = `Your score: ${score}/${totalQuestions}\nPerfect - you're totally in touch with your emotions! You're definitely the emoji expert in your friend group!`;
+        scoreLine.innerText = `Your score: ${score}/${totalMarks}\nPerfect!!!`;
     }
 
-    // Show the certificate section
     const certificateSection = document.getElementById('certificate');
     certificateSection.classList.add('show');
     certificateSection.classList.remove('hide');
 
-    // Hide the navigation buttons
     document.getElementById('next-button').style.display = 'none';
     document.getElementById('prev-button').style.display = 'none';
     document.getElementById('finish-button').style.display = 'none';
