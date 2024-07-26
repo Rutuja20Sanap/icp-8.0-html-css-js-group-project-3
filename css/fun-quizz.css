@@ -13,57 +13,87 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.heading {
-    padding: 10px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Main-container {
+    margin-top: 120px;
 }
 
-.heading img {
-    margin: 0 120px;
-    height: 150px;
-    width: 250px;
-    border-radius: 30px;
-}
-
-.heading h1 {
-    font-size: 42px;
+.header-name {
+    font-size: 80px;
     color: #ff3399;
     font-family: rutu;
+    margin-top: 45px;
 }
 
-.heading2 {
+#head{
+    font-size: 80px;
+    color: #ff3399;
+    font-family: rutu;
+    margin-top: 45px;
+}
+
+.GK-header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-img {
+    height: 150px;
+    margin-top: 0;
+}
+
+.tagline {
     text-align: center;
-    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
 }
 
-.box-que {
+.divider {
+    border-bottom: 2px solid #ccc;
+    margin: 20px 0;
+}
+
+.bg-img{
+    background-image: url('./../images/gk-quizz/bg.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position: center;
+    margin-bottom: 0px;
+}
+
+.Quiz-container {
+    margin-top: 0px;
+}
+
+.type-container {
     display: flex;
     justify-content: center;
-    padding: 15px;
-    margin: 30px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    border-radius: 10px;
+    gap: 60px;
 }
 
-.box-que img {
-    height: 100px;
-    margin: 0 70px;
-    border-radius: 30px;
-}
-
-.box-que h1 {
+.que-type {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
     font-size: 30px;
-    align-self: center;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.que-type-img {
+    height: 70px;
+}
+
+.container-image img {
+    height: 400px;
+    mix-blend-mode: multiply;
 }
 
 .fun-container {
     max-width: 600px;
     margin: 60px auto;
     padding: 10px 20px;
-    background-color: #ffffff;
+    background-color: #ccebff;
     border-radius: 8px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     position: relative;
@@ -109,6 +139,7 @@ form {
 form div {
     padding: 10px;
     margin-bottom: 10px;
+    background-color: #fff;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     font-size: medium;
 }
@@ -122,9 +153,9 @@ form div {
 button {
     padding: 10px 30px;
     border: none;
-    background-color: #eb51b7;
+    background-color:rgb(2, 175, 255);
     color: white;
-    border-radius: 25px 10px;
+    border-radius:  10px;
     font-size: 16px;
     margin-top: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -132,7 +163,7 @@ button {
 
 button:hover {
     cursor: pointer;
-    background-color: #e600e6;
+    background-color: #008bcc;
     color: black;
     transform: scale(1.1);
 
@@ -297,13 +328,13 @@ button:hover {
         padding: 10px;
     }
 
-    .heading img {
+    .header-img {
         margin: 0 5px;
         height: 30px;
         width: 50px;
     }
 
-    .heading h1 {
+    .header-name {
         font-size: 6px;
     }
 
@@ -396,13 +427,13 @@ button:hover {
         padding: 10px;
     }
 
-    .heading img {
+    .header-img {
         margin: 0 5px;
         height: 30px;
         width: 50px;
     }
 
-    .heading h1 {
+    .header-name {
         font-size: 10px;
     }
 
@@ -480,13 +511,13 @@ button:hover {
         padding: 10px;
     }
 
-    .heading img {
+    .header-img {
         margin: 0 5px;
         height: 80px;
         width: 100px;
     }
 
-    .heading h1 {
+    .header-name {
         font-size: 15px;
     }
 
@@ -556,13 +587,13 @@ button:hover {
         padding: 10px;
     }
 
-    .heading img {
+    .header-img{
         margin: 0 5px;
         height: 80px;
         width: 100px;
     }
 
-    .heading h1 {
+    .header-name {
         font-size: 15px;
     }
 
@@ -629,13 +660,13 @@ button:hover {
         padding: 10px;
     }
 
-    .heading img {
+    .header-img{
         margin: 0 auto;
         height: 100px;
         width: 120px;
     }
 
-    .heading h1 {
+    .header-name  {
         font-size: 25px;
     }
 
