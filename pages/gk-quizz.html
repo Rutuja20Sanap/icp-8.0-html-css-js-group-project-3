@@ -48,7 +48,7 @@
                 <a href="#">
                     <img src="./../icon/moon.png" alt="dark mode" class="logo-dark" id="dark-logo"
                         onclick="toggleTheme()" />
-                    <img src="./../icon/moon.png" alt="light mode" class="logo-light" id="light-logo"
+                    <img src="./../icon/sun.png" alt="light mode" class="logo-light" id="light-logo"
                         onclick="toggleTheme()" />
                 </a>
             </div>
@@ -90,7 +90,7 @@
             <div class="header-container">
                 <div class="GK-header">
                     <img src="./../images/gk-quizz/gk-1.jpeg" alt="kids" class="header-img">
-                    <h1 class="header-name">General Knowledge Quizes</h1>
+                    <h1 class="header-name"><span id="head">General</span> Knowledge Quizes</h1>
                     <img src="./../images/gk-quizz/gk-1.jpeg" alt="kids" class="header-img">
                 </div>
                 <h1 class="tagline">Explore and Learn: Quizzes for Little Geniuses!</h1>
@@ -103,8 +103,6 @@
                         <h1 id="section-title" class="section-title">Simple Questions</h1>
                         <img src="./../images/gk-quizz/type.png" alt="study" class="que-type-img">
                     </div>
-
-
                     <section id="questions" class="que-no">
                         <div class="question" id="question1" data-correct="A">
                             <p class="que-name">1. How many hours are there in a day?</p>
@@ -151,7 +149,8 @@
                         </div>
 
                         <div class="question" id="question3" data-correct="C">
-                            <p class="que-name" id="Question">3. What is the name of the big, gray animal with a trunk?
+                            <p class="que-name" id="Question">3. What is the name of the big, gray animal with a
+                                trunk?
                             </p>
                             <form class="quiz-form" id="quiz-form3">
                                 <label>
@@ -445,12 +444,13 @@
                         <div class="navigation-buttons">
                             <button id="prev-button" class="hide" onclick="navigateQuestion(0,-1)">Previous</button>
                             <button id="next-button" onclick="navigateQuestion(0,1)">Next</button>
-                            <button id="finish-button" class="hide" onclick="checkAnswer('question15', 'quiz-form15', 'result15')">Finish</button>
+                            <button id="finish-button" class="hide"
+                                onclick="checkAnswer('question15', 'quiz-form15', 'result15')">Finish</button>
                         </div>
                     </section>
 
+                </div>
             </div>
-        </div>
         </div>
         </div>
 
@@ -458,7 +458,7 @@
             <h1 id="score-container"></h1>
             <p id="score-line"></p>
         </div>
-        
+
         <div id="certificate" class="certificate-container-main">
             <div class="certificate-container">
                 <h1>Certificate of Achievement</h1>
@@ -467,12 +467,12 @@
                 <p class="certificate-p">For their outstanding performance and participation in the</p>
                 <h3>Fun Quiz for Kids</h3>
                 <p class="certificate-p">Congratulations on your amazing efforts and knowledge!</p>
-                <p>Date: <span id="date">[Date]</span></p>
-                <p>Quiz Organizer: <span id="organizerName">Sejal Pawar</span></p>
+                <p class="date">Date: <span id="date">[Date]</span></p>
+                <p class="quiz-Organizer">Quiz Organizer: <span id="organizerName">Sejal Pawar</span></p>
             </div>
-        
-                <button class="certificate-button" onclick="generateCertificate()">Generate Certificate</button>
-            </div>
+
+            <button class="certificate-button" onclick="generateCertificate()">Generate Certificate</button>
+        </div>
         </div>
         <div class="form-container">
             <div class="certificate-input" id="certificate-input">
@@ -480,6 +480,7 @@
                 <input type="text" id="inputDate" placeholder="Enter Date" required>
             </div>
         </div>
+
         <!--footer section start-->
         <div class="footer">
 

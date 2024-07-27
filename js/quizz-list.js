@@ -1,33 +1,33 @@
+function startQuiz(quizName) {
+    const userResponse = prompt(`Are you ready to start the ${quizName}?`);
 
- // Dark/Light Theme Toggle
-    function toggleTheme() {
-        const body = document.getElementById('body');
-        body.classList.toggle('dark-theme');
-        body.classList.toggle('light-theme');
-        localStorage.setItem('theme', body.classList.contains('dark-theme') ? 'dark' : 'light');
+    if (userResponse) {
+        alert(`Great! Let's start the ${quizName}.`);
+
+    } else {
+        alert(`No worries! Take your time and start the ${quizName} when you are ready.`);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const sentences = [
+        "Test your English skills with fun and engaging questions!",
+        "Join us for a fun-filled quiz adventure with games and laughter!",
+        "Challenge your math skills with our exciting quiz!",
+        "Explore the world with our fun and educational geography quiz!",
+        "Discover amazing themes with our fun and engaging quiz!",
+        "Expand your general knowledge with our fun and informative quiz!"
+    ];
+    const colors = ["red", "green", "skyblue", "orange", "black", "pink"];
+    let currentSentenceIndex = 0;
+
+    function changeSentence() {
+        const sentenceElement = document.getElementById("changing-sentence");
+        sentenceElement.innerText = sentences[currentSentenceIndex];
+        sentenceElement.style.color = colors[currentSentenceIndex];
+        currentSentenceIndex = (currentSentenceIndex + 1) % sentences.length;
     }
 
-    // Load the theme from localStorage
-    document.addEventListener('DOMContentLoaded', (event) => {
-        const body = document.getElementById('body');
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            body.classList.add(savedTheme + '-theme');
-        } else {
-            body.classList.add('light-theme'); 
-        }
-    });
-
-    // Sidebar Toggle
-    const sidebar = document.getElementById('sidebar');
-    const menuOpenBtn = document.getElementById('menu-open');
-    const closeBtn = document.getElementById('close-btn');
-
-    menuOpenBtn.addEventListener('click', function() {
-        sidebar.style.width = '250px';
-    });
-
-    closeBtn.addEventListener('click', function() {
-        sidebar.style.width = '0';
-    });
-
+    setInterval(changeSentence, 3000);
+    changeSentence();
+});

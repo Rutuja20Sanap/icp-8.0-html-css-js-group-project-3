@@ -1,171 +1,177 @@
-const questions = [
-    {
-        question: "What is 5 + 3?",
-        choices: ["6", "7", "8", "9"],
-        correctAnswer: "8"
-    },
-    {
-        question: "What is the opposite of 'hot'?",
-        choices: ["cold", "warm", "cool", "heat"],
-        correctAnswer: "cold"
-    },
-    {
-        question: "What is the value of 9 - 4?",
-        choices: ["3", "4", "5", "6"],
-        correctAnswer: "5"
-    },
-    {
-        question: "Which one is a noun?",
-        choices: ["quickly", "run", "apple", "blue"],
-        correctAnswer: "apple"
-    },
-    {
-        question: "What is the next number after 15?",
-        choices: ["14", "16", "17", "18"],
-        correctAnswer: "16"
-    },
-    {
-        question: "What is 7 x 6?",
-        choices: ["42", "48", "36", "56"],
-        correctAnswer: "42"
-    },
-    {
-        question: "Which word is an adjective?",
-        choices: ["happy", "jump", "quickly", "and"],
-        correctAnswer: "happy"
-    },
-    {
-        question: "What is the perimeter of a square with side length 5?",
-        choices: ["10", "15", "20", "25"],
-        correctAnswer: "20"
-    },
-    {
-        question: "Which sentence is in past tense?",
-        choices: ["She will go to the store.", "She is going to the store.", "She went to the store.", "She goes to the store."],
-        correctAnswer: "She went to the store."
-    },
-    {
-        question: "What is 50 ÷ 5?",
-        choices: ["5", "10", "15", "20"],
-        correctAnswer: "10"
-    },
-    {
-        question: "What is the square root of 81?",
-        choices: ["7", "8", "9", "10"],
-        correctAnswer: "9"
-    },
-    {
-        question: "What is 12 x 7?",
-        choices: ["72", "84", "96", "108"],
-        correctAnswer: "84"
-    },
-    {
-        question: "Solve for x: 2x + 3 = 7",
-        choices: ["1", "2", "3", "4"],
-        correctAnswer: "2"
-    },
-    {
-        question: "Identify the adverb in the sentence: 'She quickly ran to the store.'",
-        choices: ["She", "quickly", "ran", "store"],
-        correctAnswer: "quickly"
-    }
+let score = 0;
+let totalQuestions = 15;
+let totalMarks = 15;
+let answeredQuestions = 0;
+
+const allQuestions = [
+    document.getElementById('question1'),
+    document.getElementById('question2'),
+    document.getElementById('question3'),
+    document.getElementById('question4'),
+    document.getElementById('question5'),
+    document.getElementById('question6'),
+    document.getElementById('question7'),
+    document.getElementById('question8'),
+    document.getElementById('question9'),
+    document.getElementById('question10'),
+    document.getElementById('question11'),
+    document.getElementById('question12'),
+    document.getElementById('question13'),
+    document.getElementById('question14'),
+    document.getElementById('question15')
 ];
 
+const sectionTitles = ["Simple Questions", "Medium Questions", "Hard Questions"];
+
 let currentQuestionIndex = 0;
-let score = 0;
-const questionEl = document.getElementById('question');
-const choicesEl = document.getElementById('choices');
-const nextButton = document.getElementById('next-button');
-const prevButton = document.getElementById('prev-button');
-const resultContainer = document.getElementById('result-container');
-const quizContainer = document.querySelector('.quizz-container'); // Corrected selector
-const scoreEl = document.getElementById('score');
 
-function loadQuestion() {
-    const currentQuestion = questions[currentQuestionIndex];
-    questionEl.textContent = currentQuestion.question;
-    choicesEl.innerHTML = '';
-
-    currentQuestion.choices.forEach(choice => {
-        const button = document.createElement('button');
-        button.textContent = choice;
-        button.onclick = () => selectAnswer(button, choice);
-        choicesEl.appendChild(button);
-    });
-
-    prevButton.style.display = 'inline-block';
-    nextButton.style.display = 'inline-block';
-
-    if (currentQuestionIndex === 0) {
-        prevButton.style.display = 'none';
-    }
-}
-
-function selectAnswer(button, selectedChoice) {
-    const currentQuestion = questions[currentQuestionIndex];
-    const allButtons = choicesEl.querySelectorAll('button');
-
-    allButtons.forEach(btn => {
-        btn.disabled = true;
-        if (btn.textContent === currentQuestion.correctAnswer) {
-            btn.classList.add('correct');
-        } else if (btn.textContent === selectedChoice) {
-            btn.classList.add('incorrect');
+function showInitialQuestion() {
+    updateSectionTitle();
+    allQuestions.forEach((question, qIndex) => {
+        if (qIndex === 0) {
+            question.style.display = 'block';
+        } else {
+            question.style.display = 'none';
         }
     });
 
-    if (selectedChoice === currentQuestion.correctAnswer) {
-        score++;
-    }
+    document.getElementById('certificate-input').style.display = 'none';
 
-    nextButton.style.display = 'inline-block';
+    document.getElementById('next-button').style.display = 'inline-block';
+    document.getElementById('prev-button').style.display = 'none';
+    document.getElementById('finish-button').style.display = 'none';
 }
 
-function nextQuestion() {
-    currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-        loadQuestion();
-    } else {
-        showResults();
-    }
-}
-
-function previousQuestion() {
-    if (currentQuestionIndex > 0) {
-        currentQuestionIndex--;
-        loadQuestion();
-    }
-}
-
-function showResults() {
-    quizContainer.style.display = 'none';
-    resultContainer.style.display = 'block';
-    scoreEl.textContent = `${score} out of ${questions.length}`;
-}
-
-function restartQuiz() {
-    currentQuestionIndex = 0;
-    score = 0;
-    quizContainer.style.display = 'block';
-    resultContainer.style.display = 'none';
-    loadQuestion();
-}
-
-loadQuestion();
-
-function toggleTheme() {
-    const body = document.getElementById('body');
-    if (body.classList.contains('dark-theme')) {
-        body.classList.replace('dark-theme', 'light-theme');
-    } else {
-        body.classList.replace('light-theme', 'dark-theme');
-    }
-}
-
-    document.getElementById('menu-open').addEventListener('click', function() {
-        document.getElementById('sidebar').classList.add('open');
+function showQuestion(questionIndex) {
+    updateSectionTitle();
+    allQuestions.forEach((question, qIndex) => {
+        if (qIndex === questionIndex) {
+            question.style.display = 'block';
+        } else {
+            question.style.display = 'none';
+        }
     });
 
-    document.getElementById('close-btn').addEventListener('click', function() {
-        document.getElementById('sidebar').classList.remove('open');
+    const nextButton = document.getElementById('next-button');
+    const prevButton = document.getElementById('prev-button');
+    const finishButton = document.getElementById('finish-button');
+
+    if (questionIndex === 0) {
+        nextButton.style.display = 'inline-block';
+        prevButton.style.display = 'none';
+        finishButton.style.display = 'none';
+    } else if (questionIndex === allQuestions.length - 1) {
+        nextButton.style.display = 'none';
+        prevButton.style.display = 'inline-block';
+        finishButton.style.display = 'inline-block';
+    } else {
+        nextButton.style.display = 'inline-block';
+        prevButton.style.display = 'inline-block';
+        finishButton.style.display = 'none';
+    }
+}
+
+function navigateQuestion(direction) {
+    if (checkAnswer(`question${currentQuestionIndex + 1}`, `quiz-form${currentQuestionIndex + 1}`)) {
+        currentQuestionIndex += direction;
+
+        if (currentQuestionIndex < 0) {
+            currentQuestionIndex = 0;
+        } else if (currentQuestionIndex >= allQuestions.length) {
+            currentQuestionIndex = allQuestions.length - 1;
+        }
+
+        showQuestion(currentQuestionIndex);
+    } else {
+        alert('Please select an answer before proceeding.');
+    }
+}
+
+function updateSectionTitle() {
+    const sectionTitle = document.getElementById('section-title');
+    if (currentQuestionIndex < 5) {
+        sectionTitle.innerText = sectionTitles[0];
+    } else if (currentQuestionIndex < 10) {
+        sectionTitle.innerText = sectionTitles[1];
+    } else {
+        sectionTitle.innerText = sectionTitles[2];
+    }
+}
+
+function checkAnswer(questionId, formId) {
+    const questionDiv = document.getElementById(questionId);
+    const correctAnswer = questionDiv.getAttribute('data-correct');
+    const form = document.getElementById(formId);
+    let selectedAnswer;
+
+    const radios = form.getElementsByTagName('input');
+    for (let i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+            selectedAnswer = radios[i].value;
+            break;
+        }
+    }
+    if (selectedAnswer) {
+        console.log(`Question ${questionId} answered with ${selectedAnswer}. Correct answer is ${correctAnswer}.`);
+        if (selectedAnswer === correctAnswer) {
+            if (!questionDiv.getAttribute('data-scored')) { 
+                score++; 
+                questionDiv.setAttribute('data-scored', 'true');
+            }
+        }
+        answeredQuestions++;
+        return true;
+    } else {
+        console.log(`Question ${questionId} not answered.`);
+        return false;
+    }
+}
+
+function showFinalScore() {
+    allQuestions.forEach(question => {
+        question.style.display = 'none';
     });
+
+    document.getElementById('section-title').style.display = 'none';
+    document.getElementById('certificate-input').style.display = 'inline-block';
+    document.getElementById('Quiz-container').style.display = 'none';
+
+    const scoreContainer = document.getElementById('final-score-container');
+    const scoreContent = document.getElementById('score-container');
+    const scoreLine = document.getElementById('score-line');
+
+    scoreContainer.classList.remove('hide');
+    scoreContainer.classList.add('show');
+    
+    scoreContent.innerText = `Your final score is: ${score} out of ${totalMarks}`;
+    
+    if (score < 8) {
+        scoreLine.innerText = `Your score: ${score}/${totalMarks}\nOoh, not quite! Don't worry, you can always take the quiz and try again!`;
+    } else if (score >= 8 && score < 13) {
+        scoreLine.innerText = `Your score: ${score}/${totalMarks}\nVery good!!!`;
+    } else {
+        scoreLine.innerText = `Your score: ${score}/${totalMarks}\nPerfect!!!`;
+    }
+
+    const certificateSection = document.getElementById('certificate');
+    certificateSection.classList.add('show');
+    certificateSection.classList.remove('hide');
+
+    document.getElementById('next-button').style.display = 'none';
+    document.getElementById('prev-button').style.display = 'none';
+    document.getElementById('finish-button').style.display = 'none';
+}
+
+function generateCertificate() {
+    const name = document.getElementById('inputName').value;
+    const date = document.getElementById('inputDate').value;
+
+    document.getElementById('childName').innerText = name;
+    document.getElementById('date').innerText = date;
+}
+
+document.getElementById('next-button').addEventListener('click', () => navigateQuestion(1));
+document.getElementById('prev-button').addEventListener('click', () => navigateQuestion(-1));
+document.getElementById('finish-button').addEventListener('click', showFinalScore);
+
+showInitialQuestion();
