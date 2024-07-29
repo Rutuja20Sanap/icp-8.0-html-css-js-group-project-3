@@ -29,10 +29,8 @@ body {
 }
 
 .login-container {
-
     padding: 10px 40px;
 }
-
 
 
 .login-input-fields h1 {
@@ -214,8 +212,9 @@ a{
 }
 @media screen and  (max-width:600px) {
 
-
-
+    .login-container {
+        padding: 0px 0px;
+    }
 .regester-login-container {
     width: 100%;
     margin: 150px auto;
@@ -313,6 +312,7 @@ hr{
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     border: 1px solid rgb(224, 224, 224);
     cursor: pointer;
+    background-color: orange;
 }
 
 .last-text {
@@ -350,6 +350,7 @@ hr{
     padding: 9px 15px;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
     cursor: pointer;
+    
 }
 .register-input-fields button img{
     height: 16px;
@@ -370,6 +371,7 @@ hr{
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     border: 1px solid rgb(224, 224, 224);
     cursor: pointer;
+    background-color: orange;
 }
 a{
     text-decoration: underline;
