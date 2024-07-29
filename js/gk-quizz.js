@@ -36,7 +36,7 @@ function showInitialQuestion() {
     });
 
     document.getElementById('certificate-input').style.display = 'none';
-
+    document.getElementById('cer-btn').style.display = 'none';
     document.getElementById('next-button').style.display = 'inline-block';
     document.getElementById('prev-button').style.display = 'none';
     document.getElementById('finish-button').style.display = 'none';
@@ -135,6 +135,7 @@ function showFinalScore() {
     document.getElementById('section-title').style.display = 'none';
     document.getElementById('certificate-input').style.display = 'inline-block';
     document.getElementById('Quiz-container').style.display = 'none';
+    document.getElementById('cer-btn').style.display = 'block';
 
     const scoreContainer = document.getElementById('final-score-container');
     const scoreContent = document.getElementById('score-container');

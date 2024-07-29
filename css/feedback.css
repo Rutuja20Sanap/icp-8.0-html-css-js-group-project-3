@@ -102,6 +102,10 @@ textarea {
     border-radius: 5px;
 }
 
+
+
+
+
 .review-main-container-heading {
     text-align: center;
     margin-top: -50px;
@@ -122,6 +126,7 @@ textarea {
     justify-content: space-evenly;
     margin-top: 60px;
     margin-bottom: 100px;
+    flex-wrap: wrap;
 }
 
 .review-container-1 {
@@ -159,7 +164,7 @@ textarea {
     display: none;
 }
 
-#input-boxx {
+#input-Name {
     margin-top: 25px;
     padding: 13px;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
@@ -176,10 +181,12 @@ textarea {
 #review-text {
     margin: 12px 0px;
     text-align: center;
+    font-size: 12px;
 }
 
 #name-review {
-    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 500;
 }
 @media screen and  (max-width:600px) 
 {

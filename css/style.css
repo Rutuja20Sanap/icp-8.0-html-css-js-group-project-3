@@ -192,6 +192,42 @@ h4{
 .dark-theme .activities .box-container .box .text-color{
   color: #000000;
 }
+.gallary-img{
+  width: 1100px;
+  height: 600px;
+  object-fit: cover;
+  background-color: #f4f4f7;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px #7b7a7a ;;
+  padding:10px;
+  margin-bottom: 100px;
+}
+.btn-container{
+  position: relative;
+  width: fit-content;
+  display: block;
+  margin: 10px auto;
+}
+.buttonn{
+  height: 60px;
+  margin: 160px 10px;
+  cursor: pointer;
+  background-color: rgb(188, 187, 190);
+  border-radius: 80%;
+   position: absolute;
+  top: 80px;
+  padding:10px;
+}
+.btn-left{
+  left: -35px;
+}
+.btn-right{
+  right: -35px;
+}
+
+
 /* Media query */
 
 @media screen and (max-width: 600px) {
