@@ -1075,7 +1075,7 @@ label input[type="radio"] {
     }
     
     #date {
-        font-size: 15px;
+        font-size: 25px;
         margin-bottom: 3px;
     }
     .date{
@@ -1083,12 +1083,18 @@ label input[type="radio"] {
         margin-bottom: 3px;
     }
     .quiz-Organizer {
-        font-size: 15px;
+        font-size: 25px;
         margin-bottom: 3px;
     }
     #organizerName {
-        font-size: 15px;
+        font-size: 20px;
         margin-bottom: 3px;
+    }
+    .inbuilt-organizer{
+        font-size: 20px;
+    }
+    .inbuilt-date{
+        font-size: 20px;
     }
     
     .form-container {
