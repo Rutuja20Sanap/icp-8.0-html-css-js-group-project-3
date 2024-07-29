@@ -287,4 +287,12 @@ h4{
     margin-left:0%;
     margin-right:20px;
   }
+  .buttonn{
+    height:50px;
+    margin: 60px 10px;
+  }
+  .gallary-img{
+    width:300px;
+    height:350px;
+  }
 }
