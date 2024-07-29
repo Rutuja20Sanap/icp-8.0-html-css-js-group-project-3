@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="./../css/game.css">
+    <link rel="stylesheet" href="../css/game2.css">
 </head>
-<body>
+<body id="body">
     <!--header section start -->
 
 <body id="body" class="light-theme">
@@ -81,18 +81,32 @@
     </header>
     <!--header section end-->
      
+    <!--tick tack toe game...... -->
+
+    <div class="msg-container hide">
+        <p id="msg">winner</p>
+        <button id="new-btn" onclick="resetGAme()">New Game</button>
+    </div>
     
-    <div class="contant">
-        <h1>brain Game 🎮</h1>
-        <div class="img">
-            <img src="../images/game/jerry.png" class="jerry">
-            <img src="../images/game/tom.png" class="tom">
+    <main class="body  ">
+    <h1>tick tack toe game</h1>
+    <div class="container1">
+        <div class="game">
+            <button class="box2" ></button>
+            <button class="box2" ></button>
+            <button class="box2" ></button>
+            <button class="box2" ></button>
+            <button class="box2" ></button>
+            <button class="box2" ></button>
+            <button class="box2" ></button>
+            <button class="box2" ></button>
+            <button class="box2" ></button>
         </div>
-        <div class="game"></div>
-        <button class="reset" onclick="resetGame()">Reset Game</button>
-        <a href="../pages/game2.html" > <img src="../images/ox.png" class="fix"/> </a>
-        </div>
-      
+    </div>
+    <button id="reset-btn"  onclick="resetGAme()"> reset game </button>
+    <a href="../pages/game.html" > <img src="../images/card.png" class="fix"/> </a>
+</main>
+        <!--tick tack toe game  end...... -->
 
         <!-----footer---------------->
     <div class="footer">
@@ -110,8 +124,8 @@
                 <a href="../pages/aboutus.html"><i class="fas fa-caret-right"></i>Aboutus</a>
                 <a href="../pages/quizz-list.html"><i class="fas fa-caret-right"></i>Quizz-List</a>
                 <a href="../pages/contactus.html"><i class="fas fa-caret-right"></i>Contactus</a>
-                <i class="fas fa-caret-right"></i>Feedback</a>
-            </div ><a href="../pages/feedback.html">
+                <a href="../pages/feedback.html"><i class="fas fa-caret-right"></i>Feedback</a>
+            </div >
 
             <div class="box1" id="social-media">
                 <h3>Connect With Us</h3>
@@ -142,12 +156,9 @@
 
 
 
-    <script src="../js/game.js"></script>
+   
     <script src="../js/header.js"></script>
-
+    <script src="../js/game2.js"></script>
         
 
 
-</body>
-
-</html>

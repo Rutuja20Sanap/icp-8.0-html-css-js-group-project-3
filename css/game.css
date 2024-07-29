@@ -99,7 +99,22 @@ backface-visibility: hidden;
 transform: rotatey(180deg);
 }
 
+.fix{
+  position: absolute;
+  right: 20px;
+  top: 150px;
+  height: 50px;
+  width: 50px;
+  border-radius: 20px;
+  background-color: #1d1c1c;
+  padding: 8px;
+}
+
 /* dark-theme */
+
+.dark-theme .fix{
+  background-color: #fff;
+}
 
 .dark-theme h1{
 color: #fff;
