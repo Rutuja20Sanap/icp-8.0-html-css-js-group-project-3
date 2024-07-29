@@ -36,11 +36,12 @@ function showNextQuestion() {
         const nextQuestion = document.querySelector(`#que${activeQuestionIndex + 1}`);
         nextQuestion.classList.add('active-question');
         certificate.classList.remove('show-certificate');
-
+       
     } else {
         showScore();
         certificate.classList.add('show-certificate');
     }
+   
 }
 
 function showPrevQuestion() {

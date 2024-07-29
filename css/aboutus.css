@@ -26,8 +26,8 @@
 }
 
 #para {
-    
-    font-size: 20px;
+    text-align: center;
+    font-size: 18px;
 }
 
 .imgcontainer {
@@ -71,7 +71,7 @@
 
 .who {
     height: 70%;
-    font-size: 20px;
+    font-size: 18px;
     width: 500px;
     /* border: 1px solid black; */
 }
@@ -136,7 +136,7 @@
 }
 
 .mission-content p {
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .offer {
@@ -189,15 +189,24 @@
     transition: transform 0.3s, box-shadow 0.3s;
 }
 .dark-theme .card{
-    box-shadow: white 0px 4px 12px;
+    box-shadow: #e28605 0px 4px 12px;
 }
 .dark-theme .card:hover{
-    box-shadow: white 0px 30px 60px -12px, white 0px 18px 36px -18px;
+    box-shadow: #e28605 0px 30px 60px -12px, #e28605 0px 18px 36px -18px;
 }
 .card:hover{
     border: none;
     transform: translateY(-10px);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+#kidimg:hover{
+    transform: translateY(-10px);
+}
+#kid:hover{
+    transform: translateY(-10px);
+}
+#kid2:hover{
+    transform: translateY(-10px);
 }
 
 .card h3 {
@@ -210,7 +219,7 @@
 
 .card p {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .thim-container{
     margin-top: 120px;
@@ -288,7 +297,7 @@
     border-radius: 5px;
     padding: 10px;
     font-size: 14px;
-    background-color: #83D4A9;
+    background-color: #87ceea;
 
 }
 #age{
@@ -314,13 +323,13 @@
     border-radius: 10px;
 }
 .dark-theme .game-card{
-    box-shadow: white 0px 5px 15px;
+    box-shadow: #e28605 0px 5px 15px;
 }
 
 #game-submit{
     font-size: 15px;
     padding: 8px;
-    background-color: #83D4A9;
+    background-color: #87ceea;
     border-radius: 10px;
 }
 #result1 {
@@ -346,7 +355,7 @@
     padding: 15px;
     margin: 4px;
 
-    background-color: #83D4A9;
+    background-color: #87ceea;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -414,7 +423,7 @@
     .offer{
 
         height: 800px;
-        width: 400px    ;
+        width: 500px    ;
         /* border: 1px solid black; */
     }
     .offer h1{
@@ -428,6 +437,7 @@
         /* border: 1px solid black; */
         display: flex;
         flex-direction: column;
+
     }
     .cards p{
         font-size: 18px;
@@ -449,6 +459,14 @@
     }
     #btn-eligible{
         margin-top: 20px;
+    }
+    .games{
+        position: relative;
+        top: 100px;
+        right: 30px;
+    }
+    .game-card{
+        width: 400px;
     }
     .footer{
         position: relative;
@@ -566,7 +584,7 @@
     }
     .footer{
         position: relative;
-        top: 1200px;
+        top: 1400px;
     }
     
 

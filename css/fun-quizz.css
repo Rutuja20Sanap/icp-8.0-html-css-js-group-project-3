@@ -24,7 +24,7 @@ body {
     margin-top: 45px;
 }
 
-#head{
+#head {
     font-size: 80px;
     color: #ff3399;
     font-family: rutu;
@@ -52,13 +52,17 @@ body {
     margin: 20px 0;
 }
 
-.bg-img{
+.bg-img {
     background-image: url('./../images/gk-quizz/bg.avif');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment:scroll;
+    background-attachment: scroll;
     background-position: center;
     margin-bottom: 0px;
+}
+
+.section-title {
+    font-size: 40px;
 }
 
 .Quiz-container {
@@ -68,7 +72,8 @@ body {
 .type-container {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    align-items: center;
+    gap: 10px;
 }
 
 .que-type {
@@ -153,9 +158,9 @@ form div {
 button {
     padding: 10px 30px;
     border: none;
-    background-color:rgb(2, 175, 255);
+    background-color: rgb(2, 175, 255);
     color: white;
-    border-radius:  10px;
+    border-radius: 10px;
     font-size: 16px;
     margin-top: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -178,11 +183,13 @@ button:hover {
 }
 
 #score {
-    text-align: center;    
+    text-align: center;
 }
-#score h1{
-    color: #4CAF50;  
+
+#score h1 {
+    color: #4CAF50;
 }
+
 .certificate-container-main {
     display: block;
     max-width: 650px;
@@ -193,7 +200,7 @@ button:hover {
 .certificate-container {
     border-radius: 10px;
     padding: 10px;
-    background-color: #ffffff;
+    background-color: #ccebff;
     max-width: 650px;
     margin-top: 50px;
     text-align: center;
@@ -283,7 +290,11 @@ button:hover {
     filter: drop-shadow(5px 5px 30px #e28605);
 }
 
-.dark-theme .box-que h1 {
+.dark-theme .tagline {
+    color: white;
+}
+
+.dark-theme .section-title {
     color: white;
 }
 
@@ -316,10 +327,12 @@ button:hover {
     background-color: #262626;
     margin: 0;
 }
-.dark-theme .certificate-container{
-    background-color: #4d4d4d; 
+
+.dark-theme .certificate-container {
+    background-color: #4d4d4d;
 }
-.dark-theme .certificate-container p{
+
+.dark-theme .certificate-container p {
     color: #ffffff;
 }
 
@@ -338,47 +351,24 @@ button:hover {
         font-size: 6px;
     }
 
-    .heading2 h2 {
-        margin: 0;
-        padding: 0;
-        font-size: 8px;
-    }
-
-    .box-que {
-        padding: 0;
-        margin: 0;
-    }
-
-    .box img {
-        height: 30px;
-        margin: 0;
-        padding: 10px;
-    }
-
-    .box h1 {
+    .tagline {
         font-size: 5px;
     }
 
-    h1 {
-        font-size: 12px;
-
-    }
-
-    h2 {
+    .section-title {
         font-size: 10px;
-        color: darkslategrey;
     }
 
     .fun-container {
         max-width: 450px;
         margin: 10px auto;
         padding: 10px 10px;
-
+       
     }
 
-    .fun-container h2 {
+    .fun-container h1 {
         font-size: 10px;
-    }
+    } 
 
     .fun-container .question p {
         font-size: smaller;
@@ -409,12 +399,9 @@ button:hover {
         font-size: 20px;
     }
 
-
-    button {
-        padding: 5px 10px;
-        font-size: 10px;
-        margin-top: 10px;
-    }
+    button{
+        font-size: 10PX;
+    } 
 
 
     .certificate-input input {
@@ -434,35 +421,14 @@ button:hover {
     }
 
     .header-name {
-        font-size: 10px;
+        font-size: 20px;
     }
 
-    .heading2 h2 {
-        margin: 0;
-        padding: 0;
-        font-size: 10px;
+    .tagline {
+        font-size: 8px;
     }
 
-    .box-que {
-        padding: 0;
-        margin: 20px;
-    }
-
-    .box-que img {
-        height: 50px;
-        margin: 0 15px;
-        padding: 10px;
-    }
-
-    .box-que h1 {
-        font-size: 10px;
-    }
-
-    h1 {
-        font-size: 12px;
-    }
-
-    .h2 {
+    .section-title {
         font-size: 10px;
     }
 
@@ -473,7 +439,7 @@ button:hover {
 
     }
 
-    .fun-container h2 {
+    .fun-container h1 {
         font-size: 10px;
     }
 
@@ -500,6 +466,9 @@ button:hover {
     .que {
         font-size: 20px;
     }
+    button{
+        font-size: 10PX;
+    } 
 
     .certificate-input input {
         width: 100px;
@@ -518,28 +487,16 @@ button:hover {
     }
 
     .header-name {
+        font-size: 25px;
+    }
+
+    .tagline {
+        font-size: 10px;
+    }
+
+    .section-title {
         font-size: 15px;
     }
-
-    .heading2 h2 {
-        margin: 10px;
-        padding: 10px;
-    }
-
-    .box-que {
-        padding: 10px;
-        margin: 10px;
-    }
-
-    .box-que img {
-        height: 100px;
-        margin: 0;
-    }
-
-    .box-que h1 {
-        font-size: 20px;
-    }
-
     .fun-container {
         max-width: 600px;
         margin: 10px 40px;
@@ -569,12 +526,9 @@ button:hover {
         margin-bottom: 10px;
     }
 
-    button {
-        padding: 10px 30px;
-        border-radius: 25px 10px;
-        font-size: 16px;
-        margin-top: 20px;
-    }
+    button{
+        font-size: 10PX;
+    } 
 
     .certificate-input input {
         width: 100px;
@@ -587,35 +541,24 @@ button:hover {
         padding: 10px;
     }
 
-    .header-img{
+    .header-img {
         margin: 0 5px;
         height: 80px;
         width: 100px;
     }
 
     .header-name {
-        font-size: 15px;
+        font-size: 45px;
     }
 
-    .heading2 h2 {
-        margin: 10px;
-        padding: 10px;
-    }
-
-    .box-que {
-        padding: 10px;
-        margin: 10px;
-
-    }
-
-    .box-que img {
-        height: 100px;
-        margin: 0;
-    }
-
-    .box-que h1 {
+    .tagline {
         font-size: 20px;
     }
+
+    .section-title {
+        font-size: 25px;
+    }
+  
 
     .fun-container {
         max-width: 600px;
@@ -646,12 +589,10 @@ button:hover {
         margin-bottom: 10px;
     }
 
-    button {
-        padding: 10px 30px;
-        border-radius: 25px 10px;
-        font-size: 16px;
-        margin-top: 20px;
-    }
+    button{
+        font-size: 10PX;
+    } 
+
 
 }
 
@@ -660,34 +601,22 @@ button:hover {
         padding: 10px;
     }
 
-    .header-img{
+    .header-img {
         margin: 0 auto;
         height: 100px;
         width: 120px;
     }
 
-    .header-name  {
+    .header-name {
+        font-size: 60px;
+    }
+    
+    .tagline {
         font-size: 25px;
     }
 
-    .heading2 h2 {
-        margin: 10px;
-        padding: 10px;
-    }
-
-    .box-que {
-        padding: 10px;
-        margin: 10px;
-    }
-
-    .box-que img {
-        height: 100px;
-        margin: 0 70px;
-    }
-
-    .box-que h1 {
-        font-size: 20px;
-        align-self: center;
+    .section-title {
+        font-size: 35px;
     }
 
     .fun-container {
@@ -696,7 +625,7 @@ button:hover {
         padding: 10px 20px;
     }
 
-    h1 {
+    .fun-container h1 {
         font-size: 24px;
     }
 
@@ -723,11 +652,6 @@ button:hover {
         margin-bottom: 10px;
     }
 
-    button {
-        padding: 10px 30px;
-        border-radius: 25px 10px;
-        font-size: 16px;
-        margin-top: 20px;
-    }
+
 
 }

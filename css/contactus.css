@@ -27,6 +27,7 @@ margin-left: 35%;
     text-align: center;
     outline: .1rem solid rgba(0,0,0,.1);
     outline-offset: -1rem;
+    background-color: #fff;
   }
   .contact .icons-container .icons:hover{
     box-shadow: 0 12px 15px #535252;
@@ -62,8 +63,15 @@ margin-left: 35%;
   
   .contact .row .image{
     flex: 1 1 20rem;
-    box-shadow: 0 10px 15px rgb(248, 151, 211);
+    box-shadow: 0 10px 15px rgb(178, 177, 177);
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 5px;
+    outline: .1rem solid rgba(0,0,0,.1);
+    outline-offset: -1rem;
+    
   }
+
   
   .contact .row .image img{
     width: 100%;
@@ -74,6 +82,7 @@ margin-left: 35%;
     padding: 2rem;
     box-shadow: 0 12px 15px #535252;
     border-radius: 2rem;
+    background-color: #fff;
   
   }
  
@@ -113,4 +122,12 @@ margin-left: 35%;
     width: 100%;
     resize: none;
   }
-  
+  .dark-theme .contact .icons-container .icons{
+box-shadow: 0 5px 10px rgb(255, 140, 0);
+  }
+  .dark-theme .contact .row form{
+    box-shadow: 0 5px 10px rgb(255, 140, 0);
+  }
+  .dark-theme  .contact .row .image{
+    box-shadow: 0 5px 10px rgb(255, 140, 0);
+  }
