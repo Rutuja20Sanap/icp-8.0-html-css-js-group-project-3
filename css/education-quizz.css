@@ -531,7 +531,7 @@ label input[type="radio"] {
     
     .certificate-input {
         margin-left: 20px;
-        margin-right: 2opx;
+        margin-right: 20px;
     }
     
     .certificate-input {
@@ -549,6 +549,8 @@ label input[type="radio"] {
 
 @media screen and (min-width: 600px) and (max-width: 800px) {
     .Main-container {
+        display: flex;
+        justify-content: center;
         margin-top: 120px;
     }
     
@@ -719,10 +721,389 @@ label input[type="radio"] {
     
     .certificate-input {
         margin-left: 20px;
-        margin-right: 2opx;
+        margin-right: 20px;
     }
     
     .certificate-input {
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+    
+    .certificate-button {
+        padding: 8px 14px; 
+        margin-bottom: 0;
+        font-size: 15px; 
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .Main-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 120px;
+    }
+    
+    .header-name {
+        font-size: 45px;
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #head{ 
+        font-size: 45px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .header-img {
+        height: 65px;
+        margin-top: 20px;
+    }
+    
+    .tagline {
+        font-size: 20px;
+    }
+    
+    .Quiz-container {
+        margin-top: 20px;
+    }
+    
+    .type-container {
+        gap: 30px;
+    }
+    
+    .section-title{
+        font-size: 30px;
+    }
+    
+    .que-no {
+        gap: 20px;
+        max-width: 600px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .que-type {
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .que-type-img {
+        height: 40px;
+    }
+    
+    .que-name {
+        font-size: 20px;
+    }
+    
+    form {
+        text-align: left;
+    }
+    
+    label {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    
+    .quiz-form {
+        font-size: 15px;
+    }
+    
+    .opt-img {
+        height: 25px;
+    }
+
+    #prev-button{
+        height: 50px;
+        width: 120px;
+        font-size: 20px;
+        margin: auto;
+    }
+    
+    #next-button{
+        height: 50px;
+        width: 80px;
+        font-size: 20px;
+        margin: auto;
+    }
+    
+    #finish-button{
+        height: 50px;
+        width: 100px;
+        font-size: 20px;
+        margin: auto;
+    }
+    
+    
+    #score-container {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    #score-line {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    
+    #final-score-container {
+        max-width: 750px; 
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    
+    .certificate-container-main {
+        max-width: 650px;
+        height: 500px;
+        padding: 10px 30px;
+    }
+    
+    #certificate {
+        max-width: 750px;
+        margin-left: 20px;
+        margin-right: 20px;
+        display: none;
+    }
+    
+    .certificate-container h1 {
+        font-size: 20px; 
+        margin: 10px 10px; 
+    }
+    
+    .certificate-container h2 {
+        font-size: 30px; 
+        margin: 10px 0; 
+    }
+    
+    .certificate-container h3 {
+        font-size: 20px; 
+        margin: 10px 10px; 
+    }
+    
+    .certificate-p {
+        font-size: 18px; 
+        margin-bottom: 10px; 
+    }
+    
+    #date {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+    .date{
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+    .quiz-Organizer {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+    #organizerName {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+    
+    .form-container {
+        margin-top: 20px;
+    }
+    
+    .certificate-input {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+    
+    .certificate-button {
+        padding: 8px 14px; 
+        margin-bottom: 0;
+        font-size: 15px; 
+    }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    .Main-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 120px;
+    }
+    
+    .header-name {
+        font-size: 45px;
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #head{ 
+        font-size: 45px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .header-img {
+        height: 65px;
+        margin-top: 20px;
+    }
+    
+    .tagline {
+        font-size: 20px;
+    }
+    
+    .Quiz-container {
+        margin-top: 20px;
+    }
+    
+    .type-container {
+        gap: 30px;
+    }
+    
+    .section-title{
+        font-size: 30px;
+    }
+    
+    .que-no {
+        gap: 20px;
+        max-width: 600px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .que-type {
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .que-type-img {
+        height: 40px;
+    }
+    
+    .que-name {
+        font-size: 20px;
+    }
+    
+    form {
+        text-align: left;
+    }
+    
+    label {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    
+    .quiz-form {
+        font-size: 15px;
+    }
+    
+    .opt-img {
+        height: 25px;
+    }
+
+    #prev-button{
+        height: 50px;
+        width: 120px;
+        font-size: 20px;
+        margin: auto;
+    }
+    
+    #next-button{
+        height: 50px;
+        width: 80px;
+        font-size: 20px;
+        margin: auto;
+    }
+    
+    #finish-button{
+        height: 50px;
+        width: 100px;
+        font-size: 20px;
+        margin: auto;
+    }
+    
+    
+    #score-container {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    #score-line {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    
+    #final-score-container {
+        display: flex;
+        justify-content: center;
+        max-width: 750px; 
+        margin-top: 20px;
+        margin-bottom: 30px;
+       
+    }
+    
+    
+    .certificate-container-main {
+        max-width: 650px;
+        height: 500px;
+        padding: 10px 30px;
+    }
+    
+    #certificate {
+        display: flex;
+        justify-content: center;
+        max-width: 750px;
+        
+        display: none;
+    }
+    
+    .certificate-container h1 {
+        font-size: 20px; 
+        margin: 10px 10px; 
+    }
+    
+    .certificate-container h2 {
+        font-size: 30px; 
+        margin: 10px 0; 
+    }
+    
+    .certificate-container h3 {
+        font-size: 20px; 
+        margin: 10px 10px; 
+    }
+    
+    .certificate-p {
+        font-size: 18px; 
+        margin-bottom: 10px; 
+    }
+    
+    #date {
+        font-size: 25px;
+        margin-bottom: 3px;
+    }
+    .date{
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+    .quiz-Organizer {
+        font-size: 25px;
+        margin-bottom: 3px;
+    }
+    #organizerName {
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+    .inbuilt-organizer{
+        font-size: 20px;
+    }
+    .inbuilt-date{
+        font-size: 20px;
+    }
+    
+    .form-container {
+        margin-top: 20px;
+    }
+    
+    .certificate-input {
+        margin-left: 20px;
+        margin-right: 20px;
         margin-bottom: 20px;
         gap: 10px;
     }
