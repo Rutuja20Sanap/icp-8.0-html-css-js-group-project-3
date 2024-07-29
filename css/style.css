@@ -180,8 +180,9 @@ h4{
  #btn-1{
   margin-top: 20px;
   border-radius: 25px 10px;
-  background-color: #33ccff;
+  background-color: #21c1f6;
   color: #fff;
+  border:none;
  }
  #font-color{
   color:#0e0e0e;
