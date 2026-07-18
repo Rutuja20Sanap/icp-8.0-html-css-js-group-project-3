@@ -1,6 +1,21 @@
 # ***Kids Quizzland🌟***
 ### Website link: https://kids-quizzland.netlify.app
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic Tags</title>
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+  </body>
+</html>
+
 ## ***Hi! I'm happy to see you here!***
 #### Welcome to Kids Quizzland! This is a fun, educational, and interactive website designed for kids aged 6 to 15. Kids Quizzland offers a variety of quizzes on general knowledge, math, English, and fun games to encourage learning through play🚀.
 
